@@ -1,6 +1,6 @@
-# BTK Akademi Eğitim Çalışmalarım
+# Yazılım Akademi Eğitim Çalışmalarım
 
-Bu repo, **BTK Akademi** üzerinden aldığım **Algoritma, C#, Unity ** eğitimlerindeki notlarımı, küçük projelerimi ve egzersizlerimi içerir.  
+Bu repo, Algoritma, C#, Unity ** eğitimlerindeki notlarımı, küçük projelerimi ve egzersizlerimi içerir.  
 Amacım düzenli bir şekilde çalışarak oyun geliştirme, programlama ve algoritma mantığımı güçlendirmektir.  
 
 ---
