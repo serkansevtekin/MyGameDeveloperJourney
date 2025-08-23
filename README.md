@@ -5,6 +5,13 @@ Amacım düzenli bir şekilde çalışarak oyun geliştirme, programlama ve algo
 
 ---
 
+## 📂 Branch Yapısı
+- `algoritma` → Algoritma derslerinde öğrendiklerim
+- `csharp` → C# derslerinde öğrendiklerim
+- `unity` → Unity derslerinde öğrendiklerim
+
+---
+
 ## 📌 Çalışma Programım
 Her gün ortalama **8 saat** çalışıyorum. Günlük sıralamam:  
 **Algoritma → C# → Unity → Blender**
