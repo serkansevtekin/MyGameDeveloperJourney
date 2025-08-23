@@ -1,4 +1,4 @@
-# Yazılım Akademi Eğitim Çalışmalarım
+# Algoritma Yazılım Eğitim Çalışmalarım
 
 Bu repo, Algoritma, C#, Unity ** eğitimlerindeki notlarımı, küçük projelerimi ve egzersizlerimi içerir.  
 Amacım düzenli bir şekilde çalışarak oyun geliştirme, programlama ve algoritma mantığımı güçlendirmektir.  
