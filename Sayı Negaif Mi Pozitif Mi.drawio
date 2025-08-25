@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+  <diagram name="Sayfa -1" id="TvAnQ0inS49Vag5hEFR-">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-1" target="lIYPIZt3HbvvIp0JAj1H-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-1" value="Başla" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-2" value="Girilen Sayı Negatif Mi? Pozitif Mi?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=31;" vertex="1" parent="1">
+          <mxGeometry x="90" y="40" width="610" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-3" target="lIYPIZt3HbvvIp0JAj1H-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-3" value="Sayi" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-4" target="lIYPIZt3HbvvIp0JAj1H-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-4" value="Sayi &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="500" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-7" value="Evet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-8" target="lIYPIZt3HbvvIp0JAj1H-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-8" value="Poizitif Sayı" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-10" target="lIYPIZt3HbvvIp0JAj1H-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-10" value="Negatif Sayı" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="510" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.083;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-4" target="lIYPIZt3HbvvIp0JAj1H-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-12" target="lIYPIZt3HbvvIp0JAj1H-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-12" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="690" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-13" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="690" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-16" value="Son" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="680" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lIYPIZt3HbvvIp0JAj1H-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lIYPIZt3HbvvIp0JAj1H-13" target="lIYPIZt3HbvvIp0JAj1H-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

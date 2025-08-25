@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+  <diagram name="Sayfa -1" id="t1kc6ZBtJaFpLEnA0HFo">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-1" target="nS-8-A-CHTnIzgQsNZca-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-1" value="Başla" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-2" value="Girilen gelir ve gidere göre kar ve zarar veren akış diagramı" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="120" y="50" width="580" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-4" target="nS-8-A-CHTnIzgQsNZca-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-4" value="Gelir Oku" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-5" target="nS-8-A-CHTnIzgQsNZca-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-5" value="Gider Oku" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-6" target="nS-8-A-CHTnIzgQsNZca-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-6" target="nS-8-A-CHTnIzgQsNZca-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-6" value="Gelir &amp;gt;= Gider" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="290" y="550" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-7" value="Evet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-8" target="nS-8-A-CHTnIzgQsNZca-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-8" value="S = Gelir - Gider" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-10" target="nS-8-A-CHTnIzgQsNZca-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-10" value="Kar Yaz S" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="770" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-15" target="nS-8-A-CHTnIzgQsNZca-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-15" value="S = Gider - Gelir" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-17" target="nS-8-A-CHTnIzgQsNZca-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-17" value="Zarar Yaz S" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nS-8-A-CHTnIzgQsNZca-18" target="nS-8-A-CHTnIzgQsNZca-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-18" value="" style="shape=orEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="605" y="1050" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-20" value="Son" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1035" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nS-8-A-CHTnIzgQsNZca-24" value="Hayır" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="680" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
