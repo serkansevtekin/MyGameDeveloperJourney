@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Programlama
 {
     public class MainProgram
@@ -9,8 +10,8 @@ namespace Programlama
             // KarakterSabitleriNameSpace.KarakterSabitleri.KarakterSabitleriMethod();
             // DizeDegismezleriNameSpace.DizeDegismezleri.DizeDegismezleriMethod();    
             // OperatorlerNameSpace.Operatorler.OperatorlerMethod();
-            KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
-
+           // KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
+            DongulerNameSpace.Donguler.DongulerMainMethod();
             
             Console.ReadKey();
         }
