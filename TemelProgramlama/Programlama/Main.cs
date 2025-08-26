@@ -5,8 +5,10 @@ namespace Programlama
     {
         public static void Main(string[] args)
         {
-            DegiskenlerNameSpace.Degiskenler.DegiskenlerMethod();
-            KarakterSabitleriNameSpace.KarakterSabitleri.KarakterSabitleriMethod();
+            // DegiskenlerNameSpace.Degiskenler.DegiskenlerMethod();
+            // KarakterSabitleriNameSpace.KarakterSabitleri.KarakterSabitleriMethod();
+            DizeDegismezleriNameSpace.DizeDegismezleri.DizeDegismezleriMethod();
+
 
              Console.ReadKey();
         }
