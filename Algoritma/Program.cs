@@ -12,7 +12,7 @@ namespace Programlama
             // OperatorlerNameSpace.Operatorler.OperatorlerMethod();
            // KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
             DongulerNameSpace.Donguler.DongulerMainMethod();
-            
+          
             Console.ReadKey();
         }
     }
