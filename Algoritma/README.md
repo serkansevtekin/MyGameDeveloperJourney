@@ -37,3 +37,5 @@ Amaç, algoritma mantığını geliştirmek ve temel programlama becerilerini pe
 Bu repository’de paylaşılan kodlar ve görseller, **kendi öğrenme sürecimde üretilmiştir**.  
 Hiçbir BTK Akademi dersi, videosu, pdf’i veya resmi dokümanı birebir kopyalanmamıştır.  
 Bu repo sadece **kişisel eğitim ve portföy amaçlıdır**.
+
+<<<<<<<, =======, >>>>>>>
