@@ -12,22 +12,6 @@ Amacım düzenli bir şekilde çalışarak oyun geliştirme, programlama ve algo
 
 ---
 
-## 📌 Çalışma Programım
-Her gün ortalama **8 saat** çalışıyorum. Günlük sıralamam:  
-**Algoritma → C# → Unity → Blender**
-
-### Haftalık Plan
-- **Pazartesi:** 2saat Algoritma • 2saat C# • 2saat Unity • 2saat Blender  
-- **Salı:** 2saat Algoritma • 2saat C# • 2saat Unity • 2saat Blender  
-- **Çarşamba:** 2saat Algoritma • 2saat C# • 2saat Unity • 2saat Blender  
-- **Perşembe:** 2saat Algoritma • 2saat C# • 2saat Unity • 2saat Blender  
-- **Cuma:** 2saat Algoritma • 2saat C# • 2saat Unity • 2saat Blender  
-- **Cumartesi:** Tekrar – Mini Projeler – Uygulamalar  
-- **Pazar:** Serbest tekrar + Blender modelleme  
-
----
-
-
 ## 🎯 Hedeflerim
 - Algoritma mantığını güçlendirmek  
 - C# temellerini sağlam öğrenmek  
@@ -37,6 +21,7 @@ Her gün ortalama **8 saat** çalışıyorum. Günlük sıralamam:
 
 ---
 
-## 📌 Not
-Bu repo hem kişisel gelişim sürecimi hem de aldığım eğitimlerdeki uygulamaları içerir.  
-İlerleyen dönemlerde kendi oyun ve uygulama projelerimi de bu repo üzerinden paylaşacağım.
+## 📌 Telif Notu
+Bu repository’de paylaşılan kodlar ve görseller, **kendi öğrenme sürecimde üretilmiştir**.  
+Hiçbir BTK Akademi dersi, videosu, pdf’i veya resmi dokümanı birebir kopyalanmamıştır.  
+Bu repo sadece **kişisel eğitim ve portföy amaçlıdır**.
