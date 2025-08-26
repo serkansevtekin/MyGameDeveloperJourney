@@ -8,8 +8,10 @@ namespace Programlama
             // DegiskenlerNameSpace.Degiskenler.DegiskenlerMethod();
             // KarakterSabitleriNameSpace.KarakterSabitleri.KarakterSabitleriMethod();
             // DizeDegismezleriNameSpace.DizeDegismezleri.DizeDegismezleriMethod();    
-            OperatorlerNameSpace.Operatorler.OperatorlerMethod();
+            // OperatorlerNameSpace.Operatorler.OperatorlerMethod();
+            KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
 
+            
             Console.ReadKey();
         }
     }
