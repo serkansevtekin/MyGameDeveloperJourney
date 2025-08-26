@@ -17,7 +17,7 @@ Amaç, algoritma mantığını geliştirmek ve temel programlama becerilerini pe
 ---
 
 ## 🚀 Çalışma Konuları
-- [x] Temel algoritmalar (toplama, çıkarma, çarpma, bölme)  
+- [x] Temel algoritmalar (toplama, çıkarma, çarpma, bölme,)  
 - [x] Koşullu ifadeler (if-else, switch-case)  
 - [ ] Döngüler (for, while, do-while)  
 - [ ] Diziler ve koleksiyonlar  
