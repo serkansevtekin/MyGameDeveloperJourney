@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelProgramlama/Programlama/Programlama.csproj": {}
+    "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/Programlama/Programlama.csproj": {}
   },
   "projects": {
-    "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelProgramlama/Programlama/Programlama.csproj": {
+    "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/Programlama/Programlama.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelProgramlama/Programlama/Programlama.csproj",
+        "projectUniqueName": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/Programlama/Programlama.csproj",
         "projectName": "Programlama",
-        "projectPath": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelProgramlama/Programlama/Programlama.csproj",
+        "projectPath": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/Programlama/Programlama.csproj",
         "packagesPath": "/Users/ibrahimserkansevtekin/.nuget/packages/",
-        "outputPath": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelProgramlama/Programlama/obj/",
+        "outputPath": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/Programlama/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ibrahimserkansevtekin/.nuget/NuGet/NuGet.Config"
