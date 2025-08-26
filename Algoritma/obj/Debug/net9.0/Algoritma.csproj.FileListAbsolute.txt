@@ -1,0 +1,15 @@
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/bin/Debug/net9.0/Algoritma
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/bin/Debug/net9.0/Algoritma.deps.json
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/bin/Debug/net9.0/Algoritma.runtimeconfig.json
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/bin/Debug/net9.0/Algoritma.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/bin/Debug/net9.0/Algoritma.pdb
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.AssemblyInfoInputs.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.AssemblyInfo.cs
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.csproj.CoreCompileInputs.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.sourcelink.json
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/refint/Algoritma.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.pdb
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/Algoritma.genruntimeconfig.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/Algoritma/obj/Debug/net9.0/ref/Algoritma.dll

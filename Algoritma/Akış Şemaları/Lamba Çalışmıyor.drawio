@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+  <diagram name="Sayfa -1" id="baHbGKtte3bx-7bqTxG3">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-1" target="v-DCpXatZcyJqcZyMY4R-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-1" value="Başla" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322.5" y="200" width="145" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-2" value="Lamba Çalışmıyor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="230" y="30" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-4" target="v-DCpXatZcyJqcZyMY4R-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-4" value="Lamba Fişe Takılımı" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322.5" y="400" width="145" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-6" target="v-DCpXatZcyJqcZyMY4R-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-6" value="O zaman Fişe Tak" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.35;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-4" target="v-DCpXatZcyJqcZyMY4R-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-8" value="Hayır" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-9" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="340" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-14" target="v-DCpXatZcyJqcZyMY4R-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-14" value="Ampul Patlak Mı?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322.5" y="670" width="145" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-15" target="v-DCpXatZcyJqcZyMY4R-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-15" value="Ampulü Değiştir" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="710" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-14" target="v-DCpXatZcyJqcZyMY4R-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-17" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="585" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-25" value="Evet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v-DCpXatZcyJqcZyMY4R-26" target="v-DCpXatZcyJqcZyMY4R-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-26" value="Lambayı Aç" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="890" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-DCpXatZcyJqcZyMY4R-28" value="Son" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317.5" y="1030" width="145" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
