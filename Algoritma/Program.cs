@@ -10,9 +10,11 @@ namespace Programlama
             // KarakterSabitleriNameSpace.KarakterSabitleri.KarakterSabitleriMethod();
             // DizeDegismezleriNameSpace.DizeDegismezleri.DizeDegismezleriMethod();    
             // OperatorlerNameSpace.Operatorler.OperatorlerMethod();
-           // KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
-            DongulerNameSpace.Donguler.DongulerMainMethod();
-          
+            // KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
+            // DongulerNameSpace.Donguler.DongulerMainMethod();
+            DizilerNameSpace.Diziler.DizilerMainMethod();
+
+            
             Console.ReadKey();
         }
     }
