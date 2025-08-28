@@ -12,8 +12,8 @@ namespace Programlama
             // OperatorlerNameSpace.Operatorler.OperatorlerMethod();
             // KosulIfadeleriNameSpace.KosulIfadeleri.KosulIfadeleriMainMethod();
             // DongulerNameSpace.Donguler.DongulerMainMethod();
-            DizilerNameSpace.Diziler.DizilerMainMethod();
-
+            // DizilerNameSpace.Diziler.DizilerMainMethod();
+            ArrayListNameSpace.ArrayListClass.ArrayListMainMethod();
             
             Console.ReadKey();
         }
