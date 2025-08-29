@@ -14,9 +14,9 @@ namespace Programlama
             // DongulerNameSpace.Donguler.DongulerMainMethod();
             // DizilerNameSpace.Diziler.DizilerMainMethod();
             //  ArrayListNameSpace.ArrayListClass.ArrayListMainMethod();
-            ListelerNameSpace.ListelerClass.ListelerMainMethod();
+            // ListelerNameSpace.ListelerClass.ListelerMainMethod();
+            MethodlarNameSpace.MethodlarClass.MethodlarMainMethod();
 
-            
             Console.ReadKey();
         }
     }
