@@ -15,8 +15,10 @@ namespace Programlama
             // DizilerNameSpace.Diziler.DizilerMainMethod();
             //  ArrayListNameSpace.ArrayListClass.ArrayListMainMethod();
             // ListelerNameSpace.ListelerClass.ListelerMainMethod();
-            MethodlarNameSpace.MethodlarClass.MethodlarMainMethod();
+            //MethodlarNameSpace.MethodlarClass.MethodlarMainMethod();
+            DegerVeReferansTipNameSpace.DegerVeReferansTipClass.DegerVeReferansTipMainMethod();
 
+            
             Console.ReadKey();
         }
     }
