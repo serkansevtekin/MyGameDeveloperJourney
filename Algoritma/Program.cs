@@ -16,8 +16,8 @@ namespace Programlama
             //  ArrayListNameSpace.ArrayListClass.ArrayListMainMethod();
             // ListelerNameSpace.ListelerClass.ListelerMainMethod();
             //MethodlarNameSpace.MethodlarClass.MethodlarMainMethod();
-            DegerVeReferansTipNameSpace.DegerVeReferansTipClass.DegerVeReferansTipMainMethod();
-
+            //DegerVeReferansTipNameSpace.DegerVeReferansTipClass.DegerVeReferansTipMainMethod();
+            VeriTurlerininAltVeUstLimitleriNameSpace.VeriTurlerininAltVeUstLimitleriClass.VeriTurleriVeLimitleriMain();
             
             Console.ReadKey();
         }
