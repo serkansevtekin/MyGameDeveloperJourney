@@ -1,72 +1,71 @@
-using System;
 namespace Programlama.StructNameSpace //Namespace aynı
 {
-
-
-    //class Tanımı - Referans tipli çalışır
-    public class NormalClass
+    //Struct Tanımlama - Değer tipli çalışır
+    public struct Ogrenci
     {
-        public static void NormalMainMethod()
+
+        //Field + property - özellik
+
+        private int numara { get; set; }
+        private string adi { get; set; }
+        public string soyadi { get; set; }
+        public bool cinsiyet { get; set; }
+
+        //alternatif kullanım için örnek özellik
+        public int yas { get; set; }
+
+
+        //constructor (yapıcı metot) - struct için parametresiz constructor tanımlanamaz
+        //bool consCinsiyet = true -> default değer ataması - opsiyonel parametre en sona yazılır
+        public Ogrenci(int consNumara, string consAdi, string consSoyadi, int consYas, bool consCinsiyet = true)
         {
-            //GenelStructBilgisiVeIyilestirmeler();
 
-            //struct -> deger tipli 
-            // Değer tipli değişkenler, bellekte stack (yığın) alanında depolanır ve doğrudan değerleriyle çalışırlar.
-            // Bu, değer tiplerinin kopyalandığı anlamına gelir; yani bir değer tipi değişkeni başka bir değişkene atadığınızda, 
-            // aslında o değerin bir kopyasını oluşturursunuz. Bu nedenle, bir değer tipi değişkenini değiştirdiğinizde, 
-            // bu değişiklik yalnızca o değişkeni etkiler ve diğer kopyalar bundan etkilenmez.
-            
-            Nokta n1 = new Nokta(3, 4);
-             System.Console.WriteLine($"n1: {n1}");
-
-            n1.Degistir();
-             System.Console.WriteLine($"n1: {n1}");
-
-            Nokta n2 = n1; //n1 in değerini n2 ye atar (kopyalar)
-            System.Console.WriteLine($"n2: {n2}");
-
-            n2.publicX = -1 * n2.publicX; //n2 nin x değerini değiştirir
-            System.Console.WriteLine($"n1: {n1}");
-            System.Console.WriteLine($"n2: {n2}");
+            this.numara = consNumara;
+            this.adi = consAdi;
+            this.soyadi = consSoyadi;
+            this.cinsiyet = consCinsiyet;
+            this.yas = consYas;
         }
 
-        private static void GenelStructBilgisiVeIyilestirmeler()
+
+
+        //setter ve getter metotları
+        public int publicNumara
         {
-            /* //struct kullanımı
-            Ogrenci ogr1 = new Ogrenci();
-            ogr1.publicNumara(10);
-            ogr1.publicAdi("serkan");
-            ogr1.publicSoyadi("sevtekin");
-            ogr1.publicCinsiyet(true);
-            ogr1.publicyas = 10;
-
-            //Alternatif struct kullanımı
-            var ogr2 = new Ogrenci()
-            {
-                yas = 25,
-            }; */
-
-            /* //3. struct kullanımı - constructor ile
-            var ogr3 = new Ogrenci(30, "Ali", "Avşar", 28, false);//constructor ile değer atama
-
-            var ogr4 = new Ogrenci(40, "Asaf", "Karlıdağ", 35);//cinsiyet default deger ne ise o atanır
- */
-            List<Ogrenci> ogrenciListesi = new List<Ogrenci>()
-            {
-                new Ogrenci(10, "Serkan", "Sevtekin", 30, true),
-                new Ogrenci(40, "Asaf", "Karlıdağ", 35),
-                new Ogrenci(20, "Ayşe", "Yılmaz", 22, false),
-                new Ogrenci(25, "Fatma", "Kara", 20, false),
-                new Ogrenci(30, "Ali", "Avşar", 28, false)
-            };
-
-            // ogrenciListesi.ForEach(item =>System.Console.WriteLine(item));
-
-            foreach (Ogrenci item in ogrenciListesi)
-            {
-                System.Console.WriteLine(item);
-            }
+            get => numara;
+            set => numara = value;
         }
+        public string punblicAdi
+        {
+            get => adi;
+            set => adi = value;
+        }
+
+        public string publicSoyadi
+        {
+            get { return soyadi; }
+            set { soyadi = value; }
+        }
+
+        public bool publicCinsiyet
+        {
+            get { return cinsiyet; }
+            set { cinsiyet = value; }
+        }
+        
+        public int publicYas
+        {
+            get => yas;
+            set => yas = value;
+        }
+
+
+        //Geçersiz kılmak - ezmek - override
+        public override string ToString()
+        {
+            return $"Numara: {numara} Adı: {adi} Soyadı: {soyadi} Yaşı: {yas} Cinsiyeti: {string.Format("{0}", cinsiyet == true ? "Erkek" : "Kadın")}";
+        }
+
     }
 }
 
