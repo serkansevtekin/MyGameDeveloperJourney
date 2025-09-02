@@ -18,8 +18,8 @@ namespace Programlama
             //MethodlarNameSpace.MethodlarClass.MethodlarMainMethod();
             //DegerVeReferansTipNameSpace.DegerVeReferansTipClass.DegerVeReferansTipMainMethod();
            // VeriTurlerininAltVeUstLimitleriNameSpace.VeriTurlerininAltVeUstLimitleriClass.VeriTurleriVeLimitleriMain();
-            StructNameSpace.NormalClass.NormalMainMethod();
-
+            //StructNameSpace.NormalClass.NormalMainMethod();
+            ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
 
 
             Console.ReadKey();

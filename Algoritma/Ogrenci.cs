@@ -6,10 +6,10 @@ namespace Programlama.StructNameSpace //Namespace aynı
 
         //Field + property - özellik
 
-        private int numara { get; set; }
-        private string adi { get; set; }
-        public string soyadi { get; set; }
-        public bool cinsiyet { get; set; }
+        public int numara { get; private set; }
+        public string adi { get; private set; }
+        public string soyadi { get; private set; }
+        public bool cinsiyet { get; private set; }
 
         //alternatif kullanım için örnek özellik
         public int yas { get; set; }
@@ -28,7 +28,7 @@ namespace Programlama.StructNameSpace //Namespace aynı
         }
 
 
-
+/* 
         //setter ve getter metotları
         public int publicNumara
         {
@@ -58,7 +58,7 @@ namespace Programlama.StructNameSpace //Namespace aynı
             get => yas;
             set => yas = value;
         }
-
+ */
 
         //Geçersiz kılmak - ezmek - override
         public override string ToString()
