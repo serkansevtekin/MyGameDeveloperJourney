@@ -135,9 +135,10 @@ namespace Programlama.VeriYapilari
                 baslik = baslik.Replace((char)item.Key, (char)item.Value!);
             }
 
-           baslik= baslik.TrimEnd('-');// Eğer sondaki '-' varsa sil
+            baslik = baslik.TrimEnd('-');// Eğer sondaki '-' varsa sil
             //ekranda yazdır
             System.Console.WriteLine(baslik);
+            
         }
     }
 

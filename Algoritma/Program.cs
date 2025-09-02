@@ -23,7 +23,7 @@ namespace Programlama
             // VeriYapilari.DizilerVeAlternatifDiziOlusturmaYaklasimlari.DADOYMainMethod();
             VeriYapilari.HastableClass.HastableMainMethod();
 
-
+        
             Console.ReadKey();
         }
     }
