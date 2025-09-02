@@ -19,9 +19,9 @@ namespace Programlama
             //DegerVeReferansTipNameSpace.DegerVeReferansTipClass.DegerVeReferansTipMainMethod();
            // VeriTurlerininAltVeUstLimitleriNameSpace.VeriTurlerininAltVeUstLimitleriClass.VeriTurleriVeLimitleriMain();
             //StructNameSpace.NormalClass.NormalMainMethod();
-            ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
+          //  ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
 
-
+        
             Console.ReadKey();
         }
     }
