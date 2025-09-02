@@ -17,10 +17,11 @@ namespace Programlama
             // ListelerNameSpace.ListelerClass.ListelerMainMethod();
             //MethodlarNameSpace.MethodlarClass.MethodlarMainMethod();
             //DegerVeReferansTipNameSpace.DegerVeReferansTipClass.DegerVeReferansTipMainMethod();
-           // VeriTurlerininAltVeUstLimitleriNameSpace.VeriTurlerininAltVeUstLimitleriClass.VeriTurleriVeLimitleriMain();
+            // VeriTurlerininAltVeUstLimitleriNameSpace.VeriTurlerininAltVeUstLimitleriClass.VeriTurleriVeLimitleriMain();
             //StructNameSpace.NormalClass.NormalMainMethod();
-          //  ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
-
+            //  ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
+            VeriYapilari.DizilerVeAlternatifDiziOlusturmaYaklasimlari.DADOYMainMethod();
+          
         
             Console.ReadKey();
         }
