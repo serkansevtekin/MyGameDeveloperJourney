@@ -20,9 +20,10 @@ namespace Programlama
             // VeriTurlerininAltVeUstLimitleriNameSpace.VeriTurlerininAltVeUstLimitleriClass.VeriTurleriVeLimitleriMain();
             //StructNameSpace.NormalClass.NormalMainMethod();
             //  ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
-            VeriYapilari.DizilerVeAlternatifDiziOlusturmaYaklasimlari.DADOYMainMethod();
-          
-        
+            // VeriYapilari.DizilerVeAlternatifDiziOlusturmaYaklasimlari.DADOYMainMethod();
+            VeriYapilari.HastableClass.HastableMainMethod();
+
+
             Console.ReadKey();
         }
     }
