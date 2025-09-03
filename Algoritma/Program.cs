@@ -23,7 +23,8 @@ namespace Programlama
             // VeriYapilari.DizilerVeAlternatifDiziOlusturmaYaklasimlari.DADOYMainMethod();
             // VeriYapilari.HastableClass.HastableMainMethod();
             // VeriYapilari.SortedListClass.SortedListMainMethod();
-            VeriYapilari.ListKullanimiClass.ListKullanimiMainMethod();
+            // VeriYapilari.ListKullanimiClass.ListKullanimiMainMethod();
+            VeriYapilari.StackKullanimiClass.StackMainMethod();
             Console.ReadKey();
         }
     }
