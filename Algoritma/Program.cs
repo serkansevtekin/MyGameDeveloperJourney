@@ -22,8 +22,8 @@ namespace Programlama
             //  ClassNamespace.ClassKullaniciTarafliVeriTurleriClass.ClassMainMethod();
             // VeriYapilari.DizilerVeAlternatifDiziOlusturmaYaklasimlari.DADOYMainMethod();
             // VeriYapilari.HastableClass.HastableMainMethod();
-            VeriYapilari.SortedListClass.SortedListMainMethod();
-
+            // VeriYapilari.SortedListClass.SortedListMainMethod();
+            VeriYapilari.ListKullanimiClass.ListKullanimiMainMethod();
             Console.ReadKey();
         }
     }
