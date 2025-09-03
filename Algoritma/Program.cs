@@ -24,7 +24,9 @@ namespace Programlama
             // VeriYapilari.HastableClass.HastableMainMethod();
             // VeriYapilari.SortedListClass.SortedListMainMethod();
             // VeriYapilari.ListKullanimiClass.ListKullanimiMainMethod();
-            VeriYapilari.StackKullanimiClass.StackMainMethod();
+            //VeriYapilari.StackKullanimiClass.StackMainMethod();
+            VeriYapilari.QueueKullanımıClass.QueueMainMethod();
+
             Console.ReadKey();
         }
     }
