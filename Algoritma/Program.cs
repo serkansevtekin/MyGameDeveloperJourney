@@ -26,11 +26,11 @@ namespace Programlama
             // VeriYapilari.ListKullanimiClass.ListKullanimiMainMethod();
             //VeriYapilari.StackKullanimiClass.StackMainMethod();
             // VeriYapilari.QueueKullanımıClass.QueueMainMethod();
-            VeriYapilari.LinkedListClass.LinkedListMainMethod();
+            //VeriYapilari.LinkedListClass.LinkedListMainMethod();
+            VeriYapilari.DictionaryClass.DictionaryMainMethod();
 
 
 
-            
             Console.ReadKey();
         }
     }
