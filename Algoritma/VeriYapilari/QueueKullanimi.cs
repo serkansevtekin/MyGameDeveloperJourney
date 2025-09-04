@@ -140,7 +140,7 @@ namespace Programlama.VeriYapilari
             System.Console.WriteLine($"Tüm kuyruk elemanları temizlendi. Eleman Sayısı : {kuyruk.Count}");
         }
 
-        public static void TemelBilgiler()
+        private static void TemelBilgiler()
         {
             //Tanımlama
             var karakterKuyrugu = new Queue<char>();
@@ -174,7 +174,7 @@ namespace Programlama.VeriYapilari
 
         }
 
-        public static void QueueOrnekUygulamasi()
+        private static void QueueOrnekUygulamasi()
         {
 
             var sesliHarfler = new List<char>()

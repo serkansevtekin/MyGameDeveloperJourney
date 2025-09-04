@@ -25,8 +25,12 @@ namespace Programlama
             // VeriYapilari.SortedListClass.SortedListMainMethod();
             // VeriYapilari.ListKullanimiClass.ListKullanimiMainMethod();
             //VeriYapilari.StackKullanimiClass.StackMainMethod();
-            VeriYapilari.QueueKullanımıClass.QueueMainMethod();
+            // VeriYapilari.QueueKullanımıClass.QueueMainMethod();
+            VeriYapilari.LinkedListClass.LinkedListMainMethod();
 
+
+
+            
             Console.ReadKey();
         }
     }
