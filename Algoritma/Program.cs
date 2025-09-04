@@ -27,8 +27,8 @@ namespace Programlama
             //VeriYapilari.StackKullanimiClass.StackMainMethod();
             // VeriYapilari.QueueKullanımıClass.QueueMainMethod();
             //VeriYapilari.LinkedListClass.LinkedListMainMethod();
-            VeriYapilari.DictionaryClass.DictionaryMainMethod();
-
+            //VeriYapilari.DictionaryClass.DictionaryMainMethod();
+            VeriYapilari.SortedDictionaryClass.SortedDictionaryMainMethod();
 
 
             Console.ReadKey();
