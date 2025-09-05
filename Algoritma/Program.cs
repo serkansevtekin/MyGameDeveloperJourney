@@ -28,8 +28,8 @@ namespace Programlama
             // VeriYapilari.QueueKullanımıClass.QueueMainMethod();
             //VeriYapilari.LinkedListClass.LinkedListMainMethod();
             //VeriYapilari.DictionaryClass.DictionaryMainMethod();
-            VeriYapilari.SortedDictionaryClass.SortedDictionaryMainMethod();
-
+            //VeriYapilari.SortedDictionaryClass.SortedDictionaryMainMethod();
+            VeriYapilari.SortedSetClass.SortedSetMainMethod();
 
             Console.ReadKey();
         }
