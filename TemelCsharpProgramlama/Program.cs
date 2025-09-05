@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace TemelCSharp
+namespace TemelCSharpProgramlam
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            TemelCSharp.DegiskenlerClass.DegiskenlerMainMethod();
+            Console.WriteLine("Hello, World!");
+
         }
     }
 }

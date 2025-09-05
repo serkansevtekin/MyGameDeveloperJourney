@@ -5,6 +5,7 @@ namespace Programlama.ClassNamespace
     {
         public static void ClassMainMethod()
         {
+            
             // 1. Tanımlama şekli
             //List<OgretimElemaniClass> -> uzun olduğu için "var" ile tanımlanabilir.
             var ogrGor = new List<OgretimElemaniClass>()
