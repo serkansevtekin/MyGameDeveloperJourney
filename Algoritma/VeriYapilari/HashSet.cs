@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Microsoft.VisualBasic;
 
 namespace Programlama.VeriYapilari
@@ -8,6 +9,7 @@ namespace Programlama.VeriYapilari
         public static void HashSetMainMethod()
         {
             TemelBilgiler();
+           
         }
 
         private static void TemelBilgiler()
