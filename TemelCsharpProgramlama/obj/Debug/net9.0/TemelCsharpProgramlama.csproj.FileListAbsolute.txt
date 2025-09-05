@@ -1,0 +1,15 @@
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/bin/Debug/net9.0/TemelCsharpProgramlama
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/bin/Debug/net9.0/TemelCsharpProgramlama.deps.json
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/bin/Debug/net9.0/TemelCsharpProgramlama.runtimeconfig.json
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/bin/Debug/net9.0/TemelCsharpProgramlama.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/bin/Debug/net9.0/TemelCsharpProgramlama.pdb
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.AssemblyInfoInputs.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.AssemblyInfo.cs
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.csproj.CoreCompileInputs.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.sourcelink.json
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/refint/TemelCsharpProgramlama.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.pdb
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.genruntimeconfig.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/ref/TemelCsharpProgramlama.dll
