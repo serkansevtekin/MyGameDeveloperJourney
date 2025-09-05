@@ -29,7 +29,9 @@ namespace Programlama
             //VeriYapilari.LinkedListClass.LinkedListMainMethod();
             //VeriYapilari.DictionaryClass.DictionaryMainMethod();
             //VeriYapilari.SortedDictionaryClass.SortedDictionaryMainMethod();
-            VeriYapilari.SortedSetClass.SortedSetMainMethod();
+            //VeriYapilari.SortedSetClass.SortedSetMainMethod();
+            VeriYapilari.HashSetClass.HashSetMainMethod();
+
 
             Console.ReadKey();
         }
