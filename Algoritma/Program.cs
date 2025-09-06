@@ -57,7 +57,11 @@ namespace Programlama
             //AlgoritmaTasarimi.DegiskenlerClass.DegiskenMainMethod();
             //   AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
             //AlgoritmaTasarimi.SabitlerClass.SabitlerMainMethod();
-            AlgoritmaTasarimi.VarVeriTuruClass.VarVeriTuruMainMethod();
+            //AlgoritmaTasarimi.VarVeriTuruClass.VarVeriTuruMainMethod();
+            AlgoritmaTasarimi.KontrolIfadeleriClass.KontrolIfadeleriMainMethod();
+
+            Console.ReadKey();
+
         }
         #endregion
     }
