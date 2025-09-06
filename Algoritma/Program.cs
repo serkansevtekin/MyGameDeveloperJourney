@@ -6,6 +6,16 @@ namespace Programlama
     {
         public static void Main(string[] args)
         {
+
+            AlgoritmaTasarimiMainRunMethod();
+            Console.ReadKey();
+        }
+
+
+
+        #region Temel Algoritma
+        public static void TemelAlgoritmaMainRunMethods()
+        {
             // DegiskenlerNameSpace.Degiskenler.DegiskenlerMethod();
             // KarakterSabitleriNameSpace.KarakterSabitleri.KarakterSabitleriMethod();
             // DizeDegismezleriNameSpace.DizeDegismezleri.DizeDegismezleriMethod();    
@@ -30,10 +40,23 @@ namespace Programlama
             //VeriYapilari.DictionaryClass.DictionaryMainMethod();
             //VeriYapilari.SortedDictionaryClass.SortedDictionaryMainMethod();
             //VeriYapilari.SortedSetClass.SortedSetMainMethod();
-            VeriYapilari.HashSetClass.HashSetMainMethod();
-
-
-            Console.ReadKey();
+            // VeriYapilari.HashSetClass.HashSetMainMethod();
         }
+        #endregion
+
+
+
+
+
+
+        #region Algoritma Tasarımı
+
+        public static void AlgoritmaTasarimiMainRunMethod()
+        {
+
+
+
+        }
+      #endregion
     }
 }
