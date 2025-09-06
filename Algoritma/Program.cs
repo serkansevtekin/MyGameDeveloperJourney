@@ -54,9 +54,9 @@ namespace Programlama
         public static void AlgoritmaTasarimiMainRunMethod()
         {
 
-
-
+            //AlgoritmaTasarimi.DegiskenlerClass.DegiskenMainMethod();
+         //   AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
         }
-      #endregion
+        #endregion
     }
 }
