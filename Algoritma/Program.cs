@@ -56,8 +56,8 @@ namespace Programlama
 
             //AlgoritmaTasarimi.DegiskenlerClass.DegiskenMainMethod();
             //   AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
-            AlgoritmaTasarimi.SabitlerClass.SabitlerMainMethod();
-       
+            //AlgoritmaTasarimi.SabitlerClass.SabitlerMainMethod();
+            AlgoritmaTasarimi.VarVeriTuruClass.VarVeriTuruMainMethod();
         }
         #endregion
     }
