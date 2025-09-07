@@ -55,11 +55,11 @@ namespace Programlama
         {
 
             //AlgoritmaTasarimi.DegiskenlerClass.DegiskenMainMethod();
-            //   AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
+            //AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
             //AlgoritmaTasarimi.SabitlerClass.SabitlerMainMethod();
             //AlgoritmaTasarimi.VarVeriTuruClass.VarVeriTuruMainMethod();
-            AlgoritmaTasarimi.KontrolIfadeleriClass.KontrolIfadeleriMainMethod();
-
+            //AlgoritmaTasarimi.KontrolIfadeleriClass.KontrolIfadeleriMainMethod();
+            AlgoritmaTasarimi.TemelProgramlamaDüzey1UygulamaClass.TemelProgramlamaDüzey1UygulamaMainMethod();
             Console.ReadKey();
 
         }
