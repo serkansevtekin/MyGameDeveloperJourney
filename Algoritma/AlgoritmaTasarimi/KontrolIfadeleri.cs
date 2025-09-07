@@ -9,9 +9,11 @@ namespace Programlama.AlgoritmaTasarimi
 
             //IF Else
             //  IfElseUygulama1();
-            IfElseUygulama2();
+            //  IfElseUygulama2();
 
             //Switch Case
+            // SwitchCaseUygulama1();
+            SwitchCaseUygulama2();
 
         }
 
@@ -91,12 +93,48 @@ namespace Programlama.AlgoritmaTasarimi
 
         #region Switch - Case
 
+        public enum Renkler { Kirmizi, Yasil, Mavi }
+
         private static void SwitchCaseUygulama1()
         {
+            Renkler r = (Renkler)new Random().Next(0, 10);// (Renkler) cast için  
 
+            switch (r)
+            {
+                case Renkler.Kirmizi://0
+                    System.Console.WriteLine("Renk kırmızıdır");
+                    break;
+                case Renkler.Yasil://1
+                    System.Console.WriteLine("Renk yeşildir");
+
+                    break;
+                case Renkler.Mavi://2
+                    System.Console.WriteLine("Renk mavidir");
+
+                    break;
+                default://3...10
+                    System.Console.WriteLine("Renk bilinmiyor");
+
+                    break;
+            }
         }
+
+
         private static void SwitchCaseUygulama2()
         {
+
+            Random rnd = new Random();
+            int caseSwitch = rnd.Next(1, 4);
+            switch (caseSwitch)
+            {
+                case 1: System.Console.WriteLine("Durum 1"); break;
+                case 2:
+                case 3: System.Console.WriteLine($"Case {caseSwitch}"); break;
+                default:
+                    System.Console.WriteLine($"Belenmeyen durum {caseSwitch}");
+                    break;
+            }
+
 
         }
 
