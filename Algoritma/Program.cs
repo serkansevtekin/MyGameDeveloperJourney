@@ -61,7 +61,11 @@ namespace Programlama
             //AlgoritmaTasarimi.KontrolIfadeleriClass.KontrolIfadeleriMainMethod();
             // AlgoritmaTasarimi.TemelProgramlamaDüzey1UygulamaClass.TemelProgramlamaDüzey1UygulamaMainMethod();
             //AlgoritmaTasarimi.ForDongusuClass.ForDongusuMainMethod();
-           
+            AlgoritmaTasarimi.DizilerClass.DizilerMainMethod();
+
+
+
+            
             Console.ReadKey();
 
         }
