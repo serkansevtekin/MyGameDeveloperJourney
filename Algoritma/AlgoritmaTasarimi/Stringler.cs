@@ -6,10 +6,7 @@ namespace Programlama.AlgoritmaTasarimi
     {
         public static void StringlerMainMethod()
         {
-            KarakterSeti();
-            KarakterSeti(128, 255);
-            KarakterSeti(128, 255, 10);
-
+            StringMetotlar();
         }
 
         #region Desen1
@@ -50,11 +47,31 @@ namespace Programlama.AlgoritmaTasarimi
             for (int i = baslangicIndisi; i <= bitisIndisi; i++)
             {
                 System.Console.Write("{0,5}", (char)i);
-                if (i % satirKarakterSayisi==0)
+                if (i % satirKarakterSayisi == 0)
                 {
                     System.Console.WriteLine();
                 }
             }
+        }
+        #endregion
+
+        #region Name
+
+        private static void StringMetotlar()
+        {
+            string ifade = " Afacan ";
+            System.Console.WriteLine(ifade);
+            System.Console.WriteLine(ifade.Length);
+            System.Console.WriteLine(ifade.Trim());
+            System.Console.WriteLine(ifade.Trim().Length);
+            System.Console.WriteLine(ifade.TrimStart());
+            System.Console.WriteLine(ifade.TrimEnd());
+            System.Console.WriteLine(ifade.ToLower());
+            System.Console.WriteLine(ifade.ToUpper());
+            System.Console.WriteLine(ifade.Replace('a','e'));
+
+
+            
         }
         #endregion
 
