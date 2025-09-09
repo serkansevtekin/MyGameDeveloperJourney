@@ -54,14 +54,14 @@ namespace Programlama
         public static void AlgoritmaTasarimiMainRunMethod()
         {
 
-            //AlgoritmaTasarimi.DegiskenlerClass.DegiskenMainMethod();
-            //AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
-            //AlgoritmaTasarimi.SabitlerClass.SabitlerMainMethod();
-            //AlgoritmaTasarimi.VarVeriTuruClass.VarVeriTuruMainMethod();
-            //AlgoritmaTasarimi.KontrolIfadeleriClass.KontrolIfadeleriMainMethod();
+            // AlgoritmaTasarimi.DegiskenlerClass.DegiskenMainMethod();
+            // AlgoritmaTasarimi.BoxingUnboxingClass.BoxingUnboxingMainMethod();
+            // AlgoritmaTasarimi.SabitlerClass.SabitlerMainMethod();
+            // AlgoritmaTasarimi.VarVeriTuruClass.VarVeriTuruMainMethod();
+            // AlgoritmaTasarimi.KontrolIfadeleriClass.KontrolIfadeleriMainMethod();
             // AlgoritmaTasarimi.TemelProgramlamaDüzey1UygulamaClass.TemelProgramlamaDüzey1UygulamaMainMethod();
-            //AlgoritmaTasarimi.ForDongusuClass.ForDongusuMainMethod();
-            AlgoritmaTasarimi.DizilerClass.DizilerMainMethod();
+            // AlgoritmaTasarimi.ForDongusuClass.ForDongusuMainMethod();
+            // AlgoritmaTasarimi.DizilerClass.DizilerMainMethod();
 
 
 
