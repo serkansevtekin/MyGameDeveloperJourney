@@ -62,10 +62,10 @@ namespace Programlama
             // AlgoritmaTasarimi.TemelProgramlamaDüzey1UygulamaClass.TemelProgramlamaDüzey1UygulamaMainMethod();
             // AlgoritmaTasarimi.ForDongusuClass.ForDongusuMainMethod();
             // AlgoritmaTasarimi.DizilerClass.DizilerMainMethod();
+            AlgoritmaTasarimi.CharVeRakamKarsiliklari.AsciiCodeKarsili();
 
 
 
-            
             Console.ReadKey();
 
         }

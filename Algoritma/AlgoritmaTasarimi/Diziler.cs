@@ -10,27 +10,29 @@ namespace Programlama.AlgoritmaTasarimi
             var limit = Convert.ToInt32(Console.ReadLine());
             int[] x = Dizilers.Olustur(limit);
 
+            /* 
+                        System.Console.WriteLine("Dizinin aritmetik ortalamasını oluştur: {0:F2}", Dizilers.AritmetikOrtalama(x));
 
-            System.Console.WriteLine("Dizinin Sıtandart sapması : {0:F2}", Dizilers.StandartSapma(x));
+                        System.Console.WriteLine("Dizinin Sıtandart sapması : {0:F2}", Dizilers.StandartSapma(x));
 
 
-            // ValueTurple ile Tek ve Çift Sayılar
-            var (tekListe, ciftListe) = Dizilers.TekCiftSayilar(x);
-            System.Console.Write("\nTek Sayilar : ");
-            foreach (var item in tekListe)
-            {
-                System.Console.Write("{0,-5}", item);
-            }
-            System.Console.WriteLine("\nTek sayıların sayısı: {0}", tekListe.Length);
+                        // ValueTurple ile Tek ve Çift Sayılar
+                        var (tekListe, ciftListe) = Dizilers.TekCiftSayilar(x);
+                        System.Console.Write("\nTek Sayilar : ");
+                        foreach (var item in tekListe)
+                        {
+                            System.Console.Write("{0,-5}", item);
+                        }
+                        System.Console.WriteLine("\nTek sayıların sayısı: {0}", tekListe.Length);
 
-            System.Console.Write("\n Çift Sayılar :");
-            foreach (var item in ciftListe)
-            {
-                System.Console.Write("{0,-5}", item);
-            }
+                        System.Console.Write("\n Çift Sayılar :");
+                        foreach (var item in ciftListe)
+                        {
+                            System.Console.Write("{0,-5}", item);
+                        }
 
-            System.Console.WriteLine("\nÇift sayıların sayısı: {0}", ciftListe.Length);
-
+                        System.Console.WriteLine("\nÇift sayıların sayısı: {0}", ciftListe.Length);
+             */
 
         }
 
@@ -216,7 +218,16 @@ namespace Programlama.AlgoritmaTasarimi
         }
         #endregion
 
+        #region Char ve Rakam Karşılıkları
 
+        public static void CharVeRakamKarsiliklari()
+        {
+            for (int i = 65; i <= 95; i++)
+            {
+                System.Console.WriteLine("{0,2}");
+            }
+        }
+        #endregion
 
     }
 
