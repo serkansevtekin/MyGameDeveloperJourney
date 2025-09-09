@@ -6,14 +6,10 @@ namespace Programlama.AlgoritmaTasarimi
     {
         public static void StringlerMainMethod()
         {
-            /*  Desen1('*', 10);
-             Desen1();
-             Desen1('!'); 
-             */
+            KarakterSeti();
+            KarakterSeti(128, 255);
+            KarakterSeti(128, 255, 10);
 
-            Desen2();
-             Desen2('/',10);
-             Desen2('*'); 
         }
 
         #region Desen1
@@ -47,5 +43,20 @@ namespace Programlama.AlgoritmaTasarimi
         }
 
         #endregion
+
+        #region Karakter Seti
+        private static void KarakterSeti(int baslangicIndisi = 65, int bitisIndisi = 90, int satirKarakterSayisi = 5)
+        {
+            for (int i = baslangicIndisi; i <= bitisIndisi; i++)
+            {
+                System.Console.Write("{0,5}", (char)i);
+                if (i % satirKarakterSayisi==0)
+                {
+                    System.Console.WriteLine();
+                }
+            }
+        }
+        #endregion
+
     }
 }
