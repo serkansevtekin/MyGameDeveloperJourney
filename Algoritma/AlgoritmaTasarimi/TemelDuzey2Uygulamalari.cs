@@ -6,18 +6,24 @@ namespace Programlama.AlgoritmaTasarimi
     {
         public static void TemelDüzey2UygulamaMainMethod()
         {
+
+            int sayi = 180;
             System.Console.WriteLine("Üst alma {0}", Matematik.UstAlma(2, 2));
-            foreach (var item in Matematik.HashSetAsalCarpanBul(60))
+            foreach (var item in Matematik.HashSetAsalCarpanBul(sayi))
             {
                 System.Console.Write("{0} ", item);
             }
 
+            System.Console.WriteLine("\n{0} Sayısının Asal Çarpanlarının Sayıların toplamları : {1}", sayi, Matematik.AsalÇarpanlarinToplamlariBul(sayi));
+
+            System.Console.WriteLine("\n{0} Sayısının Asal Çarpanlarının Sayıların çarpımı : {1}", sayi, Matematik.AsalCarpanlarinCarpimi(sayi));
+
+            System.Console.WriteLine("Okek: {0}", Matematik.Okek(15, 20));
+            System.Console.WriteLine("Obeb: {0}", Matematik.Obebs(15, 20));
+
+            int factori = 5;
+            System.Console.WriteLine("{0}! Faktoriyel: {1}",factori,Matematik.Faktoriyel(5));
         }
-
-
-
-
-
 
 
     }
@@ -141,6 +147,126 @@ namespace Programlama.AlgoritmaTasarimi
             return asalHashSet;
         }
         #endregion
-        
+
+        #region Asal Çarpanların Toplamını Bul [UZUN YOL]
+        /// <summary>
+        /// Bir sayının asal çarpanlarının toplamını verir
+        /// </summary>
+        /// <param name="sayi">sayi</param>
+        /// <returns>Toplam</returns>
+        internal static int AsalÇarpanlarinToplamlariBul(int sayi)
+        {
+            int toplam = 0;
+            foreach (var item in HashSetAsalCarpanBul(sayi))
+            {
+                toplam += item;
+            }
+
+            return toplam;
+
+        }
+        #endregion
+
+        #region Asal Çarpanların Toplamını Bul [KISA YOL]
+        /// <summary>
+        /// Bir sayının asal çarpanlarının toplamını verir
+        /// </summary>
+        /// <param name="sayi">sayi</param>
+        /// <returns>Toplam</returns>
+        internal static int AsalCarpanlarinToplamlariBulKisa(int sayi)
+        {
+            return HashSetAsalCarpanBul(sayi).Sum();
+        }
+        #endregion
+
+        #region Asal Sayıların Çarpımı
+
+        /// <summary>
+        /// Bir sayının asal çarpanlarının çarpımını hesaplar
+        /// </summary>
+        /// <param name="sayi">sayı</param>
+        /// <returns>çarpım sonucu</returns>
+        internal static int AsalCarpanlarinCarpimi(int sayi)
+        {
+            int carpim = 1;
+            var asalCarpanDizi = AsalCarpanlariBul(sayi);
+            for (int i = 0; i < asalCarpanDizi.Length; i++)
+            {
+                carpim *= asalCarpanDizi[i];
+            }
+            return carpim;
+        }
+        #endregion
+
+        #region OKEK
+        internal static int Okek(int s1, int s2)
+        {
+            int okek = 1, bol = 2;
+            while (s1 > 1 || s2 > 1)
+            {
+                bool boldur = false;
+                if (s1 % bol == 0 || s2 % bol == 0)
+                {
+                    okek *= bol;
+                    boldur = true;
+                    if (s1 % bol == 0)
+                        s1 /= bol;
+                    if (s2 % bol == 0)
+                        s2 /= bol;
+                }
+                if (!boldur) bol++;
+            }
+            return okek;
+        }
+        #endregion
+
+        #region OBEB
+
+        internal static int Obebs(int s1, int s2)
+        {
+            int obeb = 1;
+            int bolen = 2;
+
+            while (s1 != 1 && s2 != 1)
+            {
+                for (int i = 2; i < (s1 > s2 ? s1 : s2); i++)
+                {
+
+                    if (s1 % bolen == 0 || s2 % bolen == 0)
+                    {
+                        if (s1 % bolen == 0 && s2 % bolen == 0) obeb *= bolen;
+                        if (s1 % bolen == 0) s1 /= bolen;
+                        if (s2 % bolen == 0) s2 /= bolen;
+
+                    }
+                    else bolen++;
+                }
+
+            }
+            return obeb;
+        }
+        #endregion
+
+        #region Faktoriyel Hesabı
+        internal static int Faktoriyel(int n)
+        {
+            if (n <= 1) return 1;
+
+            int f = 1;
+            for (int i = 2; i <= n; i++) f *= i;
+
+            return f;
+
+        }
+        #endregion
+
+        #region Aralıklı Hesabı
+        internal static int AralikliFaktoriyel(int n)
+        {
+           
+            return 0;
+
+        }
+        #endregion
     }
 }
