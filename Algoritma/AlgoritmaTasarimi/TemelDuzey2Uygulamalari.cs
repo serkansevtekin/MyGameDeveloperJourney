@@ -22,7 +22,9 @@ namespace Programlama.AlgoritmaTasarimi
             System.Console.WriteLine("Obeb: {0}", Matematik.Obebs(15, 20));
 
             int factori = 5;
-            System.Console.WriteLine("{0}! Faktoriyel: {1}",factori,Matematik.Faktoriyel(5));
+            System.Console.WriteLine("{0}! Faktoriyel: {1}", factori, Matematik.Faktoriyel(5));
+            System.Console.WriteLine("Ortalama = {0:F2}", (double)Matematik.AralikliFaktoriyel()/7);;
+
         }
 
 
@@ -261,10 +263,18 @@ namespace Programlama.AlgoritmaTasarimi
         #endregion
 
         #region Aralıklı Hesabı
-        internal static int AralikliFaktoriyel(int n)
+        internal static int AralikliFaktoriyel()
         {
-           
-            return 0;
+            int t = 0;
+
+            for (int i = 2; i < 9; i++)
+            {
+                t += Matematik.Faktoriyel(i);
+                System.Console.WriteLine("{0}! = {1}", i, Matematik.Faktoriyel(i));
+            }
+
+            
+            return t;
 
         }
         #endregion
