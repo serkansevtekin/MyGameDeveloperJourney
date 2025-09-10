@@ -63,7 +63,10 @@ namespace Programlama
             // AlgoritmaTasarimi.ForDongusuClass.ForDongusuMainMethod();
             // AlgoritmaTasarimi.DizilerClass.DizilerMainMethod();
             // AlgoritmaTasarimi.CharVeRakamKarsiliklari.AsciiCodeKarsili();
-            AlgoritmaTasarimi.StringlerClass.StringlerMainMethod();
+            //AlgoritmaTasarimi.StringlerClass.StringlerMainMethod();
+            AlgoritmaTasarimi.TemelDüzey2UygulamaClass.TemelDüzey2UygulamaMainMethod();
+
+
 
 
             Console.ReadKey();
