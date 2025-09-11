@@ -71,7 +71,7 @@ namespace Programlama.AlgoritmaTasarimi
         #endregion
 
         #region Birler Matrisi Oluştur
-        internal int[,] BirlerMatrisiOlustur(int satir, int sutun)
+        internal int[,] BirlerMatrisiOlustur(int satir=3, int sutun=3)
         {
             return MatrisOlusturma(satir, sutun, 1
             , 1);
@@ -111,6 +111,24 @@ namespace Programlama.AlgoritmaTasarimi
             return DiyagonalMatris(boyut, skaler, skaler);
         }
 
+        #endregion
+
+        #region Kare Matris Mi?
+        /// <summary>
+        /// Verilen iki boyutlu dizinin kare matri( satır sayısı == sütun sayısı) olup olmadığını kontrol eder
+        /// </summary>
+        /// <param name="X">Kontrol edilecek 2D tamsayı dizisi</param>
+        /// <returns>
+        /// true: Kare matris ise
+        /// false: Kare matris değilse
+        /// </returns>
+        internal bool KareMatrisMi(int[,] X)
+        {
+            //Satır sayısı ile sütun sayısı eşitse true, değilse false döndürür
+            return X.GetLength(0) == X.GetLength(1);//True || False döner
+
+           // return X.GetLength(0) == X.GetLength(1) ? true : false; // Uzun Yazım
+        }
         #endregion
     }
 }

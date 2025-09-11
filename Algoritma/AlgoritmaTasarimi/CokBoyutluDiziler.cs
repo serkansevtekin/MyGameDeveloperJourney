@@ -11,10 +11,9 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.ScalerMatris(3,5);
-
+            int[,] X = mat.DiyagonalMatris(3);
             mat.MatrisYazdir(X);
-
+        System.Console.WriteLine("{0} ",mat.KareMatrisMi(X)? "Kare Matris": "Kare Matris Değil!");
 
         }
     }
