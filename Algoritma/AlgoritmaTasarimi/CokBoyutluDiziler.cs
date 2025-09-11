@@ -11,7 +11,7 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.SifirMatrisiOLustur(3,3);
+            int[,] X = mat.BirlerMatrisiOlustur(3,3);
 
             mat.MatrisYazdir(X);
 

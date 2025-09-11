@@ -69,5 +69,13 @@ namespace Programlama.AlgoritmaTasarimi
 
         }
         #endregion
+
+        #region Birler Matrisi Oluştur
+        internal int[,] BirlerMatrisiOlustur(int satir, int sutun)
+        {
+            return MatrisOlusturma(satir, sutun, 1
+            , 1);
+        }
+        #endregion
     }
 }
