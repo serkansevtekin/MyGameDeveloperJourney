@@ -28,6 +28,10 @@ namespace Programlama.AlgoritmaTasarimi
             int[] dizi = Matematik.StringIntDiziAktarimi("2,3,4,5,67");
 
             Matematik.IkilikSayiOnluk("101");
+
+            System.Console.WriteLine("Kelime Gir: ");
+            string? kelime = Console.ReadLine();
+            System.Console.WriteLine("{0} ifadesinde {1} adet sesli harf tespit edildi", kelime, Matematik.SesliHarfSayisiBelirleme(kelime!.ToLower()));
         }
 
 
@@ -342,7 +346,23 @@ namespace Programlama.AlgoritmaTasarimi
         #endregion
 
         #region Sesli Harf Sayısını Belirleme
-            
+        internal static int SesliHarfSayisiBelirleme(string kelime)
+        {
+            var sesliHarfDizi = new char[] { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
+
+            int sesliSayisi = 0;
+            for (int j = 0; j < sesliHarfDizi.Length; j++)
+            {
+                for (int i = 0; i < kelime.Length; i++)
+                {
+
+                    if (sesliHarfDizi[j] == kelime[i]) sesliSayisi++;
+                }
+
+            }
+
+            return sesliSayisi;
+        }
         #endregion
     }
 }
