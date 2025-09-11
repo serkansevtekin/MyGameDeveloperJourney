@@ -10,11 +10,11 @@ namespace Programlama.AlgoritmaTasarimi
                 int[,,] array1 = new int[4, 2, 3];
      */
 
+            Matris mat = new Matris();
 
 
 
 
-     
         }
     }
 
