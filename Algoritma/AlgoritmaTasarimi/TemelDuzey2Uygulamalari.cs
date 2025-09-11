@@ -29,9 +29,14 @@ namespace Programlama.AlgoritmaTasarimi
 
             Matematik.IkilikSayiOnluk("101");
 
-            System.Console.WriteLine("Kelime Gir: ");
-            string? kelime = Console.ReadLine();
-            System.Console.WriteLine("{0} ifadesinde {1} adet sesli harf tespit edildi", kelime, Matematik.SesliHarfSayisiBelirleme(kelime!.ToLower()));
+            System.Console.WriteLine("Köpek ifadesinde {1} adet sesli harf tespit edildi", Matematik.SesliHarfSayisiBelirleme("Köpek"));
+
+
+            System.Console.WriteLine();
+            Matematik.RenkDegistir("Renk Değişti");
+            
+
+            
         }
 
 
@@ -364,5 +369,16 @@ namespace Programlama.AlgoritmaTasarimi
             return sesliSayisi;
         }
         #endregion
+
+        #region Console Rengini Değiştir
+        internal static void RenkDegistir(string? mesaj)
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
+            System.Console.WriteLine(mesaj);
+            Console.ResetColor();
+            }
+        #endregion
+   
     }
 }
