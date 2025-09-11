@@ -23,8 +23,11 @@ namespace Programlama.AlgoritmaTasarimi
 
             int factori = 5;
             System.Console.WriteLine("{0}! Faktoriyel: {1}", factori, Matematik.Faktoriyel(5));
-            System.Console.WriteLine("Ortalama = {0:F2}", (double)Matematik.AralikliFaktoriyel()/7);;
+            System.Console.WriteLine("Ortalama = {0:F2}", (double)Matematik.AralikliFaktoriyel() / 7); ;
 
+            int[] dizi = Matematik.StringIntDiziAktarimi("2,3,4,5,67");
+
+            Matematik.IkilikSayiOnluk("101");
         }
 
 
@@ -273,10 +276,73 @@ namespace Programlama.AlgoritmaTasarimi
                 System.Console.WriteLine("{0}! = {1}", i, Matematik.Faktoriyel(i));
             }
 
-            
+
             return t;
 
         }
+        #endregion
+
+        #region Virgül ile ayrılmış stringi int diziye çevirme
+        internal static int[] StringIntDiziAktarimi(string? ifade)
+        {
+
+
+            string[] bolunmusIfade = ifade!.Split(',');
+            int n = bolunmusIfade.Length;
+
+            int[] sayisalDizi = new int[n];
+
+            //Ayristirma
+            for (int i = 0; i < n; i++)
+            {
+                sayisalDizi[i] = Convert.ToInt32(bolunmusIfade[i]);
+                System.Console.WriteLine("Dizi[{0}] = {1}", i + 1, sayisalDizi[i]);
+            }
+            return sayisalDizi;
+        }
+        #endregion
+
+        #region İkilik sayı ifadesini onluk sisteme çevirme
+        internal static int IkilikSayiOnluk(string? sayi)
+        {
+            // uzunluk
+            int n = sayi!.Length;
+
+            //her bir basamğın dizide tutulmasi
+            int[] basamaklar = new int[n];
+            //Onluk karsiliği
+            int onlukSayi = 0;
+            bool kontrol = true;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (!(sayi[i] == '0' || sayi[i] == '1'))
+                {
+                    System.Console.WriteLine("Hatalı Giriş");
+                    kontrol = false;
+                    break;
+                }
+
+                basamaklar[i] = (int)(sayi[i] - '0');
+            }
+
+            // 2'lik sistemden 10'luk sisteme geçiş
+
+            if (kontrol)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    onlukSayi += (int)Math.Pow(2, n - 1 - i) * basamaklar[i];
+
+                }
+                Console.Write("({0}) ikilik sayı = {1}", sayi, onlukSayi);
+            }
+            return onlukSayi;
+        }
+        #endregion
+
+        #region Sesli Harf Sayısını Belirleme
+            
         #endregion
     }
 }
