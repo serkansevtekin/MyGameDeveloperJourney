@@ -11,7 +11,8 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-
+            int[,] X = mat.MatrisOlusturma();
+           
 
 
 
