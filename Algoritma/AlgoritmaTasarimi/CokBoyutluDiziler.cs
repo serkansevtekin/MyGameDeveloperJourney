@@ -11,7 +11,7 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.DiyagonalMatris(3);
+            int[,] X = mat.ScalerMatris(3,5);
 
             mat.MatrisYazdir(X);
 

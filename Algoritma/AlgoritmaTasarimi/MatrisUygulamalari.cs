@@ -97,5 +97,20 @@ namespace Programlama.AlgoritmaTasarimi
         }
 
         #endregion
+
+
+        #region Scaler Matris
+        /// <summary>
+        /// Skaler Matris Oluşturur
+        /// </summary>
+        /// <param name="boyut">Satır ve sütun</param>
+        /// <param name="skaler">Köşegenler üstündeki değerler</param>
+        /// <returns>Scaler Matris temsil eder.</returns>
+        internal int[,] ScalerMatris(int boyut = 3, int skaler = 3)
+        {
+            return DiyagonalMatris(boyut, skaler, skaler);
+        }
+
+        #endregion
     }
 }
