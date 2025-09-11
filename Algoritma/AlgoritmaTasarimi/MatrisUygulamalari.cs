@@ -42,7 +42,7 @@ namespace Programlama.AlgoritmaTasarimi
         /// Parametre olarak aldığı matrisi ekrana yazar
         /// </summary>
         /// <param name="X">Paremetre olarak gelen Matris</param>
-        internal  void MatrisYazdir(int[,] X)
+        internal void MatrisYazdir(int[,] X)
         {
             for (int i = 0; i < X.GetLength(0); i++) // GetLength(0) -> Satır
             {
@@ -56,6 +56,18 @@ namespace Programlama.AlgoritmaTasarimi
         }
         #endregion
 
+        #region Sifir Matrisi Oluştur
+        /// <summary>
+        /// Sifir Matirisi matrisi oluşturur
+        /// </summary>
+        /// <param name="satir">Satır sayısı</param>
+        /// <param name="sutun">Sütun sayısı</param>
+        /// <returns>Sıfır matrisi</returns>
+        internal int[,] SifirMatrisiOLustur(int satir, int sutun)
+        {
+            return MatrisOlusturma(satir, sutun, 0, 0);
 
+        }
+        #endregion
     }
 }
