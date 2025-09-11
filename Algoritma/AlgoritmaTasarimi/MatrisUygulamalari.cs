@@ -77,5 +77,25 @@ namespace Programlama.AlgoritmaTasarimi
             , 1);
         }
         #endregion
+
+        #region Köşegen (Diyagonal) Matris | Sadece kare matrisler olabiliyor
+        /// <summary>
+        /// Köşegen Matris Oluşturur
+        /// </summary>
+        /// <param name="boyut">Satır ve sütun sayısı</param>
+        /// <param name="min">Min</param>
+        /// <param name="max">Max</param>
+        /// <returns>Köşegen Matris</returns>
+        internal int[,] DiyagonalMatris(int boyut = 3, int min = 1, int max = 9)
+        {
+            int[,] X = SifirMatrisiOLustur(boyut, boyut);
+            for (int i = 0; i < boyut; i++)
+            {
+                X[i, i] = new Random().Next(min, max);
+            }
+            return X;
+        }
+
+        #endregion
     }
 }
