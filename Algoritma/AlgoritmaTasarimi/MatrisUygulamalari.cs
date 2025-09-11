@@ -6,16 +6,16 @@ namespace Programlama.AlgoritmaTasarimi
     {
 
         #region Matris Oluşturma
-       
-       /// <summary>
-       /// Matris Oluşturur
-       /// </summary>
-       /// <param name="satir">Satır sayısı</param>
-       /// <param name="sutun">Sütun sayısı</param>
-       /// <param name="min">Minimum değer</param>
-       /// <param name="max">Maksimum değer</param>
-       /// <returns>x matrisi döner</returns>
-         internal int[,] MatrisOlusturma(int satir = 3, int sutun = 3, int min = 1, int max = 9)
+
+        /// <summary>
+        /// Matris Oluşturur
+        /// </summary>
+        /// <param name="satir">Satır sayısı</param>
+        /// <param name="sutun">Sütun sayısı</param>
+        /// <param name="min">Minimum değer</param>
+        /// <param name="max">Maksimum değer</param>
+        /// <returns>x matrisi döner</returns>
+        internal int[,] MatrisOlusturma(int satir = 3, int sutun = 3, int min = 1, int max = 9)
         {
             //Satır ve sütun sayısı kadar 2D matris oluşturma
             int[,] x = new int[satir, sutun];
@@ -33,9 +33,28 @@ namespace Programlama.AlgoritmaTasarimi
 
             return x;
         }
-       #endregion
+        #endregion
 
 
+        #region Matris Yazırma
+
+        /// <summary>
+        /// Parametre olarak aldığı matrisi ekrana yazar
+        /// </summary>
+        /// <param name="X">Paremetre olarak gelen Matris</param>
+        internal  void MatrisYazdir(int[,] X)
+        {
+            for (int i = 0; i < X.GetLength(0); i++) // GetLength(0) -> Satır
+            {
+                for (int j = 0; j < X.GetLength(1); j++) // X.GetLength(1) -> Sütun
+                {
+                    Console.Write("{0,3}", X[i, j]);
+
+                }
+                System.Console.WriteLine();
+            }
+        }
+        #endregion
 
 
     }

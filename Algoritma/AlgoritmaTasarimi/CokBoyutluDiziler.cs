@@ -11,9 +11,9 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.MatrisOlusturma();
-           
+            int[,] X = mat.MatrisOlusturma(2,1);
 
+            mat.MatrisYazdir(X);
 
 
         }
