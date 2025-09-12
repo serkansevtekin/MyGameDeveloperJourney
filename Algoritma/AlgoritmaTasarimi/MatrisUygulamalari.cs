@@ -71,7 +71,7 @@ namespace Programlama.AlgoritmaTasarimi
         #endregion
 
         #region Birler Matrisi Oluştur
-        internal int[,] BirlerMatrisiOlustur(int satir=3, int sutun=3)
+        internal int[,] BirlerMatrisiOlustur(int satir = 3, int sutun = 3)
         {
             return MatrisOlusturma(satir, sutun, 1
             , 1);
@@ -127,8 +127,49 @@ namespace Programlama.AlgoritmaTasarimi
             //Satır sayısı ile sütun sayısı eşitse true, değilse false döndürür
             return X.GetLength(0) == X.GetLength(1);//True || False döner
 
-           // return X.GetLength(0) == X.GetLength(1) ? true : false; // Uzun Yazım
+            // return X.GetLength(0) == X.GetLength(1) ? true : false; // Uzun Yazım
         }
         #endregion
+
+        #region Birim Matris Mi?
+
+        internal int[,] BirimMatrisOlustur(int boyut = 3)
+        {
+            return ScalerMatris(boyut, 1);
+        }
+
+
+        internal bool BirimMatrisMi(int[,] X)
+        {
+            bool s = true;
+
+            for (int i = 0; (i<X.GetLength(0) && s ==true); i++)
+            {
+                for (int j = 0; (j < X.GetLength(1) && s == true); j++)
+                {
+                    // diyagonal elemanlar dısındaki değeriler 0 mi?
+                    if (X[i, j] != 0 && i != j)
+                    {
+                        s = false;
+                        break;
+                    }
+                    else // diyagonal elemanlar 1 mi?
+                    {
+                        if (X[i, i] != 1 && i == j)
+                        {
+                            s = false;
+                            break;
+                        }
+                    }
+                }
+            }
+
+
+            return s;
+        }
+
+        #endregion
+
+
     }
 }
