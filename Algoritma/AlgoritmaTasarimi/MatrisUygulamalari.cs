@@ -54,6 +54,19 @@ namespace Programlama.AlgoritmaTasarimi
                 System.Console.WriteLine();
             }
         }
+
+        //2. Yazdı foksiyon tek boyut için
+        internal void MatrisYazdir(int[] X)
+        {
+            System.Console.WriteLine();
+            for (int i = 0; i < X.GetLength(0); i++)
+            {
+                System.Console.Write("{0,5}", X[i]);
+            }
+            System.Console.WriteLine();
+        }
+
+
         #endregion
 
         #region Sifir Matrisi Oluştur
@@ -143,7 +156,7 @@ namespace Programlama.AlgoritmaTasarimi
         {
             bool s = true;
 
-            for (int i = 0; (i<X.GetLength(0) && s ==true); i++)
+            for (int i = 0; (i < X.GetLength(0) && s == true); i++)
             {
                 for (int j = 0; (j < X.GetLength(1) && s == true); j++)
                 {
@@ -170,6 +183,33 @@ namespace Programlama.AlgoritmaTasarimi
 
         #endregion
 
+        #region Diyagonel Elemanların Listelenmesi
+        /// <summary>
+        /// Diyagonal elemanlarin listesisini bir dizi olarak döner.
+        /// </summary>
+        /// <param name="X">Gelen Matris</param>
+        /// <returns>Diyagonal elemanların listesi</returns>
+        internal int[] DiyagonelElemanlariListele(int[,] X)
+        {
+            if (KareMatrisMi(X))
+            {
+                int[] D = new int[X.GetLength(0)];
+                for (int i = 0; i < X.GetLength(0); i++)
+                {
+                    D[i] = X[i, i];
+
+                }
+                return D;
+            }
+            else
+            {
+                System.Console.WriteLine("Litfen Kare Martirs gir");
+            }
+
+            return new int[1];
+        }
+
+        #endregion
 
     }
 }

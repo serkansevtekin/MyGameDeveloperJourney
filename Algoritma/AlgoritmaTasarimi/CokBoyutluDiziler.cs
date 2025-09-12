@@ -11,9 +11,11 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.DiyagonalMatris(4);
+            int[,] X = mat.DiyagonalMatris(5);
             mat.MatrisYazdir(X);
-            System.Console.WriteLine("{0}", mat.BirimMatrisMi(X) ? "Birim Matris" : "Birim Matris Değil");
+            
+            int[] D = mat.DiyagonelElemanlariListele(X);
+            mat.MatrisYazdir(D);
 
 
         }
