@@ -11,12 +11,14 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.DiyagonalMatris(5);
+            int[,] X = mat.DiyagonalMatris(3);
             mat.MatrisYazdir(X);
-            
+
+            System.Console.Write("\n Diyagonal eleman listesi: ");
             int[] D = mat.DiyagonelElemanlariListele(X);
             mat.MatrisYazdir(D);
 
+            System.Console.WriteLine("\nMatrisin izi: {0}",mat.BirMatrisinİziTrace(X));
 
         }
     }

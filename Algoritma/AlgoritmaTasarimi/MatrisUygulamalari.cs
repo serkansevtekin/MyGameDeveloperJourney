@@ -211,5 +211,34 @@ namespace Programlama.AlgoritmaTasarimi
 
         #endregion
 
+        #region Bir Matirisin izi (Trace)(Tr)
+        /// <summary>
+        /// Bir matrisin izini hesaplar
+        /// </summary>
+        /// <param name="X">Matris</param>
+        /// <returns>İzi</returns>
+        internal int BirMatrisinİziTrace(int[,] X)
+        {
+            int t = 0;
+            if (KareMatrisMi(X))
+            {
+
+
+                int[] D = DiyagonelElemanlariListele(X);
+
+                for (int i = 0; i < X.GetLength(0); i++)
+                {
+                    t += X[i, i];
+                }
+                return t;
+            }
+            else
+            {
+                return t;
+            }
+        }
+
+        #endregion
+
     }
 }
