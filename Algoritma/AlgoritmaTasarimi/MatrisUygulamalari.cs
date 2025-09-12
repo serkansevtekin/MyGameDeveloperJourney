@@ -240,5 +240,23 @@ namespace Programlama.AlgoritmaTasarimi
 
         #endregion
 
+        #region Transpoz (Devriği)
+
+        /// <summary>
+        /// Bir matrisin Transpozunu alır
+        /// </summary>
+        /// <param name="X">Matirs</param>
+        /// <returns>Transpoz</returns>
+        internal int[,] Transpoz(int[,] X)
+        {
+            int[,] Tr = new int[X.GetLength(1), X.GetLength(0)];
+
+            for (int i = 0; i < Tr.GetLength(0); i++)
+                for (int j = 0; j < Tr.GetLength(1); j++)
+                    Tr[i, j] = X[j, i];
+            return Tr;
+        }
+        #endregion
+
     }
 }
