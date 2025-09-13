@@ -11,12 +11,11 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.MatrisOlusturma(5,3);
+            int[,] X = mat.MatrisOlusturma(4,3);
             mat.MatrisYazdir(X);
 
-            System.Console.WriteLine();
-            int[,] Tr = mat.Transpoz(X);
-            mat.MatrisYazdir(Tr);
+            int[,] Y = mat.ReshapeMatris(X, 3, 4);
+            mat.MatrisYazdir(Y);
         } 
     }
 

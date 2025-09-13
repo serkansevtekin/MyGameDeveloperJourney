@@ -258,5 +258,45 @@ namespace Programlama.AlgoritmaTasarimi
         }
         #endregion
 
+        #region Bir Matrisi Yeniden Şekillendirme (ReShape)
+
+        internal int[,] ReshapeMatris(int[,] X,int yeniSatir,int yeniSutun)
+        {
+
+            if (X.Length == yeniSatir * yeniSutun)
+            {
+                int[] D = new int[X.Length];
+                int sayac = 0;
+                int[,] Y = new int[yeniSatir, yeniSutun];
+                for (int i = 0; i < X.GetLength(0); i++)
+                {
+                    for (int j = 0; j < X.GetLength(1); j++)
+                    {
+                        D[sayac] = X[i, j];
+                        sayac++;
+                    }
+
+                }
+                MatrisYazdir(D);
+                sayac = 0;
+                for (int i = 0; i < Y.GetLength(0); i++)
+                {
+                    for (int j = 0; j < Y.GetLength(1); j++)
+                    {
+                        Y[i, j] = D[sayac];
+                        sayac++;
+                    }
+                }
+                return Y;
+            }
+            else
+            {
+                System.Console.WriteLine("Bir hata oluştur");
+                return new int[1, 1];
+           }
+        }
+            
+        #endregion
+
     }
 }
