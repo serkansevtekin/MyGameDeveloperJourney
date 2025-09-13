@@ -65,7 +65,7 @@ namespace Programlama.AlgoritmaTasarimi
             }
             System.Console.WriteLine();
         }
-        
+
 
         #endregion
 
@@ -299,8 +299,6 @@ namespace Programlama.AlgoritmaTasarimi
         #endregion
 
 
-
-
         #region Matris Karşılaştırma
 
         internal bool MatrisKarsilastir(int[,] X, int[,] Y)
@@ -308,7 +306,7 @@ namespace Programlama.AlgoritmaTasarimi
 
             bool s = true;
             // boyut kontrolü
-            if (X.GetLength(0) == Y.GetLength(0) && X.GetLength(1)== Y.GetLength(1))
+            if (X.GetLength(0) == Y.GetLength(0) && X.GetLength(1) == Y.GetLength(1))
             {
                 for (int i = 0; i < X.GetLength(0); i++)
                 {
@@ -330,5 +328,43 @@ namespace Programlama.AlgoritmaTasarimi
             return s;
         }
         #endregion
+
+
+
+
+        #region HataYazdır
+        internal void HataYazdır(string mesaj)
+        {
+            Console.BackgroundColor = ConsoleColor.Yellow;
+            System.Console.WriteLine(mesaj);
+            Console.ResetColor();
+        }
+        #endregion
+
+
+        #region Matris Determinant Hesabı. | 2*2|
+        /// <summary>
+        /// Determinant hesabı yapar
+        /// </summary>
+        /// <param name="X">Matris</param>
+        /// <returns>Determinanat</returns>
+        internal int DeterminantHesabi(int[,] X)
+        {
+            int d = -1;
+            if (KareMatrisMi(X))
+            {
+                d = X[0, 0] * X[1, 1] - X[0, 1] * X[1, 0];
+                return d;
+            }
+            else
+            {
+                HataYazdır("Kare Matris Gir");
+                return d;
+            }
+
+        }
+
+        #endregion
+
     }
 }
