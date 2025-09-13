@@ -1,5 +1,6 @@
 using System;
 
+
 namespace Programlama.AlgoritmaTasarimi
 {
     class CokBoyutDiziClass
@@ -8,7 +9,7 @@ namespace Programlama.AlgoritmaTasarimi
         {
 
             Matris mat = new Matris();
-            int[,] X = mat.MatrisOlusturma(2, 2);
+            int[,] X = mat.MatrisOlusturma(3, 3);
             mat.MatrisYazdir(X);
             System.Console.WriteLine("|X| = {0}", mat.DeterminantHesabi(X));
 
