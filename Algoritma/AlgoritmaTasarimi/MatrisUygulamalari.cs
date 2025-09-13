@@ -65,7 +65,7 @@ namespace Programlama.AlgoritmaTasarimi
             }
             System.Console.WriteLine();
         }
-
+        
 
         #endregion
 
@@ -260,7 +260,7 @@ namespace Programlama.AlgoritmaTasarimi
 
         #region Bir Matrisi Yeniden Şekillendirme (ReShape)
 
-        internal int[,] ReshapeMatris(int[,] X,int yeniSatir,int yeniSutun)
+        internal int[,] ReshapeMatris(int[,] X, int yeniSatir, int yeniSutun)
         {
 
             if (X.Length == yeniSatir * yeniSutun)
@@ -293,10 +293,42 @@ namespace Programlama.AlgoritmaTasarimi
             {
                 System.Console.WriteLine("Bir hata oluştur");
                 return new int[1, 1];
-           }
+            }
         }
-            
+
         #endregion
 
+
+
+
+        #region Matris Karşılaştırma
+
+        internal bool MatrisKarsilastir(int[,] X, int[,] Y)
+        {
+
+            bool s = true;
+            // boyut kontrolü
+            if (X.GetLength(0) == Y.GetLength(0) && X.GetLength(1)== Y.GetLength(1))
+            {
+                for (int i = 0; i < X.GetLength(0); i++)
+                {
+                    for (int j = 0; j < X.GetLength(1); j++)
+                    {
+                        if (X[i, j] == Y[i, j])
+                        {
+                            s = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                s = false;
+            }
+
+            return s;
+        }
+        #endregion
     }
 }

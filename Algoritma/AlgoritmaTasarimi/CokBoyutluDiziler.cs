@@ -11,11 +11,15 @@ namespace Programlama.AlgoritmaTasarimi
      */
 
             Matris mat = new Matris();
-            int[,] X = mat.MatrisOlusturma(4,3);
-            mat.MatrisYazdir(X);
+            int[,] X = mat.MatrisOlusturma(3, 4);
+            int[,] Y = mat.MatrisOlusturma(3, 4);
 
-            int[,] Y = mat.ReshapeMatris(X, 3, 4);
+            mat.MatrisYazdir(X);
+            System.Console.WriteLine();
             mat.MatrisYazdir(Y);
+            System.Console.WriteLine("\n{0}",mat.MatrisKarsilastir(X,Y) ? "Eşit": "Eşit Değil");
+
+            
         } 
     }
 
