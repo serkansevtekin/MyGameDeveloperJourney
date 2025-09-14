@@ -444,7 +444,40 @@ namespace Programlama.AlgoritmaTasarimi
             int[,] Y = Transpoz(X);
 
 
-            return MatrisKarsilastir(X,Y);//Eşitmi
+            return MatrisKarsilastir(X, Y);//Eşitmi
+        }
+
+        #endregion
+
+        #region Köşegen matris mi?
+
+        internal bool KosegenMatrisMi(int[,] X)
+        {
+            bool s = true;
+            if (KareMatrisMi(X))
+            {
+                for (int i = 0; i < X.GetLength(0); i++)
+                {
+                    for (int j = 0; j < X.GetLength(1); j++)
+                    {
+                        if (!(X[i, j] == 0))
+                        {
+                            if (i != j)
+                            {
+                                s = false;
+                                break;
+                            }
+
+                        }
+                    }
+                }
+            }
+            else
+            {
+                HataYazdır("Kare Matris Değildir");
+                s = false;
+            }
+            return s;
         }
 
         #endregion

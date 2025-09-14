@@ -9,16 +9,16 @@ namespace Programlama.AlgoritmaTasarimi
         {
 
             Matris mat = new Matris();
-            int[,] X = mat.SimetrikMatrisOlustur(10);
+            int[,] X = mat.DiyagonalMatris(3,1,5);
             mat.MatrisYazdir(X);
 
-            System.Console.WriteLine("{0}",mat.SimetrikMi(X) ? "Simetrik": "Simetrik Değil");
+
+            System.Console.WriteLine("{0}", mat.KosegenMatrisMi(X) ? "Köşegen Matris" : "Köşegen Matris değil");
 
 
-          
-            
-            
-        } 
+
+
+        }
     }
 
 }
