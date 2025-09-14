@@ -9,11 +9,11 @@ namespace Programlama.AlgoritmaTasarimi
         {
 
             Matris mat = new Matris();
-            int[,] X = mat.DiyagonalMatris(3,1,5);
+            int[,] X = mat.UstUcgenMatris(5,-2,3);
             mat.MatrisYazdir(X);
 
 
-            System.Console.WriteLine("{0}", mat.KosegenMatrisMi(X) ? "Köşegen Matris" : "Köşegen Matris değil");
+            
 
 
 

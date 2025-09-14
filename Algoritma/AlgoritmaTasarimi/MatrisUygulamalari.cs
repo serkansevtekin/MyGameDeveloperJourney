@@ -481,5 +481,27 @@ namespace Programlama.AlgoritmaTasarimi
         }
 
         #endregion
+
+
+
+        #region Üst Üçgen Matris
+        internal int[,] UstUcgenMatris(int boyut = 3, int min = 1, int max = 9)
+        {
+            int[,] X = new int[boyut,boyut];
+            Random rnd = new Random();
+            for (int i = 0; i < X.GetLength(0); i++)
+            {
+                for (int j = i; j < X.GetLength(1); j++)
+                {
+                    X[i, j] = rnd.Next(min, max);
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    X[i, j] = 0;
+                }
+            }
+            return X;
+        }
+        #endregion
     }
 }
