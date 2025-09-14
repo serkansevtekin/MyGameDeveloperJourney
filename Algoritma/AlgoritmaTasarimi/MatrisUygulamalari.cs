@@ -500,9 +500,9 @@ namespace Programlama.AlgoritmaTasarimi
                     else//alt üçgen sıfır
                     {
                         X[i, j] = 0;
-                   }
+                    }
                 }
-               
+
             }
             return X;
         }
@@ -530,5 +530,28 @@ namespace Programlama.AlgoritmaTasarimi
             return X;
         }
         #endregion
+
+
+        #region Ust Uçgen Matris Mi
+
+        internal bool UstUcgenMatrisMi(int[,] X)
+        {
+
+            for (int i = 0; i < X.GetLength(0); i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (X[i, j] != 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+        #endregion
+
+       
     }
 }
