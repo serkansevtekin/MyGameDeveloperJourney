@@ -552,6 +552,24 @@ namespace Programlama.AlgoritmaTasarimi
         }
         #endregion
 
-       
+        #region Alt Uçgen Matris Mi
+
+        internal bool AltUcgenMatrisMi(int[,] X)
+        {
+
+            for (int i = 0; i < X.GetLength(0)-1; i++)
+            {
+                for (int j = i+1; j < X.GetLength(1); j++)
+                {
+                        if (X[i,j] != 0)
+                        {
+                        return false;
+                        }
+                }
+            }
+
+            return true;
+        }
+        #endregion
     }
 }

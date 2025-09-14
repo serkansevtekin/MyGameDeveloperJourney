@@ -9,10 +9,10 @@ namespace Programlama.AlgoritmaTasarimi
         {
 
             Matris mat = new Matris();
-            int[,] X = mat.UstUcgenMatris(5, -2, 3);
+            int[,] X = mat.AltUcgenMatris(4, 1, 9);
             mat.MatrisYazdir(X);
 
-            System.Console.WriteLine("{0}",mat.UstUcgenMatrisMi(X) ? "Ust Ucgen Matris":"Ust ucgen matris değil");
+            System.Console.WriteLine("{0}",mat.AltUcgenMatrisMi(X) ? "Alt Ucgen Matris":"Alt ucgen matris değil");
 
             
 
