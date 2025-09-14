@@ -342,7 +342,7 @@ namespace Programlama.AlgoritmaTasarimi
         #endregion
 
 
-        #region Matris Determinant Hesabı. | 2*2|
+        #region Matris Determinant Hesabı. | 2*2| |3*3|
         /// <summary>
         /// Determinant hesabı yapar
         /// </summary>
@@ -380,6 +380,26 @@ namespace Programlama.AlgoritmaTasarimi
 
         #endregion
 
+
+        #region Skaler Çarpım
+        /// <summary>
+        /// Skaler bir değer ile matirisi carpar
+        /// </summary>
+        /// <param name="X">Matris</param>
+        /// <param name="c">Skaler değer</param>
+        /// <returns>çarpım sonucu</returns>
+        internal int[,] SkalerCarpim(int[,] X, int c = 0)
+        {
+            for (int i = 0; i < X.GetLength(0); i++)
+            {
+                for (int j = 0; j < X.GetLength(1); j++)
+                {
+                    X[i, j] = c * X[i, j];
+                }
+            }
+            return X;
+        }
+        #endregion
 
 
     }
