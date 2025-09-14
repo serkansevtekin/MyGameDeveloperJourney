@@ -65,7 +65,7 @@ namespace Programlama
             // AlgoritmaTasarimi.CharVeRakamKarsiliklari.AsciiCodeKarsili();
             //AlgoritmaTasarimi.StringlerClass.StringlerMainMethod();
             // AlgoritmaTasarimi.TemelDüzey2UygulamaClass.TemelDüzey2UygulamaMainMethod();
-            AlgoritmaTasarimi.CokBoyutDiziClass.CokBoyutDiziMainMethod();
+            //AlgoritmaTasarimi.CokBoyutDiziClass.CokBoyutDiziMainMethod();
 
 
 
