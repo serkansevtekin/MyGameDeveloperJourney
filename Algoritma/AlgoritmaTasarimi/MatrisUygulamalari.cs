@@ -420,5 +420,33 @@ namespace Programlama.AlgoritmaTasarimi
             return toplam;
         }
         #endregion
+
+
+        #region Simetrik Matris
+        internal int[,] SimetrikMatrisOlustur(int boyut = 3, int min = 1, int max = 9)
+        {
+            int[,] X = DiyagonalMatris(boyut, min, max);
+            for (int i = 1; i < X.GetLength(0); i++)
+            {
+                for (int j = 0; j <= i - 1; j++)
+                {
+                    X[i, j] = new Random().Next(min, max);
+                    X[i, j] = X[i, j];
+                }
+            }
+
+            return X;
+        }
+
+        //Gelen matris Simetrik mi
+        internal bool SimetrikMi(int[,] X)
+        {
+            int[,] Y = Transpoz(X);
+
+
+            return MatrisKarsilastir(X,Y);//Eşitmi
+        }
+
+        #endregion
     }
 }

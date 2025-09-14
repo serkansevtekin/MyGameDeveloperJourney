@@ -9,9 +9,13 @@ namespace Programlama.AlgoritmaTasarimi
         {
 
             Matris mat = new Matris();
-            int[,] X = mat.MatrisOlusturma(3, 3);
+            int[,] X = mat.SimetrikMatrisOlustur(10);
             mat.MatrisYazdir(X);
-            System.Console.WriteLine("Elemanları toplamı: {0}",mat.ElemanlarinToplami(X));
+
+            System.Console.WriteLine("{0}",mat.SimetrikMi(X) ? "Simetrik": "Simetrik Değil");
+
+
+          
             
             
         } 
