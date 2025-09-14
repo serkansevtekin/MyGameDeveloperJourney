@@ -487,17 +487,44 @@ namespace Programlama.AlgoritmaTasarimi
         #region Üst Üçgen Matris
         internal int[,] UstUcgenMatris(int boyut = 3, int min = 1, int max = 9)
         {
-            int[,] X = new int[boyut,boyut];
+            int[,] X = new int[boyut, boyut];
             Random rnd = new Random();
             for (int i = 0; i < X.GetLength(0); i++)
             {
                 for (int j = i; j < X.GetLength(1); j++)
                 {
-                    X[i, j] = rnd.Next(min, max);
+                    if (j >= i)//diyagonal ve üst
+                    {
+                        X[i, j] = rnd.Next(min, max);
+                    }
+                    else//alt üçgen sıfır
+                    {
+                        X[i, j] = 0;
+                   }
                 }
-                for (int j = 0; j < i; j++)
+               
+            }
+            return X;
+        }
+        #endregion
+
+        #region Alt üçgen matris oluşturma
+        internal int[,] AltUcgenMatris(int boyut = 3, int min = 1, int max = 9)
+        {
+            int[,] X = new int[boyut, boyut];
+            Random rnd = new Random();
+            for (int i = 0; i < X.GetLength(0); i++)
+            {
+                for (int j = 0; j < X.GetLength(1); j++)
                 {
-                    X[i, j] = 0;
+                    if (j <= i)//diyagonal ve altı
+                    {
+                        X[i, j] = rnd.Next(min, max);
+                    }
+                    else
+                    {
+                        X[i, j] = 0;//üst üçgen sıfır
+                    }
                 }
             }
             return X;

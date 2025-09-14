@@ -9,7 +9,7 @@ namespace Programlama.AlgoritmaTasarimi
         {
 
             Matris mat = new Matris();
-            int[,] X = mat.UstUcgenMatris(5,-2,3);
+            int[,] X = mat.AltUcgenMatris(5,-2,3);
             mat.MatrisYazdir(X);
 
 
