@@ -401,6 +401,24 @@ namespace Programlama.AlgoritmaTasarimi
         }
         #endregion
 
-
+        #region Matrisin elemanlarının toplamı
+        /// <summary>
+        /// Bir matristeki elemanların toplamını bulur
+        /// </summary>
+        /// <param name="X">Matris</param>
+        /// <returns>Elemanların toplamı</returns>
+        internal int ElemanlarinToplami(int[,] X)
+        {
+            int toplam = 0;
+            for (int i = 0; i < X.GetLength(0); i++)
+            {
+                for (int j = 0; j < X.GetLength(1); j++)
+                {
+                    toplam += X[i, j];
+                }
+            }
+            return toplam;
+        }
+        #endregion
     }
 }

@@ -11,8 +11,8 @@ namespace Programlama.AlgoritmaTasarimi
             Matris mat = new Matris();
             int[,] X = mat.MatrisOlusturma(3, 3);
             mat.MatrisYazdir(X);
-            System.Console.WriteLine("|X| = {0}", mat.SkalerCarpim(X,2));
-            mat.MatrisYazdir(X);
+            System.Console.WriteLine("Elemanları toplamı: {0}",mat.ElemanlarinToplami(X));
+            
             
         } 
     }
