@@ -9,6 +9,7 @@ namespace Programlama.AlgoritmaTasarimi
         {
             DosyaIslemler.StreamReader();
             DosyaIslemler.StreamWrite();
+            DosyaIslemler.DosyayiYazdir("Adlar.txt", ["AlgoritmaTasarimi", "DosyalamIslemleri"]);
         }
 
 
@@ -99,7 +100,7 @@ namespace Programlama.AlgoritmaTasarimi
             try
             {
                 //Adların bulunduğu dizi
-                string[] adlar = new string[] {"Zara","Ayca","Mehmet","Selim" };
+                string[] adlar = new string[] { "Zara", "Ayca", "Mehmet", "Selim" };
 
                 //Çalışma dizini
                 string? baseDir = Directory.GetCurrentDirectory();
@@ -123,6 +124,54 @@ namespace Programlama.AlgoritmaTasarimi
                 }// using bloğu sonunda StreamWriter kapanır ve dosya kaydedilir
             }
             catch (System.Exception ex) // hata varsa mesaj ver
+            {
+
+                System.Console.WriteLine("Hata: " + ex.Message);
+            }
+        }
+        #endregion
+
+
+        #region Verilen dosya adına göre dosyayı ekrana yazan kod
+        internal static void DosyayiYazdir(string dosyaAdi, params string[] dosus)// params kullanılarak ta yapıla bilir performans aynı. Method overloading 2 method olur performans kaybı
+        {
+
+            try
+            {
+                string? ustYollar = "", dosyaYolu = "", baseDir = Directory.GetCurrentDirectory();
+
+
+
+                if (string.IsNullOrEmpty(dosyaAdi) && (dosus.Length == 0))
+                {
+                    System.Console.WriteLine("Dosya yolu dizini  ve dosya adı boş");
+                    return;
+
+                }
+                if (dosus.Length > 0)
+                {
+                    ustYollar = Path.Combine(dosus);
+                    dosyaYolu = Path.Combine(baseDir, ustYollar, dosyaAdi);
+                }
+                else
+                {
+
+
+                    dosyaYolu = Path.Combine(baseDir, dosyaAdi);
+                }
+                System.Console.WriteLine(dosyaYolu);
+
+                using (StreamReader sr = new StreamReader(dosyaYolu))
+                {
+                    string? line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        System.Console.WriteLine(line);
+                    }
+                }
+
+            }
+            catch (System.Exception ex)
             {
 
                 System.Console.WriteLine("Hata: " + ex.Message);
