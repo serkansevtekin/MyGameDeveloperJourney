@@ -66,7 +66,7 @@ namespace Programlama
             //AlgoritmaTasarimi.StringlerClass.StringlerMainMethod();
             // AlgoritmaTasarimi.TemelDüzey2UygulamaClass.TemelDüzey2UygulamaMainMethod();
             //AlgoritmaTasarimi.CokBoyutDiziClass.CokBoyutDiziMainMethod();
-
+            AlgoritmaTasarimi.FILE.FILEMainMethod();
 
 
             Console.ReadKey();
