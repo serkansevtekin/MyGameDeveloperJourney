@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text;
 
 namespace Programlama.AlgoritmaTasarimi
 {
@@ -7,9 +8,16 @@ namespace Programlama.AlgoritmaTasarimi
     {
         public static void FILEMainMethod()
         {
-            DosyaIslemler.StreamReader();
-            DosyaIslemler.StreamWrite();
-            DosyaIslemler.DosyayiYazdir("Adlar.txt", ["AlgoritmaTasarimi", "DosyalamIslemleri"]);
+
+            /* DosyaIslemler.StreamReader();
+            DosyaIslemler.StreamWrite(); */
+          //  string KaynakYol = DosyaIslemler.DinamikYol("Adlar.txt", ["AlgoritmaTasarimi", "DosyalamIslemleri"]);
+            string HedefYol = DosyaIslemler.DinamikYol("Rakamlar.txt", ["AlgoritmaTasarimi", "DosyalamIslemleri"]);
+         //   DosyaIslemler.DosyaKopyalama(KaynakYol, HedefYol);
+
+            //  DosyaIslemler.VarOlanDosyayaEklemeYap(KaynakYol);
+
+            DosyaIslemler.DosyaSil(HedefYol);
         }
 
 
@@ -175,6 +183,134 @@ namespace Programlama.AlgoritmaTasarimi
             {
 
                 System.Console.WriteLine("Hata: " + ex.Message);
+            }
+        }
+        #endregion
+
+        #region Dinamik Yol
+        internal static string DinamikYol(string dosyaAdi, params string[] dosyaEkYol)
+        {
+            string? dosyaYol = "", dosyaUstYol = "";
+            try
+            {
+
+
+
+                string baseDir = Directory.GetCurrentDirectory();
+                if (string.IsNullOrEmpty(dosyaAdi))
+                {
+
+                    return "Dosya yolu dizini  ve dosya adı boş";
+                }
+                if (dosyaEkYol.Length > 0 && dosyaEkYol != null)
+                {
+                    dosyaUstYol = Path.Combine(dosyaEkYol);
+                    dosyaYol = Path.Combine(baseDir, dosyaUstYol, dosyaAdi);
+                }
+                else
+                {
+                    dosyaYol = Path.Combine(baseDir, dosyaAdi);
+                }
+
+            }
+            catch (System.Exception ex)
+            {
+
+                System.Console.WriteLine("Hata: " + ex.Message);
+            }
+            return dosyaYol;
+        }
+        #endregion
+
+        #region File Stram | Var olan bir dosyaya ekleme yapma
+        internal static void VarOlanDosyayaEklemeYap(string SabitYol)
+        {
+            try
+            {
+
+                while (true)
+                {
+                    System.Console.WriteLine("\nDosyayı kaydetmek için bir isim girin");
+                    string ad = Console.ReadLine() ?? "";
+                    if (ad.Equals("cikis", StringComparison.OrdinalIgnoreCase))
+                    {
+                        break;
+                    }
+                    if (!string.IsNullOrWhiteSpace(ad))
+                    {
+                        File.AppendAllText(SabitYol, ad + Environment.NewLine);
+                    }
+                }
+
+            }
+            catch (System.Exception ex)
+            {
+
+                System.Console.WriteLine(ex.Message);
+            }
+
+        }
+        #endregion
+
+        #region File Info
+        internal static void FInfo(string yol)
+        {
+            string dosyaYolu = yol;
+            var fi = new FileInfo(dosyaYolu);
+
+            System.Console.WriteLine(fi.FullName);
+            System.Console.WriteLine(fi.Length);
+            System.Console.WriteLine(fi.Extension);
+            System.Console.WriteLine(fi.CreationTime);
+            System.Console.WriteLine(fi.LastAccessTime);
+            System.Console.WriteLine(fi.Name);
+        }
+        #endregion
+
+        #region Dosya Kopyalama
+        /// <summary>
+        /// Dosya kopyalama işlemini gerçekleştirir
+        /// </summary>
+        /// <param name="kaynak">Kaynak dosya yolu</param>
+        /// <param name="hedef">Hedef dosya yolu</param>
+        internal static void DosyaKopyalama(string kaynak, string hedef)
+        {
+            try
+            {
+                /*  FileInfo fi = new FileInfo(kaynak);
+                 fi.CopyTo(hedef);
+                 Console.Write("{0} kayndaklı dosya {1} kopyalandi", kaynak, hedef); */
+
+                string icerik = File.ReadAllText(kaynak);
+                File.AppendAllText(hedef, icerik);
+                Console.Write("{0} kayndaklı dosya {1} kopyalandi", kaynak, hedef);
+            }
+            catch (System.Exception ex)
+            {
+
+                System.Console.WriteLine("Hata: " + ex.Message);
+            }
+        }
+        #endregion
+
+
+        #region Dosya Silme
+        internal static void DosyaSil(string kaynak)
+        {
+            try
+            {
+                FileInfo fi = new FileInfo(kaynak);
+                if (fi.Exists)
+                {
+                    fi.Delete();
+                    System.Console.WriteLine("Dosya silindi");
+                }
+                else System.Console.WriteLine("Dosya Menvcut değil");
+            }
+            catch (System.Exception ex)
+            {
+
+                System.Console.WriteLine($"{ex.Message}");
             }
         }
         #endregion
