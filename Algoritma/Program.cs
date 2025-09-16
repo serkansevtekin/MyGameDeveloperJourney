@@ -73,7 +73,10 @@ namespace Programlama
             //OOP (Object Riented Programming) -> Nesne Yönelimli Programlama
             // AlgoritmaTasarimi.ConstructorsClass.ConstructorRunMethod();
             //AlgoritmaTasarimi.PartialClassS.PartialRunMethod();
-            AlgoritmaTasarimi.ExtensionsMethodClass.ExtensionsMethodRunMethod();
+            // AlgoritmaTasarimi.ExtensionsMethodClass.ExtensionsMethodRunMethod();
+
+            AlgoritmaTasarimi.ModellemeOrnekClass.ModellemeOrnekRunMethod();
+
 
             Console.ReadKey();
 
