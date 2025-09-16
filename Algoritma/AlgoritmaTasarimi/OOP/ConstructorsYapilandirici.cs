@@ -70,7 +70,7 @@ namespace Programlama.AlgoritmaTasarimi
 
     #region  Örnek 1
 
-    class Kisi // Class
+    public class Kisi // Class
     {
         private string? _adi; // filed
 
