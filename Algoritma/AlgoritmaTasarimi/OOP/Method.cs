@@ -8,17 +8,26 @@ namespace Programlama.AlgoritmaTasarimi
 
         } */
 
-        // Klasik Yazım
+        // Klasik Method Yazımı
         public bool KareMi(int x, int y)
         {
             return x == y;
         }
 
         //Expression-Bodied Methods (Kısa yazım)
-
         public bool KareMiKisa(int x, int y) => x == y;
 
 
+
+        //Method Overloading
+        internal bool EsitMi(int x, int y) => x == y;
+
+        internal bool EsitMi(double x, double y) => x == y;
+
+        internal bool EsitMi(string x, string y) => x.Equals(y);
+
+
+        #region Tanım
 
 
         /*  Methods (Metodlar)
@@ -72,5 +81,6 @@ namespace Programlama.AlgoritmaTasarimi
 
 
         */
+        #endregion
     }
 }
