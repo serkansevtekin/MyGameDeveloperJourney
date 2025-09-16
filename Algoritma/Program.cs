@@ -66,7 +66,13 @@ namespace Programlama
             //AlgoritmaTasarimi.StringlerClass.StringlerMainMethod();
             // AlgoritmaTasarimi.TemelDüzey2UygulamaClass.TemelDüzey2UygulamaMainMethod();
             //AlgoritmaTasarimi.CokBoyutDiziClass.CokBoyutDiziMainMethod();
-            AlgoritmaTasarimi.FILE.FILEMainMethod();
+            //AlgoritmaTasarimi.FILE.FILEMainMethod();
+            
+
+            //**************** ÖNEMLİİİİİİ ************************
+            //OOP (Object Riented Programming) -> Nesne Yönelimli Programlama
+
+
 
 
             Console.ReadKey();
