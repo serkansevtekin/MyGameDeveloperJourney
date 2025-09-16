@@ -2,7 +2,7 @@ using System;
 
 namespace Programlama.AlgoritmaTasarimi
 {
-    public class Arac
+    public class Arac : Tasit // inheritance (kalıtım)
     {
         #region Fields değişkenleri
         private string? _marka, _model, _renk;
@@ -30,6 +30,7 @@ namespace Programlama.AlgoritmaTasarimi
             Model = model;
             Renk = renk;
             Yil = yil;
+            
         }
 
 
