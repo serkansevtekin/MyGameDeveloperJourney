@@ -67,11 +67,11 @@ namespace Programlama
             // AlgoritmaTasarimi.TemelDüzey2UygulamaClass.TemelDüzey2UygulamaMainMethod();
             //AlgoritmaTasarimi.CokBoyutDiziClass.CokBoyutDiziMainMethod();
             //AlgoritmaTasarimi.FILE.FILEMainMethod();
-            
+
 
             //**************** ÖNEMLİİİİİİ ************************
             //OOP (Object Riented Programming) -> Nesne Yönelimli Programlama
-
+            AlgoritmaTasarimi.ConstructorsClass.ConstructorRunMethod();
 
 
 
