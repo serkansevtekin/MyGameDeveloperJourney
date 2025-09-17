@@ -74,9 +74,8 @@ namespace Programlama
             // AlgoritmaTasarimi.ConstructorsClass.ConstructorRunMethod();
             //AlgoritmaTasarimi.PartialClassS.PartialRunMethod();
             // AlgoritmaTasarimi.ExtensionsMethodClass.ExtensionsMethodRunMethod();
-
-            AlgoritmaTasarimi.ModellemeOrnekClass.ModellemeOrnekRunMethod();
-
+            // AlgoritmaTasarimi.ModellemeOrnekClass.ModellemeOrnekRunMethod();
+            AlgoritmaTasarimi.ListClassOrnegiClass.ListClassOrnegiRunMethod();
 
             Console.ReadKey();
 

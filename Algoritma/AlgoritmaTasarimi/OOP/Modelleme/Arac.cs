@@ -44,12 +44,15 @@ namespace Programlama.AlgoritmaTasarimi
 
         public override string ToString()
         {
+            System.Console.WriteLine(new string('-', 30));
             System.Console.WriteLine($"{this.Marka}");
             System.Console.WriteLine($"{this.Model}");
             System.Console.WriteLine($"{this.Renk}");
             System.Console.WriteLine($"{this.Yil}");
             System.Console.WriteLine($"{this.Motor}");
             System.Console.WriteLine($"{this.Hacim}");
+
+            System.Console.WriteLine();
             return "";
         }
     }
