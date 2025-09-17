@@ -2,7 +2,7 @@ using System;
 
 namespace Programlama.AlgoritmaTasarimi
 {
-    class PolymorphismClass
+    class PolymorphismClass // Polymorphism (Çok Biçimlilik)
     {
 
 
@@ -80,7 +80,7 @@ namespace Programlama.AlgoritmaTasarimi
     {
         public override void SesCikar()
         {
-           System.Console.WriteLine("Hav ");
+            System.Console.WriteLine("Hav ");
         }
     }
     #endregion

@@ -78,8 +78,8 @@ namespace Programlama
             //AlgoritmaTasarimi.ListClassOrnegiClass.ListClassOrnegiRunMethod();
             //AlgoritmaTasarimi.TypeOfInheritanceClass.TypeOfInheritanceRunMethod();
             //AlgoritmaTasarimi.VirtualMethodsClass.VirtualMethodsRunMain();
-            AlgoritmaTasarimi.PolymorphismClass.PolymorphismRunMethod();
-            
+            // AlgoritmaTasarimi.PolymorphismClass.PolymorphismRunMethod();
+            AlgoritmaTasarimi.CallingBaseVersionOfMethodsClass.CallingBaseVersionOfMethodsRunMethods();
 
             Console.ReadKey();
 
