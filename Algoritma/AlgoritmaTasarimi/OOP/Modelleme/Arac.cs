@@ -30,7 +30,7 @@ namespace Programlama.AlgoritmaTasarimi
             Model = model;
             Renk = renk;
             Yil = yil;
-            
+
         }
 
 
@@ -38,8 +38,19 @@ namespace Programlama.AlgoritmaTasarimi
 
         #region Methods
         public void Calistir() => System.Console.WriteLine("Araç çalıştı!");
-            
+
         public void Durdur() => System.Console.WriteLine("Araç durduruldu.");
         #endregion
+
+        public override string ToString()
+        {
+            System.Console.WriteLine($"{this.Marka}");
+            System.Console.WriteLine($"{this.Model}");
+            System.Console.WriteLine($"{this.Renk}");
+            System.Console.WriteLine($"{this.Yil}");
+            System.Console.WriteLine($"{this.Motor}");
+            System.Console.WriteLine($"{this.Hacim}");
+            return "";
+        }
     }
 }
