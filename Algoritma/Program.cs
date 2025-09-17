@@ -75,7 +75,11 @@ namespace Programlama
             //AlgoritmaTasarimi.PartialClassS.PartialRunMethod();
             // AlgoritmaTasarimi.ExtensionsMethodClass.ExtensionsMethodRunMethod();
             // AlgoritmaTasarimi.ModellemeOrnekClass.ModellemeOrnekRunMethod();
-            AlgoritmaTasarimi.ListClassOrnegiClass.ListClassOrnegiRunMethod();
+            //AlgoritmaTasarimi.ListClassOrnegiClass.ListClassOrnegiRunMethod();
+            AlgoritmaTasarimi.TypeOfInheritanceClass.TypeOfInheritanceRunMethod();
+
+
+            
 
             Console.ReadKey();
 
