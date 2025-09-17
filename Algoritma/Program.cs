@@ -77,8 +77,8 @@ namespace Programlama
             // AlgoritmaTasarimi.ModellemeOrnekClass.ModellemeOrnekRunMethod();
             //AlgoritmaTasarimi.ListClassOrnegiClass.ListClassOrnegiRunMethod();
             //AlgoritmaTasarimi.TypeOfInheritanceClass.TypeOfInheritanceRunMethod();
-            AlgoritmaTasarimi.VirtualMethodsClass.VirtualMethodsRunMain();
-
+            //AlgoritmaTasarimi.VirtualMethodsClass.VirtualMethodsRunMain();
+            AlgoritmaTasarimi.PolymorphismClass.PolymorphismRunMethod();
             
 
             Console.ReadKey();
