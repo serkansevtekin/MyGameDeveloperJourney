@@ -80,8 +80,8 @@ namespace Programlama
             //AlgoritmaTasarimi.VirtualMethodsClass.VirtualMethodsRunMain();
             // AlgoritmaTasarimi.PolymorphismClass.PolymorphismRunMethod();
             // AlgoritmaTasarimi.CallingBaseVersionOfMethodsClass.CallingBaseVersionOfMethodsRunMethods();
-            AlgoritmaTasarimi.AbstractClassesAndMethodsClass.AbstractClassesAndMethodsRunMethod();
-
+            //AlgoritmaTasarimi.AbstractClassesAndMethodsClass.AbstractClassesAndMethodsRunMethod();
+            AlgoritmaTasarimi.SealedClassAndMethodsClass.SealedClassAndMethodsRunMethod();
 
 
             
