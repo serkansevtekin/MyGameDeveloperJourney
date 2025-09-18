@@ -79,8 +79,12 @@ namespace Programlama
             //AlgoritmaTasarimi.TypeOfInheritanceClass.TypeOfInheritanceRunMethod();
             //AlgoritmaTasarimi.VirtualMethodsClass.VirtualMethodsRunMain();
             // AlgoritmaTasarimi.PolymorphismClass.PolymorphismRunMethod();
-            AlgoritmaTasarimi.CallingBaseVersionOfMethodsClass.CallingBaseVersionOfMethodsRunMethods();
+            // AlgoritmaTasarimi.CallingBaseVersionOfMethodsClass.CallingBaseVersionOfMethodsRunMethods();
+            AlgoritmaTasarimi.AbstractClassesAndMethodsClass.AbstractClassesAndMethodsRunMethod();
 
+
+
+            
             Console.ReadKey();
 
         }
