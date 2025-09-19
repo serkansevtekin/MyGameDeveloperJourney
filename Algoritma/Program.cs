@@ -95,8 +95,8 @@ namespace Programlama
         public static void AlgoritmaIleriSeviyeMainRunMethod()
         {
 
-            
-                
+            IleriAlgoritma.VeriOrganizasyonuClass.VeriOrganizasyonuRunMethod();
+
 
 
 
