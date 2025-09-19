@@ -7,7 +7,7 @@ namespace Programlama
         public static void Main(string[] args)
         {
 
-            AlgoritmaTasarimiMainRunMethod();
+            AlgoritmaIleriSeviyeMainRunMethod();
             Console.ReadKey();
         }
 
@@ -43,10 +43,6 @@ namespace Programlama
             // VeriYapilari.HashSetClass.HashSetMainMethod();
         }
         #endregion
-
-
-
-
 
 
         #region Algoritma Tasarımı
@@ -88,9 +84,21 @@ namespace Programlama
             //   AlgoritmaTasarimi.IListClass.IListClassRunMethod();
             // AlgoritmaTasarimi.ICollectionClass.ICollectionClassRunMethod();
             //  AlgoritmaTasarimi.TipBelirsizTurİleArrayFonksClass.TipBelirsizTurİleArrayFonksRunMethod();
-            AlgoritmaTasarimi.Sinav.SinavRunMethod();
 
             Console.ReadKey();
+
+        }
+        #endregion
+
+
+        #region Algoritma ve Veri Yapıları İleri Seviye
+        public static void AlgoritmaIleriSeviyeMainRunMethod()
+        {
+
+            
+                
+
+
 
         }
         #endregion
