@@ -85,10 +85,10 @@ namespace Programlama
             // AlgoritmaTasarimi.ConstructorsOfderivedClassesCLass.ConstructorsOfderivedClassesRunMethod();
             //AlgoritmaTasarimi.InterFaceClass.InterFaceRunMain();
             //AlgoritmaTasarimi.IEnumerationAndIEnumerableClass.IEnumerationAndIEnumerableRunMain();
-            AlgoritmaTasarimi.IListClass.IListClassRunMethod();
-
+            //   AlgoritmaTasarimi.IListClass.IListClassRunMethod();
+            // AlgoritmaTasarimi.ICollectionClass.ICollectionClassRunMethod();
             //  AlgoritmaTasarimi.TipBelirsizTurİleArrayFonksClass.TipBelirsizTurİleArrayFonksRunMethod();
-
+            AlgoritmaTasarimi.Sinav.SinavRunMethod();
 
             Console.ReadKey();
 
