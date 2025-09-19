@@ -82,8 +82,8 @@ namespace Programlama
             // AlgoritmaTasarimi.CallingBaseVersionOfMethodsClass.CallingBaseVersionOfMethodsRunMethods();
             //AlgoritmaTasarimi.AbstractClassesAndMethodsClass.AbstractClassesAndMethodsRunMethod();
             // AlgoritmaTasarimi.SealedClassAndMethodsClass.SealedClassAndMethodsRunMethod();
-            AlgoritmaTasarimi.ConstructorsOfderivedClassesCLass.ConstructorsOfderivedClassesRunMethod();
-
+            // AlgoritmaTasarimi.ConstructorsOfderivedClassesCLass.ConstructorsOfderivedClassesRunMethod();
+            AlgoritmaTasarimi.InterFaceClass.InterFaceRunMain();
             
             Console.ReadKey();
 
