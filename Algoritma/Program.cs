@@ -83,8 +83,11 @@ namespace Programlama
             //AlgoritmaTasarimi.AbstractClassesAndMethodsClass.AbstractClassesAndMethodsRunMethod();
             // AlgoritmaTasarimi.SealedClassAndMethodsClass.SealedClassAndMethodsRunMethod();
             // AlgoritmaTasarimi.ConstructorsOfderivedClassesCLass.ConstructorsOfderivedClassesRunMethod();
-            AlgoritmaTasarimi.InterFaceClass.InterFaceRunMain();
-            
+            //AlgoritmaTasarimi.InterFaceClass.InterFaceRunMain();
+            AlgoritmaTasarimi.IEnumerationAndIEnumerableClass.IEnumerationAndIEnumerableRunMain();
+             
+
+
             Console.ReadKey();
 
         }
