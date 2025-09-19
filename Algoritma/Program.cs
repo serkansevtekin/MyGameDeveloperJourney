@@ -84,8 +84,8 @@ namespace Programlama
             // AlgoritmaTasarimi.SealedClassAndMethodsClass.SealedClassAndMethodsRunMethod();
             // AlgoritmaTasarimi.ConstructorsOfderivedClassesCLass.ConstructorsOfderivedClassesRunMethod();
             //AlgoritmaTasarimi.InterFaceClass.InterFaceRunMain();
-            AlgoritmaTasarimi.IEnumerationAndIEnumerableClass.IEnumerationAndIEnumerableRunMain();
-             
+            //AlgoritmaTasarimi.IEnumerationAndIEnumerableClass.IEnumerationAndIEnumerableRunMain();
+            AlgoritmaTasarimi.TipBelirsizTurİleArrayFonksClass.TipBelirsizTurİleArrayFonksRunMethod();
 
 
             Console.ReadKey();
