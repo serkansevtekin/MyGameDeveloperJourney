@@ -96,8 +96,9 @@ namespace Programlama
         {
 
             // IleriAlgoritma.VeriOrganizasyonuClass.VeriOrganizasyonuRunMethod();
-            IleriAlgoritma.DizilerClass.DizilerRunMain();
 
+            //IleriAlgoritma.DizilerClass.DizilerRunMain();
+            IleriAlgoritma.GenericDiziSinifiClass.GenericDiziSinifiRunMethod();
 
         }
         #endregion
