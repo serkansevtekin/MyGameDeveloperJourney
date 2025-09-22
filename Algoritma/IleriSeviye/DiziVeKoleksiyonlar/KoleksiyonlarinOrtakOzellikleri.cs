@@ -4,17 +4,17 @@ namespace Programlama.IleriAlgoritma
 {
     class KolleksiyonlarinOrtakOzellikleriClass
     {
-        public static void KolleksiyonlarinOrtakOzellikleriRunMethod()
+        public static void KoleksiyonlarinOrtakOzellikleriRunMethod()
         {
 
         }
         
-        #region Kolleksiyonların Ortak Özellikleri Tanım
+        #region Koleksiyonların Ortak Özellikleri Tanım
             /*
 
-                Kolleksiyonların Ortak Özellikleri 
+                Koleksiyonların Ortak Özellikleri 
 
-            1- Kolleksiyonun numaralandırma yeteneği
+            1- Koleksiyonun numaralandırma yeteneği
                     - System.Collection.IEnumerable veya System.Collections.Generic.IEnumerable<T>
             
             2- Bir "Enumerator", kolleksiyondaki herhangi bir öğeye taşınabilir bir işaretçi olarak düşünebilir.
@@ -35,6 +35,8 @@ namespace Programlama.IleriAlgoritma
             - Collections ifadeleri generic yada non-generic olarak tanımlanabilirler.
 
             1. - Generic Koleksiyonlar (System.Collections.Generic)
+
+                https://learn.microsoft.com/en-us/dotnet/standard/collections/
                 
                 - Genelde "GENERIC" kodlama tercih edilir
 
