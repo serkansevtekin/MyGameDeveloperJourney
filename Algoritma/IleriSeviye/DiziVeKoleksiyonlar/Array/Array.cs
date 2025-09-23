@@ -31,6 +31,17 @@ namespace Programlama.IleriAlgoritma
             InnerList[Count] = item;
             Count++;
         }
+        //dizi sonundaki elemanı silen
+        public T Remove()
+        {
+            if (Count == 0)
+            {
+                throw new Exception("There is no more item to be removed from the array");
+            }
+            var temp = InnerList[Count - 1];
+            Count--;
+            return temp;
+        }
 
         //Bu metot dizinin kapasitesini iki katına çıkarmak için yazılmış.
         private void DoubleArray()

@@ -15,7 +15,15 @@ namespace Programlama.IleriAlgoritma
             arr.Add(34);
 
 
-            
+
+            System.Console.WriteLine($"{arr.Count} / {arr.Capacity}");
+
+            //dizinin son elemanını siler
+            arr.Remove();
+            System.Console.WriteLine("Son eleman silindi");
+
+
+
             System.Console.WriteLine($"{arr.Count} / {arr.Capacity}");
         }
     }
