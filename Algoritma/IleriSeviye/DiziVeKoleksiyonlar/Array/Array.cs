@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 
 namespace Programlama.IleriAlgoritma
 { // Bir diziyi baştan kendimiz yazma
@@ -16,10 +17,31 @@ namespace Programlama.IleriAlgoritma
         //Getter var, setter yok
         public int Capacity => InnerList.Length;
 
+        public object Current => throw new NotImplementedException();
         public Array()
         {
             InnerList = new T[2];// eleman sayısı belli değilse başta 2 elemanlı dizi yap
             Count = 0;
+        }
+
+        public Array(params T[] initial)
+        {
+            InnerList = new T[initial.Length];
+            Count = 0;
+            foreach (var item in initial)
+            {
+                Add(item);
+            }
+        }
+
+        public Array(IEnumerable<T> collection)
+        {
+            InnerList = new T[collection.ToArray().Length];
+            Count = 0;
+            foreach (var item in collection)
+            {
+                Add(item);
+            }
         }
 
         //eleman ekleme
@@ -93,9 +115,14 @@ namespace Programlama.IleriAlgoritma
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            //Select() -> elemanları dönüştür
+            return InnerList.Take(Count).GetEnumerator();
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        //bir koleksiyondan başından belirli sayıda eleman almak için kullanılır.
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
     }
 }
