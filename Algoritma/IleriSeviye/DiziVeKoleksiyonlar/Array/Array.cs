@@ -26,22 +26,12 @@ namespace Programlama.IleriAlgoritma
 
         public void Add(T item)
         {
-            if (InnerList.Length == Count)  DoubleArray();
+            if (InnerList.Length == Count) DoubleArray();
 
             InnerList[Count] = item;
             Count++;
         }
-        //dizi sonundaki elemanı silen
-        public T Remove()
-        {
-            if (Count == 0)
-            {
-                throw new Exception("There is no more item to be removed from the array");
-            }
-            var temp = InnerList[Count - 1];
-            Count--;
-            return temp;
-        }
+
 
         //Bu metot dizinin kapasitesini iki katına çıkarmak için yazılmış.
         private void DoubleArray()
@@ -56,6 +46,45 @@ namespace Programlama.IleriAlgoritma
             InnerList = temp;
 
         }
+
+
+        //dizi sonundaki elemanı silen
+        public T Remove()
+        {
+            if (Count == 0)
+            {
+                throw new Exception("There is no more item to be removed from the array");
+            }
+
+            if (InnerList.Length / 4 == Count)
+            {
+                HalfArray();
+            }
+
+
+            var temp = InnerList[Count - 1];
+
+            if (Count > 0)
+            {
+                Count--;
+            }
+
+            return temp;
+        }
+
+        //Dizi eleman silinince boyutuda azaltma
+        private void HalfArray()
+        {
+            if (InnerList.Length > 2)
+            {
+                var temp = new T[InnerList.Length / 2];
+                System.Array.Copy(InnerList, temp, temp.Length / 4);
+
+                InnerList = temp;
+            }
+        }
+
+
 
         public object Clone()
         {
