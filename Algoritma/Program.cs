@@ -100,7 +100,9 @@ namespace Programlama
             //IleriAlgoritma.DizilerClass.DizilerRunMain();
             // IleriAlgoritma.GenericDiziSinifiClass.GenericDiziSinifiRunMethod();
 
-            IleriAlgoritma.ListOfTClass.ListOfTRunMethod();
+            //  IleriAlgoritma.ListOfTClass.ListOfTRunMethod();
+
+            IleriAlgoritma.LinkedListClass.LinkedListRunMain();
         }
         #endregion
     }

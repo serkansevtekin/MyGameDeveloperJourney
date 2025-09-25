@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 namespace Programlama.IleriAlgoritma
 {
@@ -12,10 +13,27 @@ namespace Programlama.IleriAlgoritma
             linkedlist.AddFirst(1);
             linkedlist.AddFirst(2);
             linkedlist.AddFirst(3);
-            
+
             // 3 , 2 , 1 , 5 , 6
             linkedlist.AddLast(5);
             linkedlist.AddLast(6);
+
+            //araya ekeleme
+            linkedlist.AddAfter(linkedlist.Head!.Next!, 32);
+            // 3, 2, 32, 1, 5, 6
+            //linkedlist.Head! = 3
+            //linkedlist.Head!.Next!= 2
+
+            var list = new SinglyLinkedList<int>();
+            list.AddFirst(1);
+            list.AddFirst(2);
+            list.AddFirst(3);
+
+            foreach (var item in list)
+            {
+                System.Console.WriteLine(item);
+            }
+
 
         }
     }
@@ -37,10 +55,14 @@ namespace Programlama.IleriAlgoritma
     #endregion
 
     #region Tek yönlü bağlı listede AddFirst işlevi | Liste Başına Ekleme
-    internal class SinglyLinkedList<T>
+    internal class SinglyLinkedList<T> : IEnumerable<T>
     {
         public NodeDesign<T>? Head { get; set; }
 
+
+        private bool isHeadNull => Head == null; //Head null kontrol True yada false döner
+
+        //Başa ekleme
         public void AddFirst(T value)
         {
 
@@ -49,10 +71,11 @@ namespace Programlama.IleriAlgoritma
             Head = newNode;
         }
 
+        //Sona ekleme
         public void AddLast(T value)
         {
             var newNode = new NodeDesign<T>(value);
-            if (Head == null)
+            if (isHeadNull)
             {
                 Head = newNode;
                 return;
@@ -66,8 +89,71 @@ namespace Programlama.IleriAlgoritma
         }
 
 
+        // Araya ekleme
+        public void AddAfter(NodeDesign<T> node, T value)
+        {
+
+            if (node == null)
+            {
+                throw new ArgumentException();
+            }
+            if (isHeadNull)
+            {
+                AddFirst(value);
+                return;
+            }
+
+            var newNode = new NodeDesign<T>(value);
+
+            var current = Head;
+            while (current != null)
+            {
+                if (current.Equals(node))
+                {
+                    newNode.Next = current.Next;
+                    current.Next = newNode;
+                    return;
+                }
+                current = current.Next;
+            }
+            throw new ArgumentException("There reference nod is not in this List.");
+        }
+
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return new SinglyLinkedListEnumerator<T>(Head);
+        }
+
+        public IEnumerator GetEnumerator() => GetEnumerator();
+
+    }
+
+    internal class SinglyLinkedListEnumerator<T> : IEnumerator<T>
+    {
+        public T Current => throw new NotImplementedException();
+
+        object IEnumerator.Current => Current;
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
     }
     #endregion
+
+
+
 
 
 
