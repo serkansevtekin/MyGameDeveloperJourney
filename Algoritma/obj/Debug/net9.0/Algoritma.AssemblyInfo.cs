@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Algoritma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9acd527b3fe3880424efec2b114b4d2d268322ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1c94f4ff90801ba0b27f2eeb427931bfb280911")]
 [assembly: System.Reflection.AssemblyProductAttribute("Algoritma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Algoritma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

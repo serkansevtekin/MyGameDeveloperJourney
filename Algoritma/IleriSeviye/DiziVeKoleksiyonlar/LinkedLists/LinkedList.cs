@@ -7,7 +7,11 @@ namespace Programlama.IleriAlgoritma
         public static void LinkedListRunMain()
         {
             //Tek yönlü bağlı liste
-            SinglyLinkedListClass.SinglyLinkedListRunMain();
+            //SinglyLinkedListClass.SinglyLinkedListRunMain();
+
+            //Çift yönlü bağlı liste
+         //   DoublyLinkedListClass.DoublyLinkedListRunMethod();
+
         }   
         
 
