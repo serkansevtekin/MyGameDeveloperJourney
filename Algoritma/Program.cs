@@ -102,7 +102,11 @@ namespace Programlama
 
             //  IleriAlgoritma.ListOfTClass.ListOfTRunMethod();
 
-            IleriAlgoritma.LinkedListClass.LinkedListRunMain();
+            // IleriAlgoritma.LinkedListClass.LinkedListRunMain();
+
+            //IleriAlgoritma.IleriStackClass.IleriStackMainMethod();
+            IleriAlgoritma.IleriQueueClass.IleriQueueMainMethod();
+
         }
         #endregion
     }
