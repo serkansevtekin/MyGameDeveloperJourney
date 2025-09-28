@@ -242,7 +242,7 @@ namespace Programlama.VeriYapilari
                 - Dequeue() -> "Çıkarma" Kuruğun başındaki elemanı çıkarır
                 - Peek() -> "Gösterme" Kuyruğun başındaki elemanı gösterir
                 - Count -> Eleman sayısını verir
-                - Clerar -> Kuyruğu tamamen temizler.
+                - Clear -> Kuyruğu tamamen temizler.
 
             /// Oyunlarda Kullanım Alanları ///
 
