@@ -105,7 +105,7 @@ namespace Programlama
             // IleriAlgoritma.LinkedListClass.LinkedListRunMain();
 
             //IleriAlgoritma.IleriStackClass.IleriStackMainMethod();
-            IleriAlgoritma.IleriQueueClass.IleriQueueMainMethod();
+            //IleriAlgoritma.IleriQueueClass.IleriQueueMainMethod();
 
         }
         #endregion
