@@ -106,7 +106,7 @@ namespace Programlama
 
             //IleriAlgoritma.IleriStackClass.IleriStackMainMethod();
             //IleriAlgoritma.IleriQueueClass.IleriQueueMainMethod();
-
+            IleriAlgoritma.Tree.TreeClass.TreeRunMethod();
         }
         #endregion
     }

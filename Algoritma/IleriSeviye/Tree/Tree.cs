@@ -1,13 +1,24 @@
 using System;
 
-namespace Programlama.IleriAlgoritma
+namespace Programlama.IleriAlgoritma.Tree
 {
     public class TreeClass
     {
         public static void TreeRunMethod()
         {
+            var BST = new BST<int>(new int[] { 23, 16, 45, 3 });
+            BST.Add(22);
+            BST.Add(37);
+            BST.Add(99);
 
-        }
+            var InOrderList = new BinaryTree<int>().InOrder(BST.Root);
+
+            foreach (var item in InOrderList)
+            {
+                System.Console.WriteLine(item.Value);
+            }
+            
+        }  
     }
     
     #region Ağaç ve İkili Ağaç Tanım

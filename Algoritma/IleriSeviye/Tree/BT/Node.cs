@@ -1,24 +1,24 @@
 using System;
 
-namespace Programlama.IleriAlgoritma
+namespace Programlama.IleriAlgoritma.Tree
 {
     //Generic tipinde (T), ikili ağaç düğümünü temsil eden sınıf
-    public class NodeBinaryTree<T>
+    public class NodeTree<T>
     {
         //Düğümün tutulduğu yer
         public T? Value { get; set; }
 
-        //Sol alt ağacı (Left child)
-        public NodeBinaryTree<T>? Left { get; set; }
+        //Sol alt düğüm
+        public NodeTree<T>? Left { get; set; }
 
-        //Sağ alt ağacı (Right child)
-        public NodeBinaryTree<T>? Right { get; set; }
+        //Sağ alt düğüm
+        public NodeTree<T>? Right { get; set; }
 
         //Parametresiz kurucu metot (Boş düğüm oluşturur)
-        public NodeBinaryTree() { }
+        public NodeTree() { }
 
         //Parametreli kurucu metot (İlk değer atanarak düğüm oluşur)
-        public NodeBinaryTree(T? value)
+        public NodeTree(T? value)
         {
             Value = value;
         }
