@@ -2,9 +2,9 @@ using System;
 
 namespace Programlama.IleriAlgoritma
 {
-    public class AgacClass
+    public class TreeClass
     {
-        public static void AgacRunMethod()
+        public static void TreeRunMethod()
         {
 
         }
