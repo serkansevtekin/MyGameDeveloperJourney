@@ -26,29 +26,28 @@ namespace Programlama.IleriAlgoritma.Tree
 
 
             System.Console.WriteLine("\n");
+            NewMethod(btChar);
 
+        }
+
+        private static void NewMethod(BinaryTree<char> btChar)
+        {
             btChar.Root = new NodeTree<char>('F');
             btChar.Root.Left = new NodeTree<char>('A');
             btChar.Root.Right = new NodeTree<char>('T');
+            btChar.Root.Left.Left = new NodeTree<char>('D');
 
             var list = btChar.LevelOrderNoneRecursiveTraversal(btChar.Root);
             foreach (var item in list)
             {
-             System.Console.Write(item + " ");   
+                System.Console.Write(item + " ");
             }
 
             System.Console.WriteLine("\n");
             System.Console.WriteLine($"Deepest Node : {btChar.DeepestNode(btChar.Root)}");
+            System.Console.WriteLine($"Deepest Node : {btChar.DeepestNode()}");
+
             System.Console.WriteLine($"Max Depth : {btChar.MaxDepth(btChar.Root)}");
-            
-
-
-
-            
-
-
-
-
 
         }
 

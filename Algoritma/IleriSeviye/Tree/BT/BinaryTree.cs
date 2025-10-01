@@ -4,7 +4,7 @@ namespace Programlama.IleriAlgoritma.Tree
 {
     //Generic BinaryTree sınıfı, T tipi IComparable olmalı
     public class BinaryTree<T> where T : IComparable
-    {   
+    {
         public NodeTree<T>? Root { get; set; }
 
         #region InOrder Dolaşım Özyineleme (Recursive)
@@ -230,12 +230,18 @@ namespace Programlama.IleriAlgoritma.Tree
                 {
                     q.Enqueue(temp.Left);
                 }
-                if (temp.Right!= null)
+                if (temp.Right != null)
                 {
                     q.Enqueue(temp.Right);
                 }
             }
             return temp!;
+        }
+
+        public NodeTree<T> DeepestNode()
+        {
+            var list = LevelOrderNoneRecursiveTraversal(Root);
+            return list[list.Count - 1];
         }
         #endregion
     }
