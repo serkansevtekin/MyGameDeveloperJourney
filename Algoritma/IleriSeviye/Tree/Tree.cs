@@ -21,16 +21,25 @@ namespace Programlama.IleriAlgoritma.Tree
             // MaksimumMinimumVeFindIleDegerleriBulma(BST);
 
             //FindMethod(BST);
-            // RemoveMethod(BST, bt);
+            //RemoveMethod(BST, bt);
             //MaksimumDerinlik(BST, bt);
-
+            //DeepestMetod(btChar);
+            //NumbersLeadsMethod(BST, bt);
 
             System.Console.WriteLine("\n");
-            NewMethod(btChar);
+
 
         }
 
-        private static void NewMethod(BinaryTree<char> btChar)
+        private static void NumbersLeadsMethod(BST<int> BST, BinaryTree<int> bt)
+        {
+            System.Console.WriteLine($"Number of leafs : {bt.NumberOfLeads(BST.Root!)}");
+            BST.Remove(BST.Root!, 65);
+            System.Console.WriteLine($"Number of leafs : {bt.NumberOfLeads(BST.Root!)}");
+
+        }
+
+        private static void DeepestMetod(BinaryTree<char> btChar)
         {
             btChar.Root = new NodeTree<char>('F');
             btChar.Root.Left = new NodeTree<char>('A');

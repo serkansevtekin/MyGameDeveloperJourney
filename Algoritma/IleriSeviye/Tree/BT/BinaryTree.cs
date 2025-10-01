@@ -244,5 +244,41 @@ namespace Programlama.IleriAlgoritma.Tree
             return list[list.Count - 1];
         }
         #endregion
+
+
+        #region Ağaç yaprak sayısı hesaplama
+        public  int NumberOfLeads(NodeTree<T> root)
+        {
+            int count = 0;
+            if (root == null) throw new ArgumentNullException();
+            var q = new Queue<NodeTree<T>>();
+            q.Enqueue(root);
+
+            while (q.Count > 0)
+            {
+                var temp = q.Dequeue();
+                if (temp.Left == null && temp.Right == null) count++;
+                if (temp.Left != null)
+                {
+                    q.Enqueue(temp.Left);
+                }
+                if (temp.Right != null)
+                {
+                    q.Enqueue(temp.Right);
+                }
+            }
+
+            return count;
+        }
+        #endregion
+
+        #region Yarım ve tam düğüm sayısı
+
+        #endregion
+
+        #region Kökten Yaprağa Yolların bulunması
+
+        #endregion
+
     }
 }

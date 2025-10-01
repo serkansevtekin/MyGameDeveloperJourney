@@ -172,18 +172,7 @@ namespace Programlama.IleriAlgoritma.Tree
 
        
 
-        #region Ağaç yaprak sayısı hesaplama
-
-        #endregion
-
-        #region Yarım ve tam düğüm sayısı
-
-        #endregion
-
-        #region Kökten Yaprağa Yolların bulunması
-
-        #endregion
-
+      
         #region GetEnumerator Uygulaması
 
         #endregion
