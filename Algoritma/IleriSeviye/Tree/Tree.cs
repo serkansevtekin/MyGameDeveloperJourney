@@ -6,25 +6,112 @@ namespace Programlama.IleriAlgoritma.Tree
     {
         public static void TreeRunMethod()
         {
-            var BST = new BST<int>(new int[] { 23, 16, 45, 3 });
-            BST.Add(22);
-            BST.Add(37);
-            BST.Add(99);
+            var BST = new BST<int>(new int[] { 60, 40, 70 });
+            BST.Add(20);
+            BST.Add(45);
+            BST.Add(65);
+            BST.Add(85);
 
             var bt = new BinaryTree<int>();
+            var btChar = new BinaryTree<char>();
 
             //  InPrePostRecursiveTravels(BST, bt);
-            InPrePostNonRecursiveTravels(BST, bt);
+            //InPrePostNonRecursiveTravels(BST, bt);
+            //  LevelOrderNoneRecursiveMethod(BST,bt);
+            // MaksimumMinimumVeFindIleDegerleriBulma(BST);
+
+            //FindMethod(BST);
+            // RemoveMethod(BST, bt);
+            //MaksimumDerinlik(BST, bt);
+
+
+            System.Console.WriteLine("\n");
+
+            btChar.Root = new NodeTree<char>('F');
+            btChar.Root.Left = new NodeTree<char>('A');
+            btChar.Root.Right = new NodeTree<char>('T');
+
+            var list = btChar.LevelOrderNoneRecursiveTraversal(btChar.Root);
+            foreach (var item in list)
+            {
+             System.Console.Write(item + " ");   
+            }
+
+            System.Console.WriteLine("\n");
+            System.Console.WriteLine($"Deepest Node : {btChar.DeepestNode(btChar.Root)}");
+            System.Console.WriteLine($"Max Depth : {btChar.MaxDepth(btChar.Root)}");
+            
+
+
+
+            
+
+
+
 
 
         }
-        private static void InPrePostNonRecursiveTravels(BST<int> BST, BinaryTree<int> bt)
+
+        private static void RemoveMethod(BST<int> BST, BinaryTree<int> bt)
         {
-           var InOrderNonRecursiveList = bt.InOrderNonRecursiveTreversal(BST.Root!);
-            foreach (var item in InOrderNonRecursiveList)
+            BST.Remove(BST.Root!, 37);
+            BST.Remove(BST.Root!, 16);
+            bt.InOrderNonRecursiveTreversal(BST.Root!).ForEach(x => System.Console.Write(x + " "));
+        }
+
+        private static void MaksimumDerinlik(BST<int> BST, BinaryTree<int> bt)
+        {
+            System.Console.WriteLine($"Min   : {BST.FindMin(BST.Root!)}");
+            System.Console.WriteLine($"MAX   : {BST.FindMax(BST.Root!)}");
+            System.Console.WriteLine($"Depth : {bt.MaxDepth(BST.Root!)}");
+        }
+        private static void FindMethod(BST<int> BST)
+        {
+            var keyNode = BST.Find(BST.Root!, 16);
+
+            System.Console.WriteLine("{0} - Left: {1} - Right: {2}",
+            keyNode.Value,
+            keyNode.Left != null ? keyNode.Left.Value.ToString() : "null",
+            keyNode.Right != null ? keyNode.Right.Value.ToString() : "null"
+            );
+        }
+
+        private static void MaksimumMinimumVeFindIleDegerleriBulma(BST<int> BST)
+        {
+            System.Console.WriteLine($"Minimum value: {BST.FindMin(BST.Root!)}");
+            System.Console.WriteLine($"Maximum value :{BST.FindMax(BST.Root!)}");
+        }
+
+        private static void LevelOrderNoneRecursiveMethod(BST<int> BST, BinaryTree<int> bt)
+        {
+            var LevelOrderNoneRecursiveList = bt.LevelOrderNoneRecursiveTraversal(BST.Root!);
+
+            foreach (var item in LevelOrderNoneRecursiveList)
             {
                 System.Console.WriteLine(item);
             }
+        }
+        private static void InPrePostNonRecursiveTravels(BST<int> BST, BinaryTree<int> bt)
+        {
+            var InOrderNonRecursiveList = bt.InOrderNonRecursiveTreversal(BST.Root!);
+            foreach (var item in InOrderNonRecursiveList)
+            {
+                System.Console.Write(item + " ");
+            }
+
+            System.Console.WriteLine("\n");
+
+            var PreOrderNoneRecursiveList = bt.PreOrderNoneRecursiveTreversal(BST.Root!);
+            PreOrderNoneRecursiveList.ForEach(x => System.Console.Write(x + " "));
+
+            System.Console.WriteLine("\n");
+
+            var PostOrderNoneRecursiveList = bt.PostOrderNoneRecursiveTreversal(BST.Root!);
+            foreach (var item in PostOrderNoneRecursiveList)
+            {
+                System.Console.Write(item + " ");
+            }
+
         }
 
         private static void InPrePostRecursiveTravels(BST<int> BST, BinaryTree<int> bt)

@@ -4,7 +4,9 @@ namespace Programlama.IleriAlgoritma.Tree
 {
     //Generic BinaryTree sınıfı, T tipi IComparable olmalı
     public class BinaryTree<T> where T : IComparable
-    {
+    {   
+        public NodeTree<T>? Root { get; set; }
+
         #region InOrder Dolaşım Özyineleme (Recursive)
         //Public metot: In-Order traversal yapar ve sonucu List<NodeTree<T>> olarak döner
         public List<NodeTree<T>> InOrder(NodeTree<T>? root)
@@ -116,8 +118,26 @@ namespace Programlama.IleriAlgoritma.Tree
         public List<NodeTree<T>> PreOrderNoneRecursiveTreversal(NodeTree<T> root)
         {
             var list = new List<NodeTree<T>>();
+            if (root == null) throw new Exception("This tree is empty");
+
             var s = new Stack<NodeTree<T>>();
-            
+            s.Push(root);
+
+            //Önce sağ , sonra sol push edilir çünkü stack LIFO'dur.
+            while (s.Count != 0)
+            {
+                var node = s.Pop();
+                list.Add(node);
+
+                if (node.Right != null)
+                {
+                    s.Push(node.Right);
+                }
+                if (node.Left != null)
+                {
+                    s.Push(node.Left);
+                }
+            }
 
             return list;
         }
@@ -125,10 +145,98 @@ namespace Programlama.IleriAlgoritma.Tree
         #endregion
 
         #region Non Recursive PostOrder Traversal
+        public List<NodeTree<T>> PostOrderNoneRecursiveTreversal(NodeTree<T>? root)
+        {
+            var list = new List<NodeTree<T>>();
+            if (root == null) throw new Exception("This tree is empty");
+            var s = new Stack<NodeTree<T>>();
 
+            NodeTree<T> currentNode = root;
+            NodeTree<T>? lastVisited = null;
+            while (s.Count != 0 || currentNode != null)
+            {
+                if (currentNode != null)
+                {
+                    s.Push(currentNode);
+                    currentNode = currentNode.Left!;
+                }
+                else
+                {
+                    var peekNode = s.Peek();
+                    if (peekNode.Right != null && lastVisited != peekNode.Right)
+                    {
+                        currentNode = peekNode.Right;
+                    }
+                    else
+                    {
+                        list.Add(peekNode);
+                        lastVisited = s.Pop();
+                    }
+                }
+            }
+
+            return list;
+        }
 
         #endregion
 
 
+        #region Level OrderTraversal (Seviye bazlı dolaşım) Non Recursive
+        public List<NodeTree<T>> LevelOrderNoneRecursiveTraversal(NodeTree<T>? root)
+        {
+            var list = new List<NodeTree<T>>();
+            var q = new Queue<NodeTree<T>>();
+            q.Enqueue(root!);
+            while (q.Count > 0) // eleman varsa
+            {
+                var temp = q.Dequeue();
+                list.Add(temp);
+
+                if (temp.Left != null)
+                {
+                    q.Enqueue(temp.Left);
+                }
+                if (temp.Right != null)
+                {
+                    q.Enqueue(temp.Right);
+                }
+            }
+            return list;
+        }
+        #endregion
+
+        #region Maksimum Derinliği bulma
+        public int MaxDepth(NodeTree<T> root)
+        {
+            if (root == null) return 0;
+            int leftDepth = MaxDepth(root.Left!);
+            int rightDepth = MaxDepth(root.Right!);
+
+            return (leftDepth > rightDepth) ? leftDepth + 1 : rightDepth + 1;
+        }
+        #endregion
+
+        #region  En derin düğümü bulma
+        public NodeTree<T>? DeepestNode(NodeTree<T> root)
+        {
+            NodeTree<T>? temp = null;
+            if (root == null) throw new ArgumentNullException();
+            var q = new Queue<NodeTree<T>>();
+            q.Enqueue(root);
+            while (q.Count != 0)
+            {
+                temp = q.Dequeue();
+                if (temp.Left != null)
+                {
+                    q.Enqueue(temp.Left);
+                }
+                if (temp.Right!= null)
+                {
+                    q.Enqueue(temp.Right);
+                }
+            }
+            return temp!;
+        }
+        #endregion
     }
 }
