@@ -247,7 +247,7 @@ namespace Programlama.IleriAlgoritma.Tree
 
 
         #region Ağaç yaprak sayısı hesaplama
-        public  int NumberOfLeads(NodeTree<T> root)
+        public int NumberOfLeads(NodeTree<T> root)
         {
             int count = 0;
             if (root == null) throw new ArgumentNullException();
@@ -269,15 +269,71 @@ namespace Programlama.IleriAlgoritma.Tree
             }
 
             return count;
+
+
+            //recursive hali
+            /*  return new BinaryTree<T>()
+             .LevelOrderNoneRecursiveTraversal(root)
+             .Where(x => x.Left == null && x.Right == null)
+             .ToList()
+             .Count; */
         }
         #endregion
 
         #region Yarım ve tam düğüm sayısı
+        public static int NumberOfFullNodes(NodeTree<T> root) => new BinaryTree<T>()
+        .LevelOrderNoneRecursiveTraversal(root)
+        .Where(node => node.Left != null && node.Right != null)
+        .ToList()
+        .Count;
+
+
+        public static int NumberOfHalfNodes(NodeTree<T> root) => new BinaryTree<T>()
+        .LevelOrderNoneRecursiveTraversal(root)
+        .Where(node =>
+        (node.Left != null && node.Right == null) ||
+        (node.Left == null && node.Right != null))
+        .ToList()
+        .Count;
 
         #endregion
 
-        #region Kökten Yaprağa Yolların bulunması
 
+        #region Kökten Yaprağa Yolların bulunması
+        public void PrinthPath(NodeTree<T> root)
+        {
+            var path = new T[256];
+            PrinthPaths(root, path, 0);
+        }
+
+        private void PrinthPaths(NodeTree<T> root, T[] path, int pathlen)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            path[pathlen] = root.Value!;
+            pathlen++;
+            if (root.Left == null && root.Right == null) // Yaprak mı?
+            {
+                PrintArray(path, pathlen);
+            }
+            else
+            {
+                PrinthPaths(root.Left!, path, pathlen);
+                PrinthPaths(root.Right!, path, pathlen);
+
+            }
+        }
+
+        private void PrintArray(T[] path, int leng)
+        {
+            for (int i = 0; i < leng; i++)
+            {
+                System.Console.Write($"{path[i]} ");
+            }
+            System.Console.WriteLine();
+        }
         #endregion
 
     }

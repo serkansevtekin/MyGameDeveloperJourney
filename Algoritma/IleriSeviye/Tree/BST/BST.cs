@@ -164,28 +164,63 @@ namespace Programlama.IleriAlgoritma.Tree
             }
 
             return root;
-            
+
         }
         #endregion
 
-     
 
-       
 
-      
+
+
+
         #region GetEnumerator Uygulaması
 
-        #endregion
 
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return new BSTEnumerator<T>(Root!);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
+
+
+        #endregion
     }
+
+    #region GetEnumerator Uygulaması Devamı
+    internal class BSTEnumerator<T> : IEnumerator<T> where T : IComparable
+    {
+        private List<NodeTree<T>> list;
+        private int indexer = -1;
+
+        public BSTEnumerator(NodeTree<T> root)
+        {
+            list = new BinaryTree<T>().LevelOrderNoneRecursiveTraversal(root);
+        }
+        public T Current => list[indexer].Value!;
+
+        object IEnumerator.Current => Current;
+
+        public void Dispose()
+        {
+            list.Clear();
+
+        }
+
+        public bool MoveNext()
+        {
+            indexer++;
+            return indexer < list.Count ? true : false;
+        }
+
+        public void Reset()
+        {
+            indexer = -1;
+        }
+    }
+    #endregion
 }

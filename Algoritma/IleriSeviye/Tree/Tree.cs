@@ -6,11 +6,11 @@ namespace Programlama.IleriAlgoritma.Tree
     {
         public static void TreeRunMethod()
         {
-            var BST = new BST<int>(new int[] { 60, 40, 70 });
-            BST.Add(20);
-            BST.Add(45);
-            BST.Add(65);
-            BST.Add(85);
+            var BST = new BST<int>(new int[] { 23, 16, 45, 3, 22, 37, 99 });
+            /* foreach (var item in BST)
+            {
+                System.Console.WriteLine(item);
+            } */
 
             var bt = new BinaryTree<int>();
             var btChar = new BinaryTree<char>();
@@ -24,18 +24,33 @@ namespace Programlama.IleriAlgoritma.Tree
             //RemoveMethod(BST, bt);
             //MaksimumDerinlik(BST, bt);
             //DeepestMetod(btChar);
-            //NumbersLeadsMethod(BST, bt);
+            // NumbersLeadsMethod(BST, bt);
+            // FullAndHalfNodeCountMethod(BST);
+            // KoktenYapraklaraAlternatifYol(BST);
 
             System.Console.WriteLine("\n");
 
 
+
+        }
+
+        private static void KoktenYapraklaraAlternatifYol(BST<int> BST)
+        {
+            new BinaryTree<int>().PrinthPath(BST.Root!);
+        }
+
+        private static void FullAndHalfNodeCountMethod(BST<int> BST)
+        {
+
+            System.Console.WriteLine($"Number of full nodes :{BinaryTree<int>.NumberOfFullNodes(BST.Root!)}");
+            System.Console.WriteLine($"Number of half nodes :{BinaryTree<int>.NumberOfHalfNodes(BST.Root!)}");
         }
 
         private static void NumbersLeadsMethod(BST<int> BST, BinaryTree<int> bt)
         {
             System.Console.WriteLine($"Number of leafs : {bt.NumberOfLeads(BST.Root!)}");
-            BST.Remove(BST.Root!, 65);
-            System.Console.WriteLine($"Number of leafs : {bt.NumberOfLeads(BST.Root!)}");
+            //   BST.Remove(BST.Root!, 65);
+            //   System.Console.WriteLine($"Number of leafs : {bt.NumberOfLeads(BST.Root!)}");
 
         }
 
