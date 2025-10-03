@@ -5,14 +5,14 @@ namespace Programlama.IleriAlgoritma.Heap
 {
     //Binary Heap için soyut (abstract) temel sınıf
     // Hem minheap hem maxheap bu sınıftan türetilir
-    public abstract class BHeap<T> : IEnumerable<T>
+    public abstract class BHeap<T> : IEnumerable<T> where T : IComparable
     {
-        
+
         //Heap elemanlarını tutan dizi
         public T[] Array { get; private set; }
-        
+
         //Son eklenen pozisyonu gösterir
-        private int position;
+        protected int position;
 
         // Heap'teki toplam eleman sayısı
         public int Count { get; private set; }
@@ -24,7 +24,7 @@ namespace Programlama.IleriAlgoritma.Heap
             position = 0;
             Array = new T[128];
         }
-
+    
         //Parametreli cunstructor (kullanıcı kapasite belirleyebilir)
         public BHeap(int _size)
         {
@@ -33,32 +33,51 @@ namespace Programlama.IleriAlgoritma.Heap
             position = 0;
         }
 
+        //BHeap koleksiyon tabanlı constructor'ı
+        //Verilen IEnumerable<T> collection içindeki elemanları heap'e ekler
+        public BHeap(IEnumerable<T> collection)
+        {
+            //Başlangıç heap boş
+            Count = 0;
+
+            //Heap dizisini collection boyutuna göre ayarla
+            Array = new T[collection.ToArray().Length];
+
+            position = 0;//Dizide ekleme pozisyonu başlangıcı
+
+            //Collection içindeki her elemanı heap'e ekle
+            foreach (var item in collection)
+            {
+                Add(item);
+            }
+        }
+
         //Sol çocuk indexi (2*i+1)
-        private int GetLeftChaildIndex(int i) => 2 * i + 1;
+        protected int GetLeftChaildIndex(int i) => 2 * i + 1;
 
         //Sağ çocuk indexi (2*i+2)
-        private int GetRightChaildIndex(int i) => 2 * i + 2;
+        protected int GetRightChaildIndex(int i) => 2 * i + 2;
 
         //Parent indexi ((i-1)/2)
-        private int GetParentIndex(int i) => (i - 1) / 2;
+        protected int GetParentIndex(int i) => (i - 1) / 2;
 
         //Sol çocuk var mı?
-        private bool HasLeftChild(int i) => GetLeftChaildIndex(i) < position;
+        protected bool HasLeftChild(int i) => GetLeftChaildIndex(i) < position;
 
         //Sağ çocuk var mı?
-        private bool HasRightChild(int i) => GetRightChaildIndex(i) < position;
+        protected bool HasRightChild(int i) => GetRightChaildIndex(i) < position;
 
         //Root mu?
-        private bool IsRoot(int i) => i == 0;
+        protected bool IsRoot(int i) => i == 0;
 
         //Sol çocuk getir
-        private T GetLeftChild(int i) => Array[GetLeftChaildIndex(i)];
+        protected T GetLeftChild(int i) => Array[GetLeftChaildIndex(i)];
 
         //Sağ çocuk getir
-        private T GetRightChild(int i) => Array[GetRightChaildIndex(i)];
+        protected T GetRightChild(int i) => Array[GetRightChaildIndex(i)];
 
         //Parent'i getir
-        private T GetParent(int i) => Array[GetParentIndex(i)];
+        protected T GetParent(int i) => Array[GetParentIndex(i)];
 
         //Heap boş mu?
         public bool IsEmpty() => position == 0;
@@ -116,7 +135,7 @@ namespace Programlama.IleriAlgoritma.Heap
         //Heapify davarnışı (MinHeao/MaxHeap'e göre değişir)
         protected abstract void HeapifyUp();
         protected abstract void HeapifyDown();
-        
+
         //IEnumerator implementasyonu (foreach ile gezilebilir)
         public IEnumerator<T> GetEnumerator()
         {
