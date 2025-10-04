@@ -107,7 +107,8 @@ namespace Programlama
             //IleriAlgoritma.IleriStackClass.IleriStackMainMethod();
             //IleriAlgoritma.IleriQueueClass.IleriQueueMainMethod();
             //IleriAlgoritma.Tree.TreeClass.TreeRunMethod();
-            IleriAlgoritma.Heap.HeapRunClass.HeapRunMethod();
+            // IleriAlgoritma.Heap.HeapRunClass.HeapRunMethod();
+            IleriAlgoritma.DisjoinSet.DsUgulamaClass.DsUgulamaRunMethod();
         }
         #endregion
     }
