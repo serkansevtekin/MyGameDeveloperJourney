@@ -109,7 +109,9 @@ namespace Programlama
             //IleriAlgoritma.Tree.TreeClass.TreeRunMethod();
             // IleriAlgoritma.Heap.HeapRunClass.HeapRunMethod();
             //IleriAlgoritma.DisjoinSet.DsUgulamaClass.DsUgulamaRunMethod();
-            IleriAlgoritma.DisjoinSet.DsUnityUygulamaClass.DsUnityUygulamaRunMethod();
+            //  IleriAlgoritma.DisjoinSet.DsUnityUygulamaClass.DsUnityUygulamaRunMethod();
+            IleriAlgoritma.Graph.GraphRunClass.GraphRunMethod();
+            
         }
         #endregion
     }
