@@ -7,7 +7,7 @@ namespace Programlama
         public static void Main(string[] args)
         {
 
-            AlgoritmaIleriSeviyeMainRunMethod();
+            Tekrar1();
             Console.ReadKey();
         }
 
@@ -110,9 +110,40 @@ namespace Programlama
             // IleriAlgoritma.Heap.HeapRunClass.HeapRunMethod();
             //IleriAlgoritma.DisjoinSet.DsUgulamaClass.DsUgulamaRunMethod();
             //  IleriAlgoritma.DisjoinSet.DsUnityUygulamaClass.DsUnityUygulamaRunMethod();
-            IleriAlgoritma.Graph.GraphRunClass.GraphRunMethod();
-            
+            // IleriAlgoritma.Graph.GraphRunClass.GraphRunMethod();
+            //IleriAlgoritma.Sort.SortingAlgorithms.SortingAlgorithmisRunMethod();
+
         }
         #endregion
+
+        #region Tekrar1
+        public static void Tekrar1()
+        {
+
+            //Tekrars1.DegiskenlerClass.DegiskenlerRunMet();
+            // Tekrars1.KontrolYapilariClass.KontrolYapilariRun();
+            //Tekrars1.ListTClass.ListTRunMethod();
+            // Tekrars1.ArraysClass.ArraysRun();
+            // Tekrars1.DictionaryTkeyTValueClass.DictionaryTkeyTValueRun();
+            //Tekrars1.QueueClass.QueueRun();
+            //Tekrars1.StackYiginClass.StackYiginRun();
+            //Tekrars1.HashSetClassi.HashSetRun();
+            // Tekrars1.SortedSetClass.SortedSetRun();
+            //Tekrars1.SortedListTekrarClass.SortedListTekrarRun();
+            //  Tekrars1.LinkedListTekrarClass.LinkedListTekrarRun();
+            // Tekrars1.SortedDictionaryTekrarClass.SortedDictionaryTekrarRun();
+            //Tekrars1.MultiDimessionalArraysClass.MultiDimessionalArraysRun();
+
+            //OOP
+            // Tekrars1.AbsClass.AbsRunMet();
+            // Tekrars1.InterfaceClassss.InterfaceRun();
+            //    Tekrars1.InterfaceAndAbstractClass.InterfaceAndAbstractRunMethod();
+           // Tekrars1.InheritanceSpecial.InheritanceClass.InheritanceRun();
+
+           //Algoritma
+           
+        }
+        #endregion
+
     }
 }

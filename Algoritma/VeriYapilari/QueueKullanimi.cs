@@ -231,28 +231,22 @@ namespace Programlama.VeriYapilari
 
         #region Queue (Kuyruk) veri yapısı
         /*
-            - Queue -> sıralı işlerin düzenli yapılmasını sağlar.
+        Mantık: FIFO (First In, First Out) -> ilk eklenen ilk çıkar
+        Temel İşlemler:
+            - Enqueue(T item)-> kuyruğa ekle
+            - T Dequeue() -> kuyruğun başındaki öğeyi çıkar ve dödür
+            - T Peek() -> Baştaki öğeyi çıkarma, sadece bak
+            - Count -> öğe sayısı
+        
+        Performans:
+            Enqueue / Dequeue O(1)
 
-            - FIFO(First In, First Out) İlk giren ilk çıkar
+        Kullanım senaryoları:
+            -Task veya event sıralaması
+            - Job processing / coroutine yöntemi
+            - Breadth-first search (BFS) algoritması
 
-            - Gerçek Hayattaki benzetme "Market kasası kuyruğu"
-
-            **Özellikleri**
-                - Enqueue() -> "Ekleme" Kuyruğun sonuna eleman ekler
-                - Dequeue() -> "Çıkarma" Kuruğun başındaki elemanı çıkarır
-                - Peek() -> "Gösterme" Kuyruğun başındaki elemanı gösterir
-                - Count -> Eleman sayısını verir
-                - Clear -> Kuyruğu tamamen temizler.
-
-            /// Oyunlarda Kullanım Alanları ///
-
-             - Oyun içi Event / İşlem kuyruğu
-             - AI (Yapay Zeka) Hareket Kuyruğu
-             - Pathfinding (Yol Bulma - BFS)
-             - Projectile | Mermi Havuzu | Object Pooling
-             - Multiplayer | Server Sistemleri
-             - Animasyon | Ses Kuyruğu
-
+        Özet: FIFO mantığı ile veri yönetimi sağlar, sıralı işleme gerektiren durumlar için uygundur.
 
 
 
