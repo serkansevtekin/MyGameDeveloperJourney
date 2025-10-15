@@ -125,7 +125,7 @@ namespace Programlama
             //Tekrars1.ListTClass.ListTRunMethod();
             // Tekrars1.ArraysClass.ArraysRun();
             // Tekrars1.DictionaryTkeyTValueClass.DictionaryTkeyTValueRun();
-            //Tekrars1.QueueClass.QueueRun();
+            //Tekrars1.QueueClass.Queue--Run();
             //Tekrars1.StackYiginClass.StackYiginRun();
             //Tekrars1.HashSetClassi.HashSetRun();
             // Tekrars1.SortedSetClass.SortedSetRun();
@@ -138,10 +138,15 @@ namespace Programlama
             // Tekrars1.AbsClass.AbsRunMet();
             // Tekrars1.InterfaceClassss.InterfaceRun();
             //    Tekrars1.InterfaceAndAbstractClass.InterfaceAndAbstractRunMethod();
-           // Tekrars1.InheritanceSpecial.InheritanceClass.InheritanceRun();
+            // Tekrars1.InheritanceSpecial.InheritanceClass.InheritanceRun();
 
-           //Algoritma
-           
+            //Algoritma
+            // Tekrars1.Algoritma.PriorityQueueClass.PriorityQueueRunMethod();
+            //Tekrars1.Tree.GenericTreeClass.GenericTreeRun();
+            //  Tekrars1.Heap.HeapMainClass.HeapMainRun();
+            //Tekrars1.Graph.GraphClass.GraphRun();
+            // Tekrars1.DSTClass.DSTRunMethod();
+            Tekrars1.Matris.MatrisClass.MatrisRun();
         }
         #endregion
 
