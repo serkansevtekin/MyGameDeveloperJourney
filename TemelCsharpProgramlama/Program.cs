@@ -21,6 +21,12 @@ namespace CSharpProgramlama
         public static void TemelCsharp()
         {
             TemelCsharpNameSpace.Degiskenler.DegiskenlerRun();
+
+
+
+
+
+            
         }
         
 
