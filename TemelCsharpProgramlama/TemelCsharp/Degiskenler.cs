@@ -10,7 +10,10 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
             //  VeriTipleri();
             //  NullableType();
 
-            StringAndDate();
+            //StringAndDate();
+            //StringOrnekler();
+
+            DateTimeDers();
         }
 
 
@@ -121,11 +124,11 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
 
             /*
                 Strings: Karakter dizileri - referance => null
-            */
+      
             //  char cinsiyet = 'E';  string cinsiyet2 = "Erkek";
 
 
-            System.Console.WriteLine("Adı:");
+        System.Console.WriteLine("Adı:");
             string? ad = Console.ReadLine();
 
             System.Console.WriteLine("Soyadı:");
@@ -139,10 +142,101 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
 
 
             //String interpolitan
+     string mesaj = $"{ad} {soyad} isimli kişi {yas} yaşındadır";
+            System.Console.WriteLine(mesaj); 
 
-            string mesaj = $"{ad} {soyad} isimli kişi {yas} yaşındadır";
-            System.Console.WriteLine(mesaj);
+*/
+
+            // String Methods
+
+            string mesaj = "Serkan sevtekin isimli kişi 20 yaşındadır.";
+
+            System.Console.WriteLine("Karakter uzunluğu: " + mesaj.Length);
+            System.Console.WriteLine("Bütün karakterler küçük harf" + mesaj.ToLower());
+            System.Console.WriteLine("Bütün karakterler küçük harf" + mesaj.ToUpper());
+
+            string BasvesonBosluksuz = mesaj.Trim();
+            System.Console.WriteLine("Baştaki ve sondaki boşlukları yeni eleman sayısı {0} ", BasvesonBosluksuz.Length);
+
+            string[] stringDizisi = mesaj.Split(" ");// stringi boşluklara göre böler ve bir string[] dizi döner
+            System.Console.WriteLine("Dönen sitring dizisinin 3. indexsindeki elemanı: {0}", stringDizisi[3]);
+
+            System.Console.WriteLine(mesaj.StartsWith("Serkan")); // ilgili string Serkan ile mi başlıyor | True , fasle döner
+            System.Console.WriteLine(mesaj.StartsWith("Serkan")); // ilgili string . ile mi bitiyor | True , fasle döner
+
+            System.Console.WriteLine("'kişi' kelimesini string içeriyor mu? {0}", mesaj.Contains("kişi"));// içeriyor mu? | True, false
+
+            System.Console.WriteLine("'kişi' kelimeseinin başlangıç indexi {0}", mesaj.IndexOf("kişi")); // varsa indexi verir, yoksa -1 döner ve boş ise 0 verir
+
+
+            System.Console.WriteLine("23 indexten başla sonuna kadar al {0}", mesaj.Substring(23));
+
+            var yeniMesaj = mesaj.Replace("20", "10000");
+            System.Console.WriteLine(yeniMesaj);
+
+
+
+            //string.Join() static metodu
+            string[] kelimeler = mesaj.Split(" "); // mesaj değişkenini boşluklara göre böl ve string dizi döndür
+            var birlesim = string.Join("-", kelimeler);//kelimeler dizisini her bir elemanının arasına "-" koy
+            System.Console.WriteLine(birlesim);
+
+
+
+
+
         }
+        private static void StringOrnekler()
+        {
+            string kursAdi = ".NET 7 ile C# Programlama Dili";
+
+            System.Console.WriteLine("Karakter sayısı: {0}", kursAdi.Length);
+
+            string hepsiKucuk = kursAdi.ToLower();
+            System.Console.WriteLine(hepsiKucuk);
+
+            System.Console.WriteLine("String '.' ile mi başlamaktadır? {0}", kursAdi.StartsWith('.'));
+
+            System.Console.WriteLine("C# bilgisi hangi konumda bulunmaktadır? {0}", kursAdi.IndexOf("C#"));
+
+            System.Console.WriteLine("Sting C# bilgisini içeriyor mu? {0}", kursAdi.Contains("C#"));
+
+            System.Console.WriteLine(kursAdi.Replace("Dili", "Dersleri"));
+
+
+        }
+
+        private static void DateTimeDers()
+        {
+            DateTime simdi = DateTime.Now;
+            System.Console.WriteLine(simdi);
+            System.Console.WriteLine("Day: {0}", simdi.Day);
+            System.Console.WriteLine("Monyh: {0}", simdi.Month);
+            System.Console.WriteLine("Year: {0}", simdi.Year);
+            System.Console.WriteLine("Second: {0}", simdi.Second);
+            System.Console.WriteLine("Minute: {0}", simdi.Minute);
+            System.Console.WriteLine("Hour: {0}", simdi.Hour);
+
+
+            System.Console.WriteLine("");
+            DateTime dt = new DateTime(2018, 6, 10, 14, 30, 45); // 06/10/2018. 14:30:45
+            System.Console.WriteLine(dt);
+
+            DateTime dt2 = dt.AddYears(2);
+            System.Console.WriteLine(dt2);
+ 
+            var fark = simdi - dt;//TimeSpan objesi geldi
+            System.Console.WriteLine(fark.TotalDays); // toplam gün sayısı
+            System.Console.WriteLine(fark.TotalHours); // toplam saat sayısı
+
+            System.Console.WriteLine(fark.TotalDays / 365.6); // toplam yıl sayısı
+
+            
+
+
+
+        }
+
         #region Veri tipleri
         /* 
 ***s
