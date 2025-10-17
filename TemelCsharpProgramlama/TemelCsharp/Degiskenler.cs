@@ -8,8 +8,12 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
         {
             //  Degiskenlers();
             //  VeriTipleri();
-            NullableType();
+            //  NullableType();
+
+            StringAndDate();
         }
+
+
 
         private static void Degiskenlers()
         {
@@ -112,6 +116,33 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
 
         }
 
+        private static void StringAndDate()
+        {
+
+            /*
+                Strings: Karakter dizileri - referance => null
+            */
+            //  char cinsiyet = 'E';  string cinsiyet2 = "Erkek";
+
+
+            System.Console.WriteLine("Adı:");
+            string? ad = Console.ReadLine();
+
+            System.Console.WriteLine("Soyadı:");
+            var soyad = Console.ReadLine();
+
+            System.Console.WriteLine("Yaş:");
+            string? yas = Console.ReadLine();
+
+            //string concat
+            //string mesaj = ad + " " + soyad + " isimli kişi " + yas + " yaşındadır.";
+
+
+            //String interpolitan
+
+            string mesaj = $"{ad} {soyad} isimli kişi {yas} yaşındadır";
+            System.Console.WriteLine(mesaj);
+        }
         #region Veri tipleri
         /* 
 ***s
