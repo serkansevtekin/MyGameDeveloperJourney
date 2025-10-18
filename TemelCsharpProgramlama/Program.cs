@@ -23,8 +23,8 @@ namespace CSharpProgramlama
             // TemelCsharpNameSpace.Degiskenler.DegiskenlerRun();
             // TemelCsharpNameSpace.Diziler.DizilerRunMet();
             //TemelCsharpNameSpace.Operatorler.OperatorlerRunMet();
-            TemelCsharpNameSpace.KosulBloc.KosulBlocRun();
-
+            // TemelCsharpNameSpace.KosulBloc.KosulBlocRun();
+            TemelCsharpNameSpace.DongularClass.DongularRunMethod();
 
 
         }
