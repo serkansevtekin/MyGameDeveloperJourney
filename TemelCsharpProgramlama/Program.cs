@@ -8,8 +8,8 @@ namespace CSharpProgramlama
         static void Main(string[] args)
         {
 
-            TemelCsharp();
-
+            //TemelCsharp();
+            IleriCsharp();
 
         }
 
@@ -26,8 +26,8 @@ namespace CSharpProgramlama
             // TemelCsharpNameSpace.KosulBloc.KosulBlocRun();
             //TemelCsharpNameSpace.DongularClass.DongularRunMethod();
             //TemelCsharpNameSpace.DosyaYonetimiCLass.DosyaYonetimiRunMet();
-            TemelCsharpNameSpace.OOPClass.OOpRunMet();
-
+            //TemelCsharpNameSpace.OOPClass.OOpRunMet();
+            //TemelCsharpNameSpace.CollectionClass.CollectionRunMet();
 
         }
 
