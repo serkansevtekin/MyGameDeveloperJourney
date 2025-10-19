@@ -24,7 +24,9 @@ namespace CSharpProgramlama
             // TemelCsharpNameSpace.Diziler.DizilerRunMet();
             //TemelCsharpNameSpace.Operatorler.OperatorlerRunMet();
             // TemelCsharpNameSpace.KosulBloc.KosulBlocRun();
-            TemelCsharpNameSpace.DongularClass.DongularRunMethod();
+            //TemelCsharpNameSpace.DongularClass.DongularRunMethod();
+            //TemelCsharpNameSpace.DosyaYonetimiCLass.DosyaYonetimiRunMet();
+            TemelCsharpNameSpace.OOPClass.OOpRunMet();
 
 
         }

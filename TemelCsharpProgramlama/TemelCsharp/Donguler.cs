@@ -8,7 +8,7 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
         {
             //ForDongusu();
             //WhileDongusu();
-            DoWhileDongusu();
+            //DoWhileDongusu();
             ForeachDongusu();
         }
 
@@ -141,12 +141,56 @@ namespace CSharpProgramlama.TemelCsharpNameSpace
         }
         private static void DoWhileDongusu()
         {
+            /* while (true)
+            {
 
+            } */
+
+            /*  int i = 1;
+             do
+             {
+                 Console.WriteLine(i);
+                 i++;
+             } while (i<10); */
+
+            System.Console.WriteLine("Ürün adeti gir: ");
+            int adet = Convert.ToInt32(Console.ReadLine());
+            string[] urunler = new string[adet];
+
+            int i= 0;
+            do
+            {
+                System.Console.WriteLine("Ürün adı: ");
+                urunler[i] = Console.ReadLine() ?? "";
+                i++;
+            } while (adet != i);
+
+            Console.WriteLine("Ürünler listeleniyor:");
+            for (int j = 0; j < urunler.Length; j++)
+            {
+                System.Console.WriteLine(urunler[j]);
+            }
         }
 
         private static void ForeachDongusu()
         {
+            string ad = "Ahmet";
+            foreach (var item in ad)
+            {
+                System.Console.WriteLine(item);
+            }
+            System.Console.WriteLine();
 
+
+            int[] sayilar = { 10, 20, 40, 45 };
+            foreach (var item in sayilar)
+            {
+                if (item == 40)
+                {
+                    break;
+                }
+                System.Console.WriteLine(item);
+            }
         }
     }
 }
