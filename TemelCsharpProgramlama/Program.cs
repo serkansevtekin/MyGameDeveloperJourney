@@ -16,6 +16,15 @@ namespace CSharpProgramlama
         public static void IleriCsharp()
         {
 
+            IleriCSharpEgitimi.VeriTipleri.VeriTipleriRunMethod();
+
+
+
+
+
+
+
+
         }
 
         public static void TemelCsharp()
