@@ -18,8 +18,8 @@ namespace CSharpProgramlama
 
             //IleriCSharpEgitimi.VeriTipleri.VeriTipleriRunMethod();
             //IleriCSharpEgitimi.Conditionals.ConditionalsRunMethod();
-            IleriCSharpEgitimi.Methods.MethodsRun(); 
-
+            //IleriCSharpEgitimi.Methods.MethodsRun(); 
+            IleriCSharpEgitimi.Arrays.ArraysRun();
 
 
 
