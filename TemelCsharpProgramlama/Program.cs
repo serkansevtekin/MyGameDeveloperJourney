@@ -19,8 +19,8 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.VeriTipleri.VeriTipleriRunMethod();
             //IleriCSharpEgitimi.Conditionals.ConditionalsRunMethod();
             //IleriCSharpEgitimi.Methods.MethodsRun(); 
-            IleriCSharpEgitimi.Arrays.ArraysRun();
-
+            //IleriCSharpEgitimi.Arrays.ArraysRun();
+            IleriCSharpEgitimi.Donguler.DongulerRun();
 
 
 
