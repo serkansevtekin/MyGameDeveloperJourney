@@ -20,8 +20,8 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.Conditionals.ConditionalsRunMethod();
             //IleriCSharpEgitimi.Methods.MethodsRun(); 
             //IleriCSharpEgitimi.Arrays.ArraysRun();
-            IleriCSharpEgitimi.Donguler.DongulerRun();
-
+            //IleriCSharpEgitimi.Donguler.DongulerRun();
+            IleriCSharpEgitimi.Strings.StringsRun();
 
 
 
