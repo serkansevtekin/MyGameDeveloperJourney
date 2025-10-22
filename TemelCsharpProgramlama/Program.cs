@@ -21,9 +21,9 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.Methods.MethodsRun(); 
             //IleriCSharpEgitimi.Arrays.ArraysRun();
             //IleriCSharpEgitimi.Donguler.DongulerRun();
-            IleriCSharpEgitimi.Strings.StringsRun();
-
-
+            //IleriCSharpEgitimi.Strings.StringsRun();
+            //IleriCSharpEgitimi.Siniflar.SiniflarRun();
+            IleriCSharpEgitimi.RecapDemo1.RecapDemo1RunMethod();
 
         }
 
