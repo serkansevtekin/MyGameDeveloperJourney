@@ -30,9 +30,9 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.RecapDemo2.RecapDemo2.RecapDemo2Run();
             //IleriCSharpEgitimi.AccessModifiers.AccessModifiersClass.AccessModifiersRun();
             //IleriCSharpEgitimi.Constructor.ConstructorClass.CollectionRun();
-            IleriCSharpEgitimi.ReferenceAndValueTypeClass.ReferenceAndValueTypeRun();
+            //IleriCSharpEgitimi.ReferenceAndValueTypeClass.ReferenceAndValueTypeRun();
 
-
+            IleriCSharpEgitimi.CollectionsClass.CollectionRun();
 
 
 
