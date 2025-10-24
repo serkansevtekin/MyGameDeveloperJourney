@@ -23,7 +23,19 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.Donguler.DongulerRun();
             //IleriCSharpEgitimi.Strings.StringsRun();
             //IleriCSharpEgitimi.Siniflar.SiniflarRun();
-            IleriCSharpEgitimi.RecapDemo1.RecapDemo1RunMethod();
+            //IleriCSharpEgitimi.RecapDemo1.RecapDemo1RunMethod();
+            //IleriCSharpEgitimi.Interfaces.InterfaceClass.InterfaceRun();
+            //IleriCSharpEgitimi.Kalitim.InheritanceKalitim.InheritanceRun();
+            //IleriCSharpEgitimi.AbstractClass.AbstractClass.AbstractClassRunMet();
+            //IleriCSharpEgitimi.RecapDemo2.RecapDemo2.RecapDemo2Run();
+            //IleriCSharpEgitimi.AccessModifiers.AccessModifiersClass.AccessModifiersRun();
+            //IleriCSharpEgitimi.Constructor.ConstructorClass.CollectionRun();
+            IleriCSharpEgitimi.ReferenceAndValueTypeClass.ReferenceAndValueTypeRun();
+
+
+
+
+
 
         }
 
