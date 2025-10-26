@@ -169,6 +169,8 @@ namespace CSharpProgramlama.IleriCSharpEgitimi.Constructor
         {
             System.Console.WriteLine("Validation is done");
         }
+
+    
     }
 
     class Manager

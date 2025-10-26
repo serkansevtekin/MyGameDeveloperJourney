@@ -31,12 +31,11 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.AccessModifiers.AccessModifiersClass.AccessModifiersRun();
             //IleriCSharpEgitimi.Constructor.ConstructorClass.CollectionRun();
             //IleriCSharpEgitimi.ReferenceAndValueTypeClass.ReferenceAndValueTypeRun();
-
-            IleriCSharpEgitimi.CollectionsClass.CollectionRun();
-
-
-
-
+            //IleriCSharpEgitimi.CollectionsClass.CollectionRun();
+            //IleriCSharpEgitimi.HataYonetimi.HataYonetimiRun();
+            IleriCSharpEgitimi.GenericSinifVeMetot.GenericSinifVeMetotClass.GenericSinifVeMetotRun();
+         
+            
         }
 
         public static void TemelCsharp()
