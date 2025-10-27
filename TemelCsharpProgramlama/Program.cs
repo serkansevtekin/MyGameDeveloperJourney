@@ -33,8 +33,9 @@ namespace CSharpProgramlama
             //IleriCSharpEgitimi.ReferenceAndValueTypeClass.ReferenceAndValueTypeRun();
             //IleriCSharpEgitimi.CollectionsClass.CollectionRun();
             //IleriCSharpEgitimi.HataYonetimi.HataYonetimiRun();
-            IleriCSharpEgitimi.GenericSinifVeMetot.GenericSinifVeMetotClass.GenericSinifVeMetotRun();
-         
+            //IleriCSharpEgitimi.GenericSinifVeMetot.GenericSinifVeMetotClass.GenericSinifVeMetotRun();
+            //IleriCSharpEgitimi.Attributes.AttrbuteClass.AttrbuteRun();
+            IleriCSharpEgitimi.Reflection.ReflectionClass.ReflectionRun();
             
         }
 
