@@ -40,14 +40,20 @@ namespace CSharpProgramlama
 
 
             //--- Delegate Ornek ---
-            //IleriCSharpEgitimi.Delegates.DelegatesClass.DelegatesRun();
-            //DelegateOrnek1.DelegateOrnek1Class.DelegateOrnek1RunMain();
-            //DelegateOrnek2.DelegateOrnek2Class.DelegateOrnek2RunMethod();
-            //DelegateOrnek3.DelegateOrnek3Class.DelegateOrnek3RunMethod();
-            DelegatesVeEventsOrnek.DelegatesVeEventsOrnekClass.DelegatesVeEventsOrnekRunMethod();
+                 //IleriCSharpEgitimi.Delegates.DelegatesClass.DelegatesRun();
+                 //DelegateOrnek1.DelegateOrnek1Class.DelegateOrnek1RunMain();
+                 //DelegateOrnek2.DelegateOrnek2Class.DelegateOrnek2RunMethod();
+                 //DelegateOrnek3.DelegateOrnek3Class.DelegateOrnek3RunMethod();
+                 //DelegatesVeEventsOrnek.DelegatesVeEventsOrnekClass.DelegatesVeEventsOrnekRunMethod();
 
 
+            //--- Events ---
+                 //Events.EventsClass.EventsRun();
 
+            //KatmanliMimari
+                 //KatamanliMimari.KatamanliMimariClass.KatamanliMimariMain();
+
+        
         }
 
         public static void TemelCsharp()
