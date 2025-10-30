@@ -40,20 +40,31 @@ namespace CSharpProgramlama
 
 
             //--- Delegate Ornek ---
-                 //IleriCSharpEgitimi.Delegates.DelegatesClass.DelegatesRun();
-                 //DelegateOrnek1.DelegateOrnek1Class.DelegateOrnek1RunMain();
-                 //DelegateOrnek2.DelegateOrnek2Class.DelegateOrnek2RunMethod();
-                 //DelegateOrnek3.DelegateOrnek3Class.DelegateOrnek3RunMethod();
-                 //DelegatesVeEventsOrnek.DelegatesVeEventsOrnekClass.DelegatesVeEventsOrnekRunMethod();
+            //IleriCSharpEgitimi.Delegates.DelegatesClass.DelegatesRun();
+            //DelegateOrnek1.DelegateOrnek1Class.DelegateOrnek1RunMain();
+            //DelegateOrnek2.DelegateOrnek2Class.DelegateOrnek2RunMethod();
+            //DelegateOrnek3.DelegateOrnek3Class.DelegateOrnek3RunMethod();
+            //DelegatesVeEventsOrnek.DelegatesVeEventsOrnekClass.DelegatesVeEventsOrnekRunMethod();
 
 
             //--- Events ---
-                 //Events.EventsClass.EventsRun();
+            //Events.EventsClass.EventsRun();
 
             //KatmanliMimari
-                 //KatamanliMimari.KatamanliMimariClass.KatamanliMimariMain();
+            //KatamanliMimari.KatamanliMimariClass.KatamanliMimariMain();
 
-        
+            // Desing Patterns
+
+            //Singleton 
+            //SingletonDesingPatternNameSapce.SingletonDesingPatternClass.SingletonDesingPatternMain();
+
+            //Factory
+            //FactoryMethodDesignNameSpace.FactoryMethodDesignClass.FactoryMethodDesignMain();
+            //FactoryMethodDesignAbstractNameSpace.FactoryMethodDesignAbstractClass.FactoryMethodDesignAbstractRun();
+            //FactoryMethodDesignYoutuberOrnekNameSpace.FactoryMethodDesignYoutuberOrnekClass.FactoryMethodDesignYoutuberOrnekRunMethod();
+
+            //Prototype 
+            PrototypeDesignNameSpace.PrototypeDesignClass.PrototypeDesignRunMethod();
         }
 
         public static void TemelCsharp()
