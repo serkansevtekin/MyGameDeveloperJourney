@@ -64,7 +64,11 @@ namespace CSharpProgramlama
             //FactoryMethodDesignYoutuberOrnekNameSpace.FactoryMethodDesignYoutuberOrnekClass.FactoryMethodDesignYoutuberOrnekRunMethod();
 
             //Prototype 
-            PrototypeDesignNameSpace.PrototypeDesignClass.PrototypeDesignRunMethod();
+            //PrototypeDesignNameSpace.PrototypeDesignClass.PrototypeDesignRunMethod();
+
+            //Builder
+            //BuilderDesignNameSpace.BuilderDesignClass.BuilderDesignRunMain();
+            BuilderDesignBurgerNameSpace.BuilderDesignBurgerClass.BuilderDesignBurgerRunMain();
         }
 
         public static void TemelCsharp()
