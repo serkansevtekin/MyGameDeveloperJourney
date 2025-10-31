@@ -68,7 +68,69 @@ namespace CSharpProgramlama
 
             //Builder
             //BuilderDesignNameSpace.BuilderDesignClass.BuilderDesignRunMain();
-            BuilderDesignBurgerNameSpace.BuilderDesignBurgerClass.BuilderDesignBurgerRunMain();
+            //BuilderDesignBurgerNameSpace.BuilderDesignBurgerClass.BuilderDesignBurgerRunMain();
+
+            //Facade
+            //FacadeDesignPatternNamespace.FacadeClass.FacadeRunMain();
+            //FacadeDesignPatternNamespace.FacadeDesignPatternOrnekClass.FacadeDesignPatternOrnekRunMethod();
+
+            //Adapter
+            //AdapterDesignPatternNamespace.AdapterDesignPatternClass.AdapterDesignPatternRun();
+            //AdapterDesignPatternNamespace.AdapterDesignPatternBurgerOrnekClass.AdapterDesignPatternBurgerOrnekRun();
+
+            //Composite
+            CompositeDesignPatternNamespaces.CompositeDesignPatternClass.CompositeDesignPatternRunMethod();
+
+            //Proxy
+
+
+            //Decorator
+
+
+            //Bridge
+
+
+            //Strategy
+
+
+            //Observer
+            
+
+            //Chain Of Resposnsibility
+
+
+            //Memento
+
+
+            //Template Method
+
+
+            //State
+
+
+            // Mediator
+
+
+
+            //Command
+
+
+
+            //Visitor
+
+
+
+            //Dependency Inhection
+
+
+
+            //Null Object Deseni
+
+
+
+            //Multiton
+
+
         }
 
         public static void TemelCsharp()
