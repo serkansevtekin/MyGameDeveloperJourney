@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 namespace CompositeDesignPatternNamespaces
 {
@@ -6,13 +7,82 @@ namespace CompositeDesignPatternNamespaces
     {
         public static void CompositeDesignPatternRunMethod()
         {
+            Employee serkan = new Employee { Name = "Serkan Sevtekin" };
 
+            Employee hakki = new Employee { Name = "Hakkı Polq" };
+
+            serkan.AddSubordinate(hakki);
+
+
+            Employee polat = new Employee { Name = "Polat Alem" };
+            serkan.AddSubordinate(polat);
+
+            Contractor ali = new Contractor { Name = "Ali" };
+            polat.AddSubordinate(ali);
+
+            Employee ahmet = new Employee { Name = "Ahmet ğok" };
+            hakki.AddSubordinate(ahmet);
+
+
+            System.Console.WriteLine(serkan.Name);
+            foreach (Employee manager in serkan)
+            {
+                System.Console.WriteLine(manager.Name);
+                foreach (IPerson item in manager)
+                {
+                    System.Console.WriteLine(" "+item.Name);
+                }
+                
+            }
+
+        }
+    }
+
+    interface IPerson
+    {
+        public string? Name { get; set; }
+    }
+
+    class Contractor : IPerson
+    {
+        public string? Name { get; set; }
+    }
+
+    class Employee : IPerson, IEnumerable<IPerson>
+    {
+        List<IPerson> _subordinates = new List<IPerson>();
+
+        public void AddSubordinate(IPerson person)
+        {
+            _subordinates.Add(person);
+        }
+        public void RemoveSubordinate(IPerson person)
+        {
+            _subordinates.Remove(person);
+        }
+
+        public IPerson GetSubordinate(int index)
+        {
+            return _subordinates[index];
+        }
+        public string? Name { get; set; }
+
+        public IEnumerator<IPerson> GetEnumerator()
+        {
+            foreach (var item in _subordinates)
+            {
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 
 
 
-    
 
     #region Composit Design Pattern Tanım
     /*

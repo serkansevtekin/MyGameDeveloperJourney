@@ -1,4 +1,5 @@
 ﻿using System;
+using CompositeDesignPatternNamespaces;
 using DelegateOrnek2;
 
 
@@ -78,8 +79,9 @@ namespace CSharpProgramlama
             //AdapterDesignPatternNamespace.AdapterDesignPatternClass.AdapterDesignPatternRun();
             //AdapterDesignPatternNamespace.AdapterDesignPatternBurgerOrnekClass.AdapterDesignPatternBurgerOrnekRun();
 
-            //Composite
-            CompositeDesignPatternNamespaces.CompositeDesignPatternClass.CompositeDesignPatternRunMethod();
+            //Composite (Birdaha bakmalıyım)
+            //CompositeDesignPatternNamespaces.CompositeDesignPatternClass.CompositeDesignPatternRunMethod();
+            CompositeDesignPatternNamespaces.CompositeDesignPatternBurgerClass.CompositeDesignPatternBurgerRunMethod();
 
             //Proxy
 
