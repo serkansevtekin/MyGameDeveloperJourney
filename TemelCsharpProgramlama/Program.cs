@@ -81,13 +81,15 @@ namespace CSharpProgramlama
 
             //Composite (Birdaha bakmalıyım)
             //CompositeDesignPatternNamespaces.CompositeDesignPatternClass.CompositeDesignPatternRunMethod();
-            CompositeDesignPatternNamespaces.CompositeDesignPatternBurgerClass.CompositeDesignPatternBurgerRunMethod();
+            //CompositeDesignPatternNamespaces.CompositeDesignPatternBurgerClass.CompositeDesignPatternBurgerRunMethod();
 
             //Proxy
-
+            //ProxyDesignPatternNamespace.ProxyDesignPatternClass.ProxyDesignPatternRunMain();
+            //ProxyDesignPatternNamespace.BurgerProxyClass.BurgerProxyRunMain();
 
             //Decorator
-
+            //DecoratorNamespace.DecoratorClass.DecoratorRunMain();
+            //DecoratorBurgerOrnekNamespace.DecoratorBurgerClass.DecoratorBurgerRunMain();
 
             //Bridge
 
@@ -122,7 +124,7 @@ namespace CSharpProgramlama
 
 
 
-            //Dependency Inhection
+            //Dependency Injection
 
 
 
