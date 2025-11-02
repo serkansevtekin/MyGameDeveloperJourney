@@ -92,10 +92,11 @@ namespace CSharpProgramlama
             //DecoratorBurgerOrnekNamespace.DecoratorBurgerClass.DecoratorBurgerRunMain();
 
             //Bridge
-
+            //BridgeNamespace.BridgeDesignPatternClass.BridgeDesignPatternRunMain();
 
             //Strategy
-
+           // StrategyDesignPatternNamespace.StrategyDesignPatternClass.StrategyDesignPatternRunMethod();
+           // StrategyDesignPatternNamespace.StrategyDesignPatternBurgerOrnekClass.StrategyDesignPatternBurgerOrnekRunMethod();
 
             //Observer
             
