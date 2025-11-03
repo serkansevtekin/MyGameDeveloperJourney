@@ -95,11 +95,15 @@ namespace CSharpProgramlama
             //BridgeNamespace.BridgeDesignPatternClass.BridgeDesignPatternRunMain();
 
             //Strategy
-           // StrategyDesignPatternNamespace.StrategyDesignPatternClass.StrategyDesignPatternRunMethod();
-           // StrategyDesignPatternNamespace.StrategyDesignPatternBurgerOrnekClass.StrategyDesignPatternBurgerOrnekRunMethod();
+            // StrategyDesignPatternNamespace.StrategyDesignPatternClass.StrategyDesignPatternRunMethod();
+            // StrategyDesignPatternNamespace.StrategyDesignPatternBurgerOrnekClass.StrategyDesignPatternBurgerOrnekRunMethod();
 
             //Observer
-            
+            //ObserverPatternNamespace.ObserverPatternClass.ObserverPatternRunMethod();
+            //ObserverPatternNamespace.EnTemelObjectseverClass.EnTemelObjectseverRun();
+            //ObserverDesignPatternNamespace.EnTemelStateEklenmisOrnekClass.EnTemelStateEklenmisOrnekRun();
+            //ObserverDesignPatternBurgerNamespace.ObserverDesignPatternBurgerClass.ObserverDesignPatternBurgerRun();
+            ObserverDesignPatternBurgerMusteriBazliNamespace.ObserverDesignPatternBurgerMusteriBazliClass.ObserverDesignPatternBurgerMusteriBazliRunMethod();
 
             //Chain Of Resposnsibility
 
