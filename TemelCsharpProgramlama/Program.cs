@@ -103,16 +103,16 @@ namespace CSharpProgramlama
             //ObserverPatternNamespace.EnTemelObjectseverClass.EnTemelObjectseverRun();
             //ObserverDesignPatternNamespace.EnTemelStateEklenmisOrnekClass.EnTemelStateEklenmisOrnekRun();
             //ObserverDesignPatternBurgerNamespace.ObserverDesignPatternBurgerClass.ObserverDesignPatternBurgerRun();
-            ObserverDesignPatternBurgerMusteriBazliNamespace.ObserverDesignPatternBurgerMusteriBazliClass.ObserverDesignPatternBurgerMusteriBazliRunMethod();
+            //ObserverDesignPatternBurgerMusteriBazliNamespace.ObserverDesignPatternBurgerMusteriBazliClass.ObserverDesignPatternBurgerMusteriBazliRunMethod();
 
             //Chain Of Resposnsibility
-
+            //ChainOfResponsibilityNamespace.ChainOfResponsibilityClass.ChainOfResponsibilityRunMethod();
 
             //Memento
-
+            //MememntoNamespace.MementoClass.MementoRunMain();
 
             //Template Method
-
+            TemplateMethodDesignPatternNamespace.TemplateMethodDesignPatternClass.TemplateMethodDesignPatternRunMethod();
 
             //State
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemelCsharpProgramlama")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91b880b2528fd1da26597a552f499b082133b986")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95728e240f83dc45baf1f038d15bc9497a4fcd11")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemelCsharpProgramlama")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemelCsharpProgramlama")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
