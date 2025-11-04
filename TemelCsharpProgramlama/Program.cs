@@ -117,14 +117,14 @@ namespace CSharpProgramlama
 
 
             //State
-            StateDesignPatternNamespace.StateDesignPatternClass.StateDesignPatternRunMethod();
+            //StateDesignPatternNamespace.StateDesignPatternClass.StateDesignPatternRunMethod();
 
             // Mediator
-
-
+            //MediatorDesignPatternNamespace.Mediator.MediatorDesignPatternRunMain();
+            //MediatorDesignPatternUcakKuleOrnekNamespace.MediatorDesignPatternUcakKuleOrnekClass.MediatorDesignPatternUcakKuleOrnekRunMain();
 
             //Command
-
+            
 
 
             //Visitor
