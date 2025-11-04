@@ -112,7 +112,9 @@ namespace CSharpProgramlama
             //MememntoNamespace.MementoClass.MementoRunMain();
 
             //Template Method
-            TemplateMethodDesignPatternNamespace.TemplateMethodDesignPatternClass.TemplateMethodDesignPatternRunMethod();
+            //TemplateMethodDesignPatternNamespace.TemplateMethodDesignPatternClass.TemplateMethodDesignPatternRunMethod();
+            //TemplateMethodDesignPatternNamespace.TemplateMethodDesignPatternBurgerOrnekClass.TemplateMethodDesignPatternBurgerOrnekRunMain();
+
 
             //State
 
