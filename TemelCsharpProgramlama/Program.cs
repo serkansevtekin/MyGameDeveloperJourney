@@ -117,7 +117,7 @@ namespace CSharpProgramlama
 
 
             //State
-
+            StateDesignPatternNamespace.StateDesignPatternClass.StateDesignPatternRunMethod();
 
             // Mediator
 
