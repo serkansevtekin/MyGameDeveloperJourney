@@ -124,10 +124,11 @@ namespace CSharpProgramlama
             //MediatorDesignPatternUcakKuleOrnekNamespace.MediatorDesignPatternUcakKuleOrnekClass.MediatorDesignPatternUcakKuleOrnekRunMain();
 
             //Command
-            
+            //CommandDesignPatternNamespace.CommandDesignPatternClass.CommandDesignPatternRun();
 
 
             //Visitor
+            VisitorDPNamespace.VisitorDPClass.VisitorDPRunMain();
 
 
 
