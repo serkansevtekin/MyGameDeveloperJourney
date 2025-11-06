@@ -13,3 +13,6 @@
 /Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.pdb
 /Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.genruntimeconfig.cache
 /Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/ref/TemelCsharpProgramlama.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/bin/Debug/net9.0/FluentValidation.dll
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsharpProgramlama.csproj.AssemblyReference.cache
+/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/obj/Debug/net9.0/TemelCsh.AD8131B7.Up2Date

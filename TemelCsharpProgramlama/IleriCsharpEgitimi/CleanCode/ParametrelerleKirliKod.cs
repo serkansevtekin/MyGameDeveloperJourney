@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace CleanCode
 {
@@ -36,7 +37,7 @@ namespace CleanCode
     }
 
 
-    class Customer
+    public class Customer
     {
 
         public int Id { get; set; }
@@ -46,22 +47,30 @@ namespace CleanCode
         public string? IdentityNumber { get; set; }
     }
 
-    interface ICustomerService
+    public interface ICustomerService
     {
 
         void Add(Customer customer);
     }
-    class CustomerManager : ICustomerService
+    public class CustomerManager : ICustomerService
     {
         public void Add(Customer customer)
         {
             //code smell
             // Technical dept
-            ValidateFirstNameIfEmpty(customer);
-            ValidateLastNameIfEmpty(customer);
-            
+            //ValidateFirstNameIfEmpty(customer);
+            //ValidateLastNameIfEmpty(customer);
+
+            CustomerValidator customerValidator = new CustomerValidator();
+            var result = customerValidator.Validate(customer);
+            if (result.Errors.Count > 0)
+            {
+                throw new FluentValidation.ValidationException(result.Errors);
+            }
 
             CustomerDal customerDal = new CustomerDal();
+
+            CheckCustomerExists(customer);
             customerDal.Add(customer);
 
 
@@ -74,8 +83,23 @@ namespace CleanCode
             ValidateLastNameIfEmpty(customer);
             ValidateFirstNameLengthMinTwoCharacter(customer);
 
+
+
             CustomerDal customerDal = new CustomerDal();
+
+
+            CheckCustomerExists(customer);
             customerDal.Add(customer);
+
+        }
+
+        private void CheckCustomerExists(Customer customer)
+        {
+            CustomerDal customerDal = new CustomerDal();
+            if (customerDal.CustomerExists(customer))
+            {
+                throw new Exception("Müşteri zaten mevcut");
+            }
         }
 
         private void ValidateFirstNameIfEmpty(Customer customer)
@@ -111,7 +135,7 @@ namespace CleanCode
             }
         }
     }
-    class CustomerDal
+    public class CustomerDal
     {
         public void Add(Customer customer)
         {
@@ -120,6 +144,11 @@ namespace CleanCode
             System.Console.WriteLine("Veritabanına Eklendi");
 
 
+        }
+
+        public bool CustomerExists(Customer customer)
+        {
+            return true;
         }
     }
 

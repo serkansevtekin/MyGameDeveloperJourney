@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OJjhyomNYHw=",
+  "dgSpecHash": "S/sgen4UqVA=",
   "success": true,
   "projectFilePath": "/Users/ibrahimserkansevtekin/Documents/GitClone/BTKAkademiEgitim/TemelCsharpProgramlama/TemelCsharpProgramlama.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ibrahimserkansevtekin/.nuget/packages/fluentvalidation/12.1.0/fluentvalidation.12.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
