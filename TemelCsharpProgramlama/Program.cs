@@ -56,6 +56,7 @@ namespace CSharpProgramlama
 
             // Desing Patterns
 
+            #region Design Patterns
             //Singleton 
             //SingletonDesingPatternNameSapce.SingletonDesingPatternClass.SingletonDesingPatternMain();
 
@@ -128,21 +129,28 @@ namespace CSharpProgramlama
 
 
             //Visitor
-            VisitorDPNamespace.VisitorDPClass.VisitorDPRunMain();
+            //VisitorDPNamespace.VisitorDPClass.VisitorDPRunMain();
 
 
 
             //Dependency Injection
-
+            //DependencyInjectionNamespace.DependencyClass.DependencyRunMethod();
 
 
             //Null Object Deseni
-
+            //NullObjectDesingPatterNamespace.NullObjectDesingPatterClass.NullObjectDesingPatterRunMethod();
 
 
             //Multiton
+            //MultitonDPNamespace.MultitonDPClass.MultitonRun();
 
+            #endregion
 
+            // Clean Code (94)
+            #region Clean Code 
+            CleanCode.ParametreliKirliCodeClass.ParametreliKirliCodeRunMethod();
+            #endregion
+       
         }
 
         public static void TemelCsharp()
