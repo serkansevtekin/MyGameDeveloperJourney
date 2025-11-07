@@ -148,8 +148,11 @@ namespace CSharpProgramlama
 
             // Clean Code (94)
             #region Clean Code 
-            CleanCode.ParametreliKirliCodeClass.ParametreliKirliCodeRunMethod();
+
+            //CleanCode.ParametreliKirliCodeClass.ParametreliKirliCodeRunMethod();
             //CleanCode.ReferaceTypes.ReferaceTypesClass.ReferaceTypesRunMain();
+            EgitimSatis.EgitimSatisClass.EgitimSatisRunMain();
+
             #endregion
        
         }
