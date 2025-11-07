@@ -1,26 +1,20 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-
+using CleanCode.ReferaceTypes;
+using FluentValidation;
 namespace CleanCode
 {
-    // Kirli kodu düzelttik
+    
     class ParametreliKirliCodeClass
     {
         public static void ParametreliKirliCodeRunMethod()
         {
-            CustomerManager customerManager = new CustomerManager();
+            CustomerManager customerManager = new CustomerManager(new MysqlCustomerDal(),new KpsServiceAdapter() );
             customerManager.Add(new Customer
             {
                 FirstName = "Serkan",
                 LastName = "Sevtekin",
                 IdentityNumber = "222"
-            });
-            customerManager.Add(new Customer
-            {
-                FirstName = "Hasan",
-                LastName = "Dumrul",
-                IdentityNumber = "123",
-                CityId = 1
             });
 
             //Sadece bunda FirstName min 2 karakter isteniyor
@@ -37,14 +31,12 @@ namespace CleanCode
     }
 
 
-    public class Customer
+    public class Customer : Persons
     {
 
-        public int Id { get; set; }
+
         public int CityId { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? IdentityNumber { get; set; }
+
     }
 
     public interface ICustomerService
@@ -54,27 +46,27 @@ namespace CleanCode
     }
     public class CustomerManager : ICustomerService
     {
+
+        private ICustomerDal _customerDal;
+        private IPersonService _personService;
+        public CustomerManager(ICustomerDal customerDal, IPersonService personService)
+        {
+            _customerDal = customerDal;
+            _personService = personService;
+        }
+
         public void Add(Customer customer)
         {
-            //code smell
-            // Technical dept
-            //ValidateFirstNameIfEmpty(customer);
-            //ValidateLastNameIfEmpty(customer);
 
-            CustomerValidator customerValidator = new CustomerValidator();
-            var result = customerValidator.Validate(customer);
-            if (result.Errors.Count > 0)
-            {
-                throw new FluentValidation.ValidationException(result.Errors);
-            }
+            Utility.Validate(new CustomerValidator(), customer);
 
-            CustomerDal customerDal = new CustomerDal();
+            Utility.CheckPersonExists(customer, _personService);
 
-            CheckCustomerExists(customer);
-            customerDal.Add(customer);
+            _customerDal.Add(customer);
 
 
         }
+
 
 
         public void AddByOtherBusiness(Customer customer)
@@ -83,24 +75,21 @@ namespace CleanCode
             ValidateLastNameIfEmpty(customer);
             ValidateFirstNameLengthMinTwoCharacter(customer);
 
-
-
-            CustomerDal customerDal = new CustomerDal();
-
-
-            CheckCustomerExists(customer);
-            customerDal.Add(customer);
+            Utility.CheckPersonExists(customer, _personService);
+            _customerDal.Add(customer);
 
         }
 
         private void CheckCustomerExists(Customer customer)
         {
-            CustomerDal customerDal = new CustomerDal();
-            if (customerDal.CustomerExists(customer))
+
+            if (_customerDal.CustomerExists(customer))
             {
                 throw new Exception("Müşteri zaten mevcut");
             }
         }
+
+
 
         private void ValidateFirstNameIfEmpty(Customer customer)
         {
@@ -135,14 +124,45 @@ namespace CleanCode
             }
         }
     }
-    public class CustomerDal
+
+    public interface ICustomerDal
+    {
+        void Add(Customer customer);
+        bool CustomerExists(Customer customer);
+    }
+
+
+    public class EnfCustomerDal : ICustomerDal
     {
         public void Add(Customer customer)
         {
+            System.Console.WriteLine("Nhibernate kullanarak veritabanına Eklendi");
+        }
 
+        public bool CustomerExists(Customer customer)
+        {
+            return true;
+        }
+    }
 
-            System.Console.WriteLine("Veritabanına Eklendi");
+    public class NhCustomerDal : ICustomerDal
+    {
+        public void Add(Customer customer)
+        {
+            System.Console.WriteLine("Entity Freamwork kullanarak veritabanına Eklendi");
+        }
 
+        public bool CustomerExists(Customer customer)
+        {
+            return true;
+        }
+    }
+
+    public class MysqlCustomerDal : ICustomerDal
+    {
+        public void Add(Customer customer)
+        {
+            System.Console.WriteLine("Myqsl veritabanına Eklendi");
 
         }
 
@@ -153,4 +173,35 @@ namespace CleanCode
     }
 
 
+    // Bu koda dokunamıyoruz mesela
+    public class KpsService
+    {
+        public bool CheckPerson(long tcNo, string adi, string soyadi, int yil)
+        {
+            return true;
+        }
+    }
+
+    public class KpsServiceAdapter : IPersonService
+    {
+        public bool CheckPerson(Persons person)
+        {
+            KpsService kpsService = new KpsService();
+            return kpsService.CheckPerson(Convert.ToInt64(person.IdentityNumber), person.FirstName!, person.LastName!, person.YearOfBirth);
+        }
+    }
+    public interface IPersonService
+    {
+        bool CheckPerson(Persons person);
+    }
+
+    public class Persons
+    {
+        public int Id { get; set; }
+
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? IdentityNumber { get; set; }
+        public int YearOfBirth { get; set; }
+    }
 }
