@@ -151,7 +151,7 @@ namespace CSharpProgramlama
 
             //CleanCode.ParametreliKirliCodeClass.ParametreliKirliCodeRunMethod();
             //CleanCode.ReferaceTypes.ReferaceTypesClass.ReferaceTypesRunMain();
-            EgitimSatis.EgitimSatisClass.EgitimSatisRunMain();
+           // EgitimSatis.EgitimSatisClass.EgitimSatisRunMain();
 
             #endregion
        
